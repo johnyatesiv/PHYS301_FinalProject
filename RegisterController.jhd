@@ -1,0 +1,9 @@
+MODULE RegisterController
+	SUBMODULE eight_b_mux
+		INSTANCE XLXI_1
+	SUBMODULE eight_b_mux
+		INSTANCE XLXI_2
+	SUBMODULE eight_b_mux
+		INSTANCE XLXI_3
+	SUBMODULE eight_b_mux
+		INSTANCE XLXI_4

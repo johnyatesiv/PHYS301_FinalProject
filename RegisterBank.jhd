@@ -1,0 +1,3 @@
+MODULE RegisterBank
+	SUBMODULE WorkingRegisters
+		INSTANCE XLXI_40

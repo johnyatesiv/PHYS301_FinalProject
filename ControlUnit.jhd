@@ -1,0 +1,3 @@
+MODULE ControlUnit
+	SUBMODULE InstructionControl
+		INSTANCE XLXI_49

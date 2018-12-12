@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl RegisterBank_drc.vhf -w C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/RegisterBank.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym RegisterBank C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/RegisterBank.sch C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/RegisterBank.sym 

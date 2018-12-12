@@ -1,0 +1,11 @@
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl eight_b_mux_drc.vhf -w {C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/ALU_part/ALU/eight_b_mux.sch} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl eight_b_mux_drc.vhf -w {C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/ALU_part/ALU/eight_b_mux.sch} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl eight_b_mux_drc.vhf -w {C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/ALU_part/ALU/eight_b_mux.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym eight_b_mux {C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/ALU_part/ALU/eight_b_mux.sch} {C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/ALU_part/ALU/eight_b_mux.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl eight_b_mux_drc.vhf -w {C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/ALU_part/ALU/eight_b_mux.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym eight_b_mux {C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/ALU_part/ALU/eight_b_mux.sch} {C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/ALU_part/ALU/eight_b_mux.sym} 
+sch2vhdl -intstyle ise -family spartan3e -tionly -w {C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/ALU_part/ALU/eight_b_mux.sch} eight_b_mux.vhi 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl eight_b_mux.vhf -w {C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/ALU_part/ALU/eight_b_mux.sch} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl eight_b_mux_drc.vhf -w {C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/ALU_part/ALU/eight_b_mux.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym eight_b_mux {C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/ALU_part/ALU/eight_b_mux.sch} {C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/ALU_part/ALU/eight_b_mux.sym} 
+sch2sym -intstyle ise -family spartan3e -w -refsym eight_b_mux C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/eight_b_mux.sch C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/eight_b_mux.sym 
