@@ -62,6 +62,7 @@
         <signal name="Sin(7)" />
         <signal name="Subtract_Flag" />
         <signal name="Add_Flag" />
+        <signal name="RST_On" />
         <port polarity="Input" name="CLKin" />
         <port polarity="Input" name="Instr_In(7:0)" />
         <port polarity="Input" name="Data_In(7:0)" />
@@ -114,8 +115,10 @@
         <port polarity="Input" name="Sin(7)" />
         <port polarity="Output" name="Subtract_Flag" />
         <port polarity="Output" name="Add_Flag" />
+        <port polarity="Output" name="RST_On" />
         <blockdef name="ControlUnit">
-            <timestamp>2018-12-11T23:27:4</timestamp>
+            <timestamp>2018-12-13T1:29:0</timestamp>
+            <line x2="384" y1="1088" y2="1088" x1="320" />
             <line x2="384" y1="944" y2="944" x1="320" />
             <line x2="384" y1="992" y2="992" x1="320" />
             <line x2="384" y1="1040" y2="1040" x1="320" />
@@ -135,7 +138,7 @@
             <line x2="384" y1="736" y2="736" x1="320" />
             <line x2="384" y1="800" y2="800" x1="320" />
             <line x2="0" y1="108" y2="108" x1="64" />
-            <rect width="256" x="64" y="56" height="1016" />
+            <rect width="256" x="64" y="56" height="1064" />
         </blockdef>
         <blockdef name="RegisterBank">
             <timestamp>2018-12-11T22:14:4</timestamp>
@@ -260,6 +263,7 @@
             <blockpin signalname="SET_On" name="SET_On" />
             <blockpin signalname="GET_On" name="GET_On" />
             <blockpin signalname="HLT_On" name="HLT_On" />
+            <blockpin signalname="RST_On" name="RST_On" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -626,5 +630,10 @@
         <iomarker fontsize="28" x="1408" y="1200" name="SET_On" orien="R0" />
         <iomarker fontsize="28" x="1408" y="1248" name="GET_On" orien="R0" />
         <iomarker fontsize="28" x="1408" y="1296" name="HLT_On" orien="R0" />
+        <branch name="RST_On">
+            <wire x2="1376" y1="1344" y2="1344" x1="1360" />
+            <wire x2="1408" y1="1344" y2="1344" x1="1376" />
+        </branch>
+        <iomarker fontsize="28" x="1408" y="1344" name="RST_On" orien="R0" />
     </sheet>
 </drawing>

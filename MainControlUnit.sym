@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="MainControlUnit">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2018-12-12T21:52:2</timestamp>
+    <timestamp>2018-12-13T1:30:53</timestamp>
     <pin polarity="Input" x="0" y="-608" name="CLKin" />
     <pin polarity="Input" x="0" y="-512" name="Instr_In(7:0)" />
     <pin polarity="Input" x="0" y="-416" name="Data_In(7:0)" />
@@ -15,18 +15,6 @@
     <pin polarity="Input" x="0" y="352" name="R2in(7:0)" />
     <pin polarity="Input" x="0" y="416" name="R3in(7:0)" />
     <pin polarity="Input" x="0" y="-128" name="Sin(7:0)" />
-    <pin polarity="Output" x="432" y="-608" name="ALU_AOut(7:0)" />
-    <pin polarity="Output" x="432" y="-544" name="ALU_BOut(7:0)" />
-    <pin polarity="Output" x="432" y="-480" name="COut(7:0)" />
-    <pin polarity="Output" x="432" y="-416" name="IROut(7:0)" />
-    <pin polarity="Output" x="432" y="-352" name="DROut(7:0)" />
-    <pin polarity="Output" x="432" y="-288" name="R0Out(7:0)" />
-    <pin polarity="Output" x="432" y="-224" name="R2Out(7:0)" />
-    <pin polarity="Output" x="432" y="-160" name="R1Out(7:0)" />
-    <pin polarity="Output" x="432" y="-96" name="R3Out(7:0)" />
-    <pin polarity="Output" x="432" y="-32" name="Sout(7:0)" />
-    <pin polarity="Output" x="432" y="32" name="Subtract_Flag" />
-    <pin polarity="Output" x="432" y="96" name="Add_Flag" />
     <pin polarity="Output" x="432" y="160" name="MVI_On" />
     <pin polarity="Output" x="432" y="224" name="LCA_On" />
     <pin polarity="Output" x="432" y="288" name="STA_On" />
@@ -40,6 +28,19 @@
     <pin polarity="Output" x="432" y="800" name="HLT_On" />
     <pin polarity="Output" x="432" y="864" name="SET_On" />
     <pin polarity="Output" x="432" y="928" name="GET_On" />
+    <pin polarity="Output" x="432" y="-608" name="ALU_AOut(7:0)" />
+    <pin polarity="Output" x="432" y="-544" name="ALU_BOut(7:0)" />
+    <pin polarity="Output" x="432" y="-480" name="COut(7:0)" />
+    <pin polarity="Output" x="432" y="-416" name="IROut(7:0)" />
+    <pin polarity="Output" x="432" y="-352" name="DROut(7:0)" />
+    <pin polarity="Output" x="432" y="-288" name="R0Out(7:0)" />
+    <pin polarity="Output" x="432" y="-224" name="R2Out(7:0)" />
+    <pin polarity="Output" x="432" y="-160" name="R1Out(7:0)" />
+    <pin polarity="Output" x="432" y="-96" name="R3Out(7:0)" />
+    <pin polarity="Output" x="432" y="-32" name="Sout(7:0)" />
+    <pin polarity="Output" x="432" y="32" name="Subtract_Flag" />
+    <pin polarity="Output" x="432" y="96" name="Add_Flag" />
+    <pin polarity="Output" x="432" y="992" name="RST_On" />
     <graph>
         <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="216" y="-648" type="symbol" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-608" type="pin CLKin" />
@@ -53,7 +54,21 @@
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="224" type="pin R0in(7:0)" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="288" type="pin R1in(7:0)" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="352" type="pin R2in(7:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="416" type="pin R3in(7:0)" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-128" type="pin Sin(7:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="160" type="pin MVI_On" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="224" type="pin LCA_On" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="288" type="pin STA_On" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="352" type="pin ADI_On" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="416" type="pin SUB_On" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="480" type="pin ADD_On" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="544" type="pin SUBU_On" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="608" type="pin ADDU_On" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="672" type="pin SBI_On" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="736" type="pin LDA_On" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="800" type="pin HLT_On" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="864" type="pin SET_On" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="928" type="pin GET_On" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="-608" type="pin ALU_AOut(7:0)" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="-544" type="pin ALU_BOut(7:0)" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="-480" type="pin COut(7:0)" />
@@ -64,6 +79,10 @@
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="-160" type="pin R1Out(7:0)" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="-96" type="pin R3Out(7:0)" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="-32" type="pin Sout(7:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="32" type="pin Subtract_Flag" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="96" type="pin Add_Flag" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="992" type="pin RST_On" />
+        <line x2="432" y1="992" y2="992" x1="368" />
         <rect width="64" x="0" y="20" height="24" />
         <line x2="0" y1="32" y2="32" x1="64" />
         <rect width="64" x="0" y="84" height="24" />
@@ -107,37 +126,21 @@
         <line x2="432" y1="-96" y2="-96" x1="368" />
         <rect width="64" x="368" y="-44" height="24" />
         <line x2="432" y1="-32" y2="-32" x1="368" />
-        <rect width="304" x="64" y="-640" height="1600" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="416" type="pin R3in(7:0)" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="96" type="pin Add_Flag" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="160" type="pin MVI_On" />
         <line x2="432" y1="160" y2="160" x1="368" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="224" type="pin LCA_On" />
         <line x2="432" y1="224" y2="224" x1="368" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="288" type="pin STA_On" />
         <line x2="432" y1="288" y2="288" x1="368" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="352" type="pin ADI_On" />
         <line x2="432" y1="352" y2="352" x1="368" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="416" type="pin SUB_On" />
         <line x2="432" y1="416" y2="416" x1="368" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="480" type="pin ADD_On" />
         <line x2="432" y1="480" y2="480" x1="368" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="544" type="pin SUBU_On" />
         <line x2="432" y1="544" y2="544" x1="368" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="608" type="pin ADDU_On" />
         <line x2="432" y1="608" y2="608" x1="368" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="672" type="pin SBI_On" />
         <line x2="432" y1="672" y2="672" x1="368" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="736" type="pin LDA_On" />
         <line x2="432" y1="736" y2="736" x1="368" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="800" type="pin HLT_On" />
         <line x2="432" y1="800" y2="800" x1="368" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="864" type="pin SET_On" />
         <line x2="432" y1="864" y2="864" x1="368" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="928" type="pin GET_On" />
         <line x2="432" y1="928" y2="928" x1="368" />
         <line x2="432" y1="32" y2="32" x1="368" />
         <line x2="432" y1="96" y2="96" x1="368" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="32" type="pin Subtract_Flag" />
+        <rect width="304" x="64" y="-640" height="1664" />
     </graph>
 </symbol>

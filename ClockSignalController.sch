@@ -42,6 +42,7 @@
         <signal name="SET_On" />
         <signal name="GET_On" />
         <signal name="HLT_On" />
+        <signal name="RST_On" />
         <port polarity="Input" name="MVI" />
         <port polarity="Input" name="STA" />
         <port polarity="Input" name="LDA" />
@@ -75,6 +76,7 @@
         <port polarity="Output" name="SET_On" />
         <port polarity="Output" name="GET_On" />
         <port polarity="Output" name="HLT_On" />
+        <port polarity="Output" name="RST_On" />
         <blockdef name="or2">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-64" y2="-64" x1="0" />
@@ -198,6 +200,11 @@
             <blockpin signalname="CLK_4" name="I0" />
             <blockpin signalname="HLT" name="I1" />
             <blockpin signalname="HLT_On" name="O" />
+        </block>
+        <block symbolname="and2b1" name="XLXI_34">
+            <blockpin signalname="CLK_4" name="I0" />
+            <blockpin signalname="RST" name="I1" />
+            <blockpin signalname="RST_On" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -526,5 +533,18 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1088" y="2432" type="branch" />
             <wire x2="1232" y1="2432" y2="2432" x1="1088" />
         </branch>
+        <instance x="2176" y="2576" name="XLXI_34" orien="R0" />
+        <branch name="CLK_4">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2032" y="2512" type="branch" />
+            <wire x2="2176" y1="2512" y2="2512" x1="2032" />
+        </branch>
+        <branch name="RST_On">
+            <wire x2="2464" y1="2480" y2="2480" x1="2432" />
+        </branch>
+        <branch name="RST">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2032" y="2448" type="branch" />
+            <wire x2="2176" y1="2448" y2="2448" x1="2032" />
+        </branch>
+        <iomarker fontsize="28" x="2464" y="2480" name="RST_On" orien="R0" />
     </sheet>
 </drawing>

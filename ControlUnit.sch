@@ -25,6 +25,7 @@
         <signal name="SET_On" />
         <signal name="GET_On" />
         <signal name="HLT_On" />
+        <signal name="RST_On" />
         <port polarity="Input" name="CLKin" />
         <port polarity="Input" name="INSTin(7:0)" />
         <port polarity="Output" name="CLR_On" />
@@ -43,6 +44,7 @@
         <port polarity="Output" name="SET_On" />
         <port polarity="Output" name="GET_On" />
         <port polarity="Output" name="HLT_On" />
+        <port polarity="Output" name="RST_On" />
         <blockdef name="pullup">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-108" y2="-128" x1="64" />
@@ -61,7 +63,8 @@
             <line x2="32" y1="-128" y2="-128" x1="96" />
         </blockdef>
         <blockdef name="InstructionControl">
-            <timestamp>2018-12-11T23:25:27</timestamp>
+            <timestamp>2018-12-13T1:28:3</timestamp>
+            <line x2="384" y1="352" y2="352" x1="320" />
             <line x2="384" y1="160" y2="160" x1="320" />
             <line x2="384" y1="224" y2="224" x1="320" />
             <line x2="384" y1="288" y2="288" x1="320" />
@@ -81,16 +84,16 @@
             <line x2="384" y1="-160" y2="-160" x1="320" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
-            <rect width="256" x="64" y="-704" height="1024" />
+            <rect width="256" x="64" y="-704" height="1088" />
         </blockdef>
         <block symbolname="pullup" name="XLXI_34">
             <blockpin signalname="CE" name="O" />
         </block>
         <block symbolname="InstructionControl" name="XLXI_49">
-            <blockpin signalname="INSTin(7:0)" name="INSTin(7:0)" />
             <blockpin signalname="CLKin" name="CLKin" />
             <blockpin signalname="quarter_clk" name="quarter_clk" />
             <blockpin signalname="half_clk" name="half_clk" />
+            <blockpin signalname="INSTin(7:0)" name="INSTin(7:0)" />
             <blockpin signalname="CLR_On" name="CLR_On" />
             <blockpin signalname="MVI_On" name="MVI_On" />
             <blockpin signalname="LCA_On" name="LCA_On" />
@@ -105,6 +108,7 @@
             <blockpin signalname="SET_On" name="SET_On" />
             <blockpin signalname="GET_On" name="GET_On" />
             <blockpin signalname="HLT_On" name="HLT_On" />
+            <blockpin signalname="RST_On" name="RST_On" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -192,5 +196,9 @@
             <wire x2="784" y1="1088" y2="1088" x1="752" />
         </branch>
         <iomarker fontsize="28" x="784" y="1088" name="HLT_On" orien="R0" />
+        <branch name="RST_On">
+            <wire x2="784" y1="1152" y2="1152" x1="752" />
+        </branch>
+        <iomarker fontsize="28" x="784" y="1152" name="RST_On" orien="R0" />
     </sheet>
 </drawing>

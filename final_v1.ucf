@@ -1,5 +1,4 @@
 #CLOCK
-
 NET "B8_clk" LOC = B8;
 
 #Instruction In
@@ -12,11 +11,7 @@ NET "Ctrl_Instr_In[5]" LOC = f3;
 NET "Ctrl_Instr_In[6]" LOC = e2;
 NET "Ctrl_Instr_In[7]" LOC = n3;
 
-#Output
-
-#run mode
-NET "SBI_On" LOC = g1;
-NET "LDA_On" LOC = p4;
-NET "HLT_On" LOC = n4;
-NET "run_mode" LOC = g12;
-
+#runconfig
+NET "run_mode" LOC = n3;
+NET "toggle_clk_speed" = e2;
+NET "step" LOC = a7;

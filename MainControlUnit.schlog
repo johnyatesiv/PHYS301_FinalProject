@@ -1,10 +1,1 @@
-select figure at 1354 1491 8 -branches -sn=1
-select figure at 835 719 8 -branches -sn=1
-select figure at 2004 1239 8 -branches -sn=1
-select figure at 2025 1353 8 -branches -sn=1
-select figure at 1981 1367 8 -branches -sn=1
-select figure at 2106 1434 8 -branches -sn=1
-select figure at 1350 1193 8 -branches -sn=1
-select figure at 1841 1388 8 -branches -sn=1
-select figure at 1920 1431 8 -branches -sn=1
-select figure at 2013 1239 8 -branches -sn=1
+select figure at 1731 1480 8 -branches -sn=1

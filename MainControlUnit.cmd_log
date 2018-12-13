@@ -5,3 +5,4 @@ sch2sym -intstyle ise -family spartan3e -w -refsym MainControlUnit C:/Users/John
 sch2sym -intstyle ise -family spartan3e -w -refsym MainControlUnit C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.sch C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.sym 
 sch2sym -intstyle ise -family spartan3e -w -refsym MainControlUnit C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.sch C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.sym 
 sch2sym -intstyle ise -family spartan3e -w -refsym MainControlUnit C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.sch C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym MainControlUnit C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.sch C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.sym 
