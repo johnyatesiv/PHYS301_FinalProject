@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Prog_Counter.vhf
--- /___/   /\     Timestamp : 12/12/2018 17:33:17
+-- /___/   /\     Timestamp : 12/12/2018 19:28:39
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/John/Documents/PHYS301_FinalProject/Prog_Counter.vhf -w C:/Users/John/Documents/PHYS301_FinalProject/Prog_Counter.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/Prog_Counter.vhf -w C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/Prog_Counter.sch
 --Design Name: Prog_Counter
 --Device: spartan3e
 --Purpose:
@@ -159,8 +159,8 @@ architecture BEHAVIORAL of DivClock_MUSER_Prog_Counter is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_94";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_95";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_19";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_20";
 begin
    half_clk <= half_clk_DUMMY;
    XLXI_1 : FJKC_MXILINX_Prog_Counter
@@ -352,7 +352,7 @@ architecture BEHAVIORAL of FTCLEX_MXILINX_Prog_Counter is
    end component;
    attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
    
-   attribute HU_SET of I_36_30 : label is "I_36_30_96";
+   attribute HU_SET of I_36_30 : label is "I_36_30_21";
    attribute RLOC of I_36_35 : label is "X0Y0";
 begin
    Q <= Q_DUMMY;
@@ -554,22 +554,22 @@ architecture BEHAVIORAL of CB8CLED_MXILINX_Prog_Counter is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_104";
-   attribute HU_SET of I_Q1 : label is "I_Q1_103";
-   attribute HU_SET of I_Q2 : label is "I_Q2_102";
-   attribute HU_SET of I_Q3 : label is "I_Q3_101";
-   attribute HU_SET of I_Q4 : label is "I_Q4_100";
-   attribute HU_SET of I_Q5 : label is "I_Q5_99";
-   attribute HU_SET of I_Q6 : label is "I_Q6_98";
-   attribute HU_SET of I_Q7 : label is "I_Q7_97";
-   attribute HU_SET of I_TC : label is "I_TC_109";
-   attribute HU_SET of I_T1 : label is "I_T1_112";
-   attribute HU_SET of I_T2 : label is "I_T2_105";
-   attribute HU_SET of I_T3 : label is "I_T3_106";
-   attribute HU_SET of I_T4 : label is "I_T4_111";
-   attribute HU_SET of I_T5 : label is "I_T5_110";
-   attribute HU_SET of I_T6 : label is "I_T6_107";
-   attribute HU_SET of I_T7 : label is "I_T7_108";
+   attribute HU_SET of I_Q0 : label is "I_Q0_29";
+   attribute HU_SET of I_Q1 : label is "I_Q1_28";
+   attribute HU_SET of I_Q2 : label is "I_Q2_27";
+   attribute HU_SET of I_Q3 : label is "I_Q3_26";
+   attribute HU_SET of I_Q4 : label is "I_Q4_25";
+   attribute HU_SET of I_Q5 : label is "I_Q5_24";
+   attribute HU_SET of I_Q6 : label is "I_Q6_23";
+   attribute HU_SET of I_Q7 : label is "I_Q7_22";
+   attribute HU_SET of I_TC : label is "I_TC_34";
+   attribute HU_SET of I_T1 : label is "I_T1_37";
+   attribute HU_SET of I_T2 : label is "I_T2_30";
+   attribute HU_SET of I_T3 : label is "I_T3_31";
+   attribute HU_SET of I_T4 : label is "I_T4_36";
+   attribute HU_SET of I_T5 : label is "I_T5_35";
+   attribute HU_SET of I_T6 : label is "I_T6_32";
+   attribute HU_SET of I_T7 : label is "I_T7_33";
 begin
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    TC <= TC_DUMMY;
@@ -917,8 +917,8 @@ architecture BEHAVIORAL of Prog_Counter is
              clk         : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_113";
-   attribute HU_SET of XLXI_59 : label is "XLXI_59_114";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_38";
+   attribute HU_SET of XLXI_59 : label is "XLXI_59_39";
 begin
    clk1Hz <= clk1Hz_DUMMY;
    clk1MHz <= clk1MHz_DUMMY;

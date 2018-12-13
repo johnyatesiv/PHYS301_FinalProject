@@ -17,15 +17,18 @@
          <ClosedNode>/final_v1 C:|Users|John|Documents|PHYS301_FinalProject|final_v1.sch/XLXI_3 - keypad_input/XLXI_12 - key4_dbnc - Behavioral</ClosedNode>
          <ClosedNode>/final_v1 C:|Users|John|Documents|PHYS301_FinalProject|final_v1.sch/XLXI_8 - RegisterBank</ClosedNode>
          <ClosedNode>/final_v1 C:|Users|John|Documents|PHYS301_FinalProject|final_v1.sch/XLXI_9 - ControlUnit</ClosedNode>
+         <ClosedNode>/final_v1 C:|Users|John|Downloads|PHYS301_FinalProject-master_v2|PHYS301_FinalProject-master|final_v1.sch/XLXI_1 - memory</ClosedNode>
+         <ClosedNode>/final_v1 C:|Users|John|Downloads|PHYS301_FinalProject-master_v2|PHYS301_FinalProject-master|final_v1.sch/XLXI_2 - Prog_Counter</ClosedNode>
+         <ClosedNode>/final_v1 C:|Users|John|Downloads|PHYS301_FinalProject-master_v2|PHYS301_FinalProject-master|final_v1.sch/XLXI_3 - keypad_input</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>final_v1 (C:/Users/John/Documents/PHYS301_FinalProject/final_v1.sch)</SelectedItem>
+         <SelectedItem>final_v1 (C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.sch)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000015d000000020000000000000000000000000200000064ffffffff0000008100000003000000020000015d0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001c7000000020000000000000000000000000200000064ffffffff000000810000000300000002000001c70000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>final_v1 (C:/Users/John/Documents/PHYS301_FinalProject/final_v1.sch)</CurrentItem>
+      <CurrentItem>final_v1 (C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.sch)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
       <ClosedNodes>
@@ -34,13 +37,13 @@
          <ClosedNode>Implement Design</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Configure Target Device</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >9</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e7000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e70000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Configure Target Device</CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -92,5 +95,19 @@
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Create Schematic Symbol</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
    </ItemView>
 </Project>

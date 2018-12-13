@@ -7,17 +7,158 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : MainControlUnit.vhf
--- /___/   /\     Timestamp : 12/12/2018 17:33:11
+-- /___/   /\     Timestamp : 12/12/2018 22:21:39
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.vhf -w C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf -w C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.sch
 --Design Name: MainControlUnit
 --Device: spartan3e
 --Purpose:
 --    This vhdl netlist is translated from an ECS schematic. It can be 
 --    synthesized and simulated, but it should not be modified. 
 --
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity M2_1_MXILINX_MainControlUnit is
+   port ( D0 : in    std_logic; 
+          D1 : in    std_logic; 
+          S0 : in    std_logic; 
+          O  : out   std_logic);
+end M2_1_MXILINX_MainControlUnit;
+
+architecture BEHAVIORAL of M2_1_MXILINX_MainControlUnit is
+   attribute BOX_TYPE   : string ;
+   signal M0 : std_logic;
+   signal M1 : std_logic;
+   component AND2B1
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
+   
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
+   component AND2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
+   
+begin
+   I_36_7 : AND2B1
+      port map (I0=>S0,
+                I1=>D0,
+                O=>M0);
+   
+   I_36_8 : OR2
+      port map (I0=>M1,
+                I1=>M0,
+                O=>O);
+   
+   I_36_9 : AND2
+      port map (I0=>D1,
+                I1=>S0,
+                O=>M1);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity eight_b_mux_MUSER_MainControlUnit is
+   port ( Ain  : in    std_logic_vector (7 downto 0); 
+          Bin  : in    std_logic_vector (7 downto 0); 
+          Sw   : in    std_logic; 
+          Qout : out   std_logic_vector (7 downto 0));
+end eight_b_mux_MUSER_MainControlUnit;
+
+architecture BEHAVIORAL of eight_b_mux_MUSER_MainControlUnit is
+   attribute HU_SET     : string ;
+   component M2_1_MXILINX_MainControlUnit
+      port ( D0 : in    std_logic; 
+             D1 : in    std_logic; 
+             S0 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_102";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_103";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_104";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_105";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_106";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_107";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_108";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_109";
+begin
+   XLXI_1 : M2_1_MXILINX_MainControlUnit
+      port map (D0=>Ain(0),
+                D1=>Bin(0),
+                S0=>Sw,
+                O=>Qout(0));
+   
+   XLXI_2 : M2_1_MXILINX_MainControlUnit
+      port map (D0=>Ain(1),
+                D1=>Bin(1),
+                S0=>Sw,
+                O=>Qout(1));
+   
+   XLXI_3 : M2_1_MXILINX_MainControlUnit
+      port map (D0=>Ain(2),
+                D1=>Bin(2),
+                S0=>Sw,
+                O=>Qout(2));
+   
+   XLXI_4 : M2_1_MXILINX_MainControlUnit
+      port map (D0=>Ain(3),
+                D1=>Bin(3),
+                S0=>Sw,
+                O=>Qout(3));
+   
+   XLXI_5 : M2_1_MXILINX_MainControlUnit
+      port map (D0=>Ain(4),
+                D1=>Bin(4),
+                S0=>Sw,
+                O=>Qout(4));
+   
+   XLXI_6 : M2_1_MXILINX_MainControlUnit
+      port map (D0=>Ain(5),
+                D1=>Bin(5),
+                S0=>Sw,
+                O=>Qout(5));
+   
+   XLXI_7 : M2_1_MXILINX_MainControlUnit
+      port map (D0=>Ain(6),
+                D1=>Bin(6),
+                S0=>Sw,
+                O=>Qout(6));
+   
+   XLXI_8 : M2_1_MXILINX_MainControlUnit
+      port map (D0=>Ain(7),
+                D1=>Bin(7),
+                S0=>Sw,
+                O=>Qout(7));
+   
+end BEHAVIORAL;
+
+
 
 library ieee;
 use ieee.std_logic_1164.ALL;
@@ -343,22 +484,22 @@ architecture BEHAVIORAL of Signals_MUSER_MainControlUnit is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_10 : label is "XLXI_10_63";
-   attribute HU_SET of XLXI_14 : label is "XLXI_14_64";
-   attribute HU_SET of XLXI_17 : label is "XLXI_17_65";
-   attribute HU_SET of XLXI_18 : label is "XLXI_18_66";
-   attribute HU_SET of XLXI_31 : label is "XLXI_31_67";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_68";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_69";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_70";
-   attribute HU_SET of XLXI_55 : label is "XLXI_55_71";
-   attribute HU_SET of XLXI_56 : label is "XLXI_56_72";
-   attribute HU_SET of XLXI_57 : label is "XLXI_57_73";
-   attribute HU_SET of XLXI_58 : label is "XLXI_58_74";
-   attribute HU_SET of XLXI_59 : label is "XLXI_59_75";
-   attribute HU_SET of XLXI_60 : label is "XLXI_60_76";
-   attribute HU_SET of XLXI_61 : label is "XLXI_61_77";
-   attribute HU_SET of XLXI_62 : label is "XLXI_62_78";
+   attribute HU_SET of XLXI_10 : label is "XLXI_10_110";
+   attribute HU_SET of XLXI_14 : label is "XLXI_14_111";
+   attribute HU_SET of XLXI_17 : label is "XLXI_17_112";
+   attribute HU_SET of XLXI_18 : label is "XLXI_18_113";
+   attribute HU_SET of XLXI_31 : label is "XLXI_31_114";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_115";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_116";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_117";
+   attribute HU_SET of XLXI_55 : label is "XLXI_55_118";
+   attribute HU_SET of XLXI_56 : label is "XLXI_56_119";
+   attribute HU_SET of XLXI_57 : label is "XLXI_57_120";
+   attribute HU_SET of XLXI_58 : label is "XLXI_58_121";
+   attribute HU_SET of XLXI_59 : label is "XLXI_59_122";
+   attribute HU_SET of XLXI_60 : label is "XLXI_60_123";
+   attribute HU_SET of XLXI_61 : label is "XLXI_61_124";
+   attribute HU_SET of XLXI_62 : label is "XLXI_62_125";
 begin
    XLXI_1 : INV
       port map (I=>INSTin(0),
@@ -945,10 +1086,10 @@ architecture BEHAVIORAL of WorkingRegisters_MUSER_MainControlUnit is
    end component;
    attribute BOX_TYPE of PULLUP : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_30 : label is "XLXI_30_80";
-   attribute HU_SET of XLXI_31 : label is "XLXI_31_79";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_81";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_82";
+   attribute HU_SET of XLXI_30 : label is "XLXI_30_127";
+   attribute HU_SET of XLXI_31 : label is "XLXI_31_126";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_128";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_129";
 begin
    XLXI_30 : FD8RE_MXILINX_MainControlUnit
       port map (C=>CLKin,
@@ -992,37 +1133,41 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity RegisterBank_MUSER_MainControlUnit is
-   port ( ABCRSTin : in    std_logic; 
-          Ain      : in    std_logic_vector (7 downto 0); 
-          Bin      : in    std_logic_vector (7 downto 0); 
-          Cin      : in    std_logic_vector (7 downto 0); 
-          CLKin    : in    std_logic; 
-          DRin     : in    std_logic_vector (7 downto 0); 
-          IRin     : in    std_logic_vector (7 downto 0); 
-          RSTin    : in    std_logic; 
-          R0in     : in    std_logic_vector (7 downto 0); 
-          R1in     : in    std_logic_vector (7 downto 0); 
-          R2in     : in    std_logic_vector (7 downto 0); 
-          R3in     : in    std_logic_vector (7 downto 0); 
-          Sin      : in    std_logic_vector (7 downto 0); 
-          Zin      : in    std_logic_vector (7 downto 0); 
-          Aout     : out   std_logic_vector (7 downto 0); 
-          Bout     : out   std_logic_vector (7 downto 0); 
-          Cout     : out   std_logic_vector (7 downto 0); 
-          DRout    : out   std_logic_vector (7 downto 0); 
-          IRout    : out   std_logic_vector (7 downto 0); 
-          R0out    : out   std_logic_vector (7 downto 0); 
-          R1out    : out   std_logic_vector (7 downto 0); 
-          R2out    : out   std_logic_vector (7 downto 0); 
-          R3out    : out   std_logic_vector (7 downto 0); 
-          Sout     : out   std_logic_vector (7 downto 0); 
-          Zout     : out   std_logic_vector (7 downto 0));
+   port ( ABCRSTin    : in    std_logic; 
+          Ain         : in    std_logic_vector (7 downto 0); 
+          A_Enable    : in    std_logic; 
+          Bin         : in    std_logic_vector (7 downto 0); 
+          B_Enable    : in    std_logic; 
+          Cin         : in    std_logic_vector (7 downto 0); 
+          CLKin       : in    std_logic; 
+          DRin        : in    std_logic_vector (7 downto 0); 
+          half_clk    : in    std_logic; 
+          IRin        : in    std_logic_vector (7 downto 0); 
+          quarter_clk : in    std_logic; 
+          RSTin       : in    std_logic; 
+          R0in        : in    std_logic_vector (7 downto 0); 
+          R1in        : in    std_logic_vector (7 downto 0); 
+          R2in        : in    std_logic_vector (7 downto 0); 
+          R3in        : in    std_logic_vector (7 downto 0); 
+          Sin         : in    std_logic_vector (7 downto 0); 
+          Zin         : in    std_logic_vector (7 downto 0); 
+          Aout        : out   std_logic_vector (7 downto 0); 
+          Bout        : out   std_logic_vector (7 downto 0); 
+          Cout        : out   std_logic_vector (7 downto 0); 
+          DRout       : out   std_logic_vector (7 downto 0); 
+          IRout       : out   std_logic_vector (7 downto 0); 
+          R0out       : out   std_logic_vector (7 downto 0); 
+          R1out       : out   std_logic_vector (7 downto 0); 
+          R2out       : out   std_logic_vector (7 downto 0); 
+          R3out       : out   std_logic_vector (7 downto 0); 
+          Sout        : out   std_logic_vector (7 downto 0); 
+          Zout        : out   std_logic_vector (7 downto 0));
 end RegisterBank_MUSER_MainControlUnit;
 
 architecture BEHAVIORAL of RegisterBank_MUSER_MainControlUnit is
    attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
-   signal CE       : std_logic;
+   signal CE          : std_logic;
    component FD8RE_MXILINX_MainControlUnit
       port ( C  : in    std_logic; 
              CE : in    std_logic; 
@@ -1049,17 +1194,17 @@ architecture BEHAVIORAL of RegisterBank_MUSER_MainControlUnit is
              CLKin : in    std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_84";
-   attribute HU_SET of XLXI_9 : label is "XLXI_9_88";
-   attribute HU_SET of XLXI_14 : label is "XLXI_14_85";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_86";
-   attribute HU_SET of XLXI_29 : label is "XLXI_29_83";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_89";
-   attribute HU_SET of XLXI_38 : label is "XLXI_38_87";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_131";
+   attribute HU_SET of XLXI_9 : label is "XLXI_9_135";
+   attribute HU_SET of XLXI_14 : label is "XLXI_14_132";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_133";
+   attribute HU_SET of XLXI_29 : label is "XLXI_29_130";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_136";
+   attribute HU_SET of XLXI_38 : label is "XLXI_38_134";
 begin
    XLXI_1 : FD8RE_MXILINX_MainControlUnit
       port map (C=>CLKin,
-                CE=>CE,
+                CE=>A_Enable,
                 D(7 downto 0)=>Ain(7 downto 0),
                 R=>ABCRSTin,
                 Q(7 downto 0)=>Aout(7 downto 0));
@@ -1073,7 +1218,7 @@ begin
    
    XLXI_14 : FD8RE_MXILINX_MainControlUnit
       port map (C=>CLKin,
-                CE=>CE,
+                CE=>B_Enable,
                 D(7 downto 0)=>Bin(7 downto 0),
                 R=>ABCRSTin,
                 Q(7 downto 0)=>Bout(7 downto 0));
@@ -1155,7 +1300,7 @@ entity MainControlUnit is
           DROut         : out   std_logic_vector (7 downto 0); 
           GET_On        : out   std_logic; 
           HLT_On        : out   std_logic; 
-          IROut         : out   std_logic_vector (7 downto 0); 
+          IRout         : out   std_logic_vector (7 downto 0); 
           LCA_On        : out   std_logic; 
           LDA_On        : out   std_logic; 
           MVI_On        : out   std_logic; 
@@ -1175,41 +1320,55 @@ end MainControlUnit;
 
 architecture BEHAVIORAL of MainControlUnit is
    attribute BOX_TYPE   : string ;
-   signal XLXN_6                : std_logic;
-   signal XLXN_7                : std_logic;
-   signal SBI_On_DUMMY          : std_logic;
-   signal ADDU_On_DUMMY         : std_logic;
-   signal SUB_On_DUMMY          : std_logic;
-   signal ADD_On_DUMMY          : std_logic;
-   signal ADI_On_DUMMY          : std_logic;
-   signal SUBU_On_DUMMY         : std_logic;
-   signal XLXI_8_Zin_openSignal : std_logic_vector (7 downto 0);
+   signal Ain_Muxd                      : std_logic_vector (7 downto 0);
+   signal A_Enable                      : std_logic;
+   signal B_Enable                      : std_logic;
+   signal XLXN_6                        : std_logic;
+   signal XLXN_7                        : std_logic;
+   signal SBI_On_DUMMY                  : std_logic;
+   signal ADDU_On_DUMMY                 : std_logic;
+   signal SUB_On_DUMMY                  : std_logic;
+   signal ADD_On_DUMMY                  : std_logic;
+   signal ADI_On_DUMMY                  : std_logic;
+   signal LDA_On_DUMMY                  : std_logic;
+   signal Subtract_Flag_DUMMY           : std_logic;
+   signal IRout_DUMMY                   : std_logic_vector (7 downto 0);
+   signal DROut_DUMMY                   : std_logic_vector (7 downto 0);
+   signal Add_Flag_DUMMY                : std_logic;
+   signal SUBU_On_DUMMY                 : std_logic;
+   signal XLXI_8_half_clk_openSignal    : std_logic;
+   signal XLXI_8_quarter_clk_openSignal : std_logic;
+   signal XLXI_8_Zin_openSignal         : std_logic_vector (7 downto 0);
    component RegisterBank_MUSER_MainControlUnit
-      port ( CLKin    : in    std_logic; 
-             ABCRSTin : in    std_logic; 
-             RSTin    : in    std_logic; 
-             R0in     : in    std_logic_vector (7 downto 0); 
-             DRin     : in    std_logic_vector (7 downto 0); 
-             Ain      : in    std_logic_vector (7 downto 0); 
-             R1in     : in    std_logic_vector (7 downto 0); 
-             Bin      : in    std_logic_vector (7 downto 0); 
-             IRin     : in    std_logic_vector (7 downto 0); 
-             Zin      : in    std_logic_vector (7 downto 0); 
-             Cin      : in    std_logic_vector (7 downto 0); 
-             R2in     : in    std_logic_vector (7 downto 0); 
-             R3in     : in    std_logic_vector (7 downto 0); 
-             Sin      : in    std_logic_vector (7 downto 0); 
-             R0out    : out   std_logic_vector (7 downto 0); 
-             DRout    : out   std_logic_vector (7 downto 0); 
-             Aout     : out   std_logic_vector (7 downto 0); 
-             R1out    : out   std_logic_vector (7 downto 0); 
-             Bout     : out   std_logic_vector (7 downto 0); 
-             IRout    : out   std_logic_vector (7 downto 0); 
-             Zout     : out   std_logic_vector (7 downto 0); 
-             Cout     : out   std_logic_vector (7 downto 0); 
-             R2out    : out   std_logic_vector (7 downto 0); 
-             R3out    : out   std_logic_vector (7 downto 0); 
-             Sout     : out   std_logic_vector (7 downto 0));
+      port ( ABCRSTin    : in    std_logic; 
+             RSTin       : in    std_logic; 
+             DRin        : in    std_logic_vector (7 downto 0); 
+             Ain         : in    std_logic_vector (7 downto 0); 
+             Bin         : in    std_logic_vector (7 downto 0); 
+             IRin        : in    std_logic_vector (7 downto 0); 
+             Zin         : in    std_logic_vector (7 downto 0); 
+             Cin         : in    std_logic_vector (7 downto 0); 
+             Sin         : in    std_logic_vector (7 downto 0); 
+             R0in        : in    std_logic_vector (7 downto 0); 
+             R1in        : in    std_logic_vector (7 downto 0); 
+             R2in        : in    std_logic_vector (7 downto 0); 
+             R3in        : in    std_logic_vector (7 downto 0); 
+             CLKin       : in    std_logic; 
+             DRout       : out   std_logic_vector (7 downto 0); 
+             Aout        : out   std_logic_vector (7 downto 0); 
+             Bout        : out   std_logic_vector (7 downto 0); 
+             IRout       : out   std_logic_vector (7 downto 0); 
+             Zout        : out   std_logic_vector (7 downto 0); 
+             Cout        : out   std_logic_vector (7 downto 0); 
+             Sout        : out   std_logic_vector (7 downto 0); 
+             R0out       : out   std_logic_vector (7 downto 0); 
+             R1out       : out   std_logic_vector (7 downto 0); 
+             R2out       : out   std_logic_vector (7 downto 0); 
+             R3out       : out   std_logic_vector (7 downto 0); 
+             half_clk    : in    std_logic; 
+             quarter_clk : in    std_logic; 
+             B_Enable    : in    std_logic; 
+             A_Enable    : in    std_logic);
    end component;
    
    component ControlUnit_MUSER_MainControlUnit
@@ -1242,21 +1401,44 @@ architecture BEHAVIORAL of MainControlUnit is
    end component;
    attribute BOX_TYPE of OR3 : component is "BLACK_BOX";
    
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
+   component eight_b_mux_MUSER_MainControlUnit
+      port ( Ain  : in    std_logic_vector (7 downto 0); 
+             Bin  : in    std_logic_vector (7 downto 0); 
+             Sw   : in    std_logic; 
+             Qout : out   std_logic_vector (7 downto 0));
+   end component;
+   
 begin
    ADDU_On <= ADDU_On_DUMMY;
+   Add_Flag <= Add_Flag_DUMMY;
    ADD_On <= ADD_On_DUMMY;
    ADI_On <= ADI_On_DUMMY;
+   DROut(7 downto 0) <= DROut_DUMMY(7 downto 0);
+   IRout(7 downto 0) <= IRout_DUMMY(7 downto 0);
+   LDA_On <= LDA_On_DUMMY;
    SBI_On <= SBI_On_DUMMY;
+   Subtract_Flag <= Subtract_Flag_DUMMY;
    SUBU_On <= SUBU_On_DUMMY;
    SUB_On <= SUB_On_DUMMY;
    XLXI_8 : RegisterBank_MUSER_MainControlUnit
       port map (ABCRSTin=>XLXN_6,
-                Ain(7 downto 0)=>Ain(7 downto 0),
+                Ain(7 downto 0)=>Ain_Muxd(7 downto 0),
+                A_Enable=>A_Enable,
                 Bin(7 downto 0)=>Bin(7 downto 0),
+                B_Enable=>B_Enable,
                 Cin(7 downto 0)=>Cin(7 downto 0),
                 CLKin=>CLKin,
                 DRin(7 downto 0)=>Data_In(7 downto 0),
+                half_clk=>XLXI_8_half_clk_openSignal,
                 IRin(7 downto 0)=>Instr_In(7 downto 0),
+                quarter_clk=>XLXI_8_quarter_clk_openSignal,
                 RSTin=>XLXN_7,
                 R0in(7 downto 0)=>R0in(7 downto 0),
                 R1in(7 downto 0)=>R1in(7 downto 0),
@@ -1267,8 +1449,8 @@ begin
                 Aout(7 downto 0)=>ALU_AOut(7 downto 0),
                 Bout(7 downto 0)=>ALU_BOut(7 downto 0),
                 Cout(7 downto 0)=>COut(7 downto 0),
-                DRout(7 downto 0)=>DROut(7 downto 0),
-                IRout(7 downto 0)=>IROut(7 downto 0),
+                DRout(7 downto 0)=>DROut_DUMMY(7 downto 0),
+                IRout(7 downto 0)=>IRout_DUMMY(7 downto 0),
                 R0out(7 downto 0)=>R0Out(7 downto 0),
                 R1out(7 downto 0)=>R1Out(7 downto 0),
                 R2out(7 downto 0)=>R2Out(7 downto 0),
@@ -1279,7 +1461,7 @@ begin
    XLXI_9 : ControlUnit_MUSER_MainControlUnit
       port map (CLKin=>CLKin,
                 half_clk=>half_clk,
-                INSTin(7 downto 0)=>Instr_In(7 downto 0),
+                INSTin(7 downto 0)=>IRout_DUMMY(7 downto 0),
                 quarter_clk=>quarter_clk,
                 ADDU_On=>ADDU_On_DUMMY,
                 ADD_On=>ADD_On_DUMMY,
@@ -1288,7 +1470,7 @@ begin
                 GET_On=>GET_On,
                 HLT_On=>HLT_On,
                 LCA_On=>LCA_On,
-                LDA_On=>LDA_On,
+                LDA_On=>LDA_On_DUMMY,
                 MVI_On=>MVI_On,
                 RST_On=>RST_On,
                 SBI_On=>SBI_On_DUMMY,
@@ -1301,13 +1483,30 @@ begin
       port map (I0=>SUBU_On_DUMMY,
                 I1=>SBI_On_DUMMY,
                 I2=>SUB_On_DUMMY,
-                O=>Subtract_Flag);
+                O=>Subtract_Flag_DUMMY);
    
    XLXI_16 : OR3
       port map (I0=>ADDU_On_DUMMY,
                 I1=>ADI_On_DUMMY,
                 I2=>ADD_On_DUMMY,
-                O=>Add_Flag);
+                O=>Add_Flag_DUMMY);
+   
+   XLXI_17 : OR3
+      port map (I0=>LDA_On_DUMMY,
+                I1=>Subtract_Flag_DUMMY,
+                I2=>Add_Flag_DUMMY,
+                O=>A_Enable);
+   
+   XLXI_18 : OR2
+      port map (I0=>Subtract_Flag_DUMMY,
+                I1=>Add_Flag_DUMMY,
+                O=>B_Enable);
+   
+   XLXI_21 : eight_b_mux_MUSER_MainControlUnit
+      port map (Ain(7 downto 0)=>Ain(7 downto 0),
+                Bin(7 downto 0)=>DROut_DUMMY(7 downto 0),
+                Sw=>LDA_On_DUMMY,
+                Qout(7 downto 0)=>Ain_Muxd(7 downto 0));
    
 end BEHAVIORAL;
 

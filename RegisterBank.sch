@@ -6,13 +6,11 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="CLKin" />
         <signal name="ABCRSTin" />
         <signal name="RSTin" />
         <signal name="DRout(7:0)" />
         <signal name="DRin(7:0)" />
         <signal name="Ain(7:0)" />
-        <signal name="CE" />
         <signal name="Aout(7:0)" />
         <signal name="Bin(7:0)" />
         <signal name="Bout(7:0)" />
@@ -32,7 +30,12 @@
         <signal name="R1out(7:0)" />
         <signal name="R2out(7:0)" />
         <signal name="R3out(7:0)" />
-        <port polarity="Input" name="CLKin" />
+        <signal name="quarter_clk" />
+        <signal name="CLKin" />
+        <signal name="B_Enable" />
+        <signal name="A_Enable" />
+        <signal name="CE" />
+        <signal name="half_clk" />
         <port polarity="Input" name="ABCRSTin" />
         <port polarity="Input" name="RSTin" />
         <port polarity="Output" name="DRout(7:0)" />
@@ -57,6 +60,11 @@
         <port polarity="Output" name="R1out(7:0)" />
         <port polarity="Output" name="R2out(7:0)" />
         <port polarity="Output" name="R3out(7:0)" />
+        <port polarity="Input" name="quarter_clk" />
+        <port polarity="Input" name="CLKin" />
+        <port polarity="Input" name="B_Enable" />
+        <port polarity="Input" name="A_Enable" />
+        <port polarity="Input" name="half_clk" />
         <blockdef name="fd8re">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-128" y2="-128" x1="0" />
@@ -123,14 +131,14 @@
         </block>
         <block symbolname="fd8re" name="XLXI_1">
             <blockpin signalname="CLKin" name="C" />
-            <blockpin signalname="CE" name="CE" />
+            <blockpin signalname="A_Enable" name="CE" />
             <blockpin signalname="Ain(7:0)" name="D(7:0)" />
             <blockpin signalname="ABCRSTin" name="R" />
             <blockpin signalname="Aout(7:0)" name="Q(7:0)" />
         </block>
         <block symbolname="fd8re" name="XLXI_14">
             <blockpin signalname="CLKin" name="C" />
-            <blockpin signalname="CE" name="CE" />
+            <blockpin signalname="B_Enable" name="CE" />
             <blockpin signalname="Bin(7:0)" name="D(7:0)" />
             <blockpin signalname="ABCRSTin" name="R" />
             <blockpin signalname="Bout(7:0)" name="Q(7:0)" />
@@ -177,9 +185,6 @@
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <branch name="CLKin">
-            <wire x2="432" y1="2160" y2="2160" x1="240" />
-        </branch>
         <branch name="RSTin">
             <wire x2="432" y1="2224" y2="2224" x1="240" />
         </branch>
@@ -192,7 +197,6 @@
         <branch name="ABCRSTin">
             <wire x2="432" y1="2304" y2="2304" x1="304" />
         </branch>
-        <iomarker fontsize="28" x="240" y="2160" name="CLKin" orien="R180" />
         <iomarker fontsize="28" x="240" y="2224" name="RSTin" orien="R180" />
         <iomarker fontsize="28" x="304" y="2304" name="ABCRSTin" orien="R180" />
         <instance x="560" y="1216" name="XLXI_29" orien="R0" />
@@ -226,11 +230,6 @@
             <wire x2="528" y1="400" y2="400" x1="512" />
             <wire x2="560" y1="400" y2="400" x1="528" />
         </branch>
-        <branch name="CE">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="432" y="464" type="branch" />
-            <wire x2="448" y1="464" y2="464" x1="432" />
-            <wire x2="560" y1="464" y2="464" x1="448" />
-        </branch>
         <branch name="CLKin">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="432" y="528" type="branch" />
             <wire x2="448" y1="528" y2="528" x1="432" />
@@ -247,11 +246,6 @@
         <branch name="ABCRSTin">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="448" y="624" type="branch" />
             <wire x2="560" y1="624" y2="624" x1="448" />
-        </branch>
-        <branch name="CE">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1152" y="464" type="branch" />
-            <wire x2="1168" y1="464" y2="464" x1="1152" />
-            <wire x2="1360" y1="464" y2="464" x1="1168" />
         </branch>
         <branch name="CLKin">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1152" y="528" type="branch" />
@@ -420,5 +414,33 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="512" y="1712" type="branch" />
             <wire x2="544" y1="1712" y2="1712" x1="512" />
         </branch>
+        <branch name="quarter_clk">
+            <wire x2="448" y1="2144" y2="2144" x1="256" />
+        </branch>
+        <iomarker fontsize="28" x="256" y="2144" name="quarter_clk" orien="R180" />
+        <branch name="CLKin">
+            <wire x2="432" y1="2048" y2="2048" x1="240" />
+        </branch>
+        <iomarker fontsize="28" x="240" y="2048" name="CLKin" orien="R180" />
+        <branch name="B_Enable">
+            <wire x2="944" y1="2048" y2="2048" x1="736" />
+        </branch>
+        <iomarker fontsize="28" x="736" y="2048" name="B_Enable" orien="R180" />
+        <branch name="A_Enable">
+            <wire x2="960" y1="2128" y2="2128" x1="752" />
+        </branch>
+        <iomarker fontsize="28" x="752" y="2128" name="A_Enable" orien="R180" />
+        <branch name="A_Enable">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="464" y="464" type="branch" />
+            <wire x2="560" y1="464" y2="464" x1="464" />
+        </branch>
+        <branch name="B_Enable">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1216" y="464" type="branch" />
+            <wire x2="1360" y1="464" y2="464" x1="1216" />
+        </branch>
+        <branch name="half_clk">
+            <wire x2="432" y1="2096" y2="2096" x1="256" />
+        </branch>
+        <iomarker fontsize="28" x="256" y="2096" name="half_clk" orien="R180" />
     </sheet>
 </drawing>

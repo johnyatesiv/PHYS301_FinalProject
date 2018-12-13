@@ -1,17 +1,60 @@
 #CLOCK
 NET "B8_clk" LOC = B8;
 
-#Instruction In
-NET "Ctrl_Instr_In[0]" LOC = p11;
-NET "Ctrl_Instr_In[1]" LOC = l3;
-NET "Ctrl_Instr_In[2]" LOC = k3;
-NET "Ctrl_Instr_In[3]" LOC = b4;
-NET "Ctrl_Instr_In[4]" LOC = g3;
-NET "Ctrl_Instr_In[5]" LOC = f3;
-NET "Ctrl_Instr_In[6]" LOC = e2;
-NET "Ctrl_Instr_In[7]" LOC = n3;
+#Instruction In; DEBUG SWITCH INPUTS
+#NET "Ctrl_Instr_In[0]" LOC = P11;
+#NET "Ctrl_Instr_In[1]" LOC = L3;
+#NET "Ctrl_Instr_In[2]" LOC = K3;
+#NET "Ctrl_Instr_In[3]" LOC = B4;
+#NET "Ctrl_Instr_In[4]" LOC = G3;
+#NET "Ctrl_Instr_In[5]" LOC = F3;
+#NET "Ctrl_Instr_In[6]" LOC = E2;
+#NET "Ctrl_Instr_In[7]" LOC = N3;
+
+#PC State Display
+NET "PC[0]" LOC = M5;
+NET "PC[1]" LOC = M11;
+NET "PC[2]" LOC = P7;
+NET "PC[3]" LOC = P6;
+NET "PC[4]" LOC = N5;
+
+#keypad inputs
+NET "key_row[0]" LOC = D12;
+NET "key_row[1]" LOC = C13;
+NET "key_row[2]" LOC = A13;
+NET "key_row[3]" LOC = C12;
+
+NET "key_col[3]" LOC = A9;
+NET "key_col[2]" LOC = B9;
+NET "key_col[1]" LOC = A10;
+NET "key_col[0]" LOC = C9;
 
 #runconfig
-NET "run_mode" LOC = n3;
-NET "toggle_clk_speed" = e2;
-NET "step" LOC = a7;
+NET "step" LOC = A7;
+NET "run_mode" LOC = N3;
+NET "Data_Instr_mode" LOC = F3;
+NET "toggle_clk_speed" LOC = E2;
+
+#Display
+NET "sseg[6]" LOC = L14;
+NET "sseg[5]" LOC = H12;
+NET "sseg[4]" LOC = N14;
+NET "sseg[3]" LOC = N11;
+NET "sseg[2]" LOC = P12;
+NET "sseg[1]" LOC = L13;
+NET "sseg[0]" LOC = M12;
+NET "anode[3]" LOC = K14;
+NET "anode[2]" LOC = M13;
+NET "anode[1]" LOC = J12;
+NET "anode[0]" LOC = F12;
+
+# PlanAhead Generated physical constraints 
+
+#NET "A_reg_out[7]" LOC = G1;
+#NET "A_reg_out[6]" LOC = P4;
+#NET "A_reg_out[5]" LOC = N4;
+#NET "A_reg_out[4]" LOC = N5;
+#NET "A_reg_out[3]" LOC = P6;
+#NET "A_reg_out[2]" LOC = P7;
+#NET "A_reg_out[1]" LOC = M11;
+#NET "A_reg_out[0]" LOC = M5;

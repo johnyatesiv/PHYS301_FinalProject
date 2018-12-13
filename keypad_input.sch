@@ -7,7 +7,6 @@
     </attr>
     <netlist>
         <signal name="key_col(3:0)" />
-        <signal name="XLXN_3(3:0)" />
         <signal name="XLXN_4(3:0)" />
         <signal name="XLXN_5(3:0)" />
         <signal name="XLXN_6(3:0)" />
@@ -21,6 +20,7 @@
         <signal name="Data_entry(7:0)" />
         <signal name="Data_entry(3:0)" />
         <signal name="Data_entry(7:4)" />
+        <signal name="XLXN_18(3:0)" />
         <port polarity="BiDirectional" name="key_col(3:0)" />
         <port polarity="Output" name="key_press" />
         <port polarity="Input" name="clk_1k" />
@@ -114,15 +114,15 @@
         </blockdef>
         <block symbolname="key_detect" name="XLXI_5">
             <blockpin signalname="clk_10k" name="clk" />
-            <blockpin signalname="key_col(3:0)" name="row(3:0)" />
-            <blockpin signalname="XLXN_3(3:0)" name="col(3:0)" />
+            <blockpin signalname="XLXN_18(3:0)" name="row(3:0)" />
+            <blockpin signalname="key_col(3:0)" name="col(3:0)" />
             <blockpin signalname="key_press" name="keyL" />
             <blockpin signalname="XLXN_4(3:0)" name="Lcol(3:0)" />
             <blockpin signalname="XLXN_5(3:0)" name="Lrow(3:0)" />
         </block>
         <block symbolname="col_strobe" name="XLXI_6">
             <blockpin signalname="clk_1k" name="clk" />
-            <blockpin signalname="XLXN_3(3:0)" name="col(3:0)" />
+            <blockpin signalname="key_col(3:0)" name="col(3:0)" />
         </block>
         <block symbolname="decoder16keyEn" name="XLXI_7">
             <blockpin name="En" />
@@ -145,7 +145,7 @@
         <block symbolname="key4_dbnc" name="XLXI_12">
             <blockpin signalname="clk_10k" name="clk" />
             <blockpin signalname="key_row(3:0)" name="swI(3:0)" />
-            <blockpin signalname="key_col(3:0)" name="swO(3:0)" />
+            <blockpin signalname="XLXN_18(3:0)" name="swO(3:0)" />
         </block>
         <block symbolname="shiftreg_hex2D" name="XLXI_14">
             <blockpin signalname="XLXN_17" name="CE" />
@@ -160,13 +160,10 @@
         <instance x="1712" y="1360" name="XLXI_5" orien="R0">
         </instance>
         <branch name="key_col(3:0)">
-            <wire x2="1696" y1="1184" y2="1184" x1="1360" />
-            <wire x2="1696" y1="1184" y2="1264" x1="1696" />
-            <wire x2="1712" y1="1264" y2="1264" x1="1696" />
-            <wire x2="1696" y1="1152" y2="1184" x1="1696" />
-        </branch>
-        <branch name="XLXN_3(3:0)">
-            <wire x2="1712" y1="1328" y2="1328" x1="1680" />
+            <wire x2="1696" y1="1328" y2="1328" x1="1680" />
+            <wire x2="1712" y1="1328" y2="1328" x1="1696" />
+            <wire x2="1696" y1="1328" y2="1440" x1="1696" />
+            <wire x2="1696" y1="1440" y2="1440" x1="1680" />
         </branch>
         <instance x="1296" y="1360" name="XLXI_6" orien="R0">
         </instance>
@@ -213,7 +210,6 @@
         </branch>
         <iomarker fontsize="28" x="880" y="1248" name="key_row(3:0)" orien="R180" />
         <instance x="880" y="1456" name="XLXI_10(3:0)" orien="R0" />
-        <iomarker fontsize="28" x="1696" y="1152" name="key_col(3:0)" orien="R270" />
         <branch name="clk_10k">
             <wire x2="976" y1="1184" y2="1184" x1="944" />
         </branch>
@@ -258,5 +254,11 @@
         </instance>
         <instance x="2624" y="1088" name="XLXI_14" orien="R0">
         </instance>
+        <branch name="XLXN_18(3:0)">
+            <wire x2="1536" y1="1184" y2="1184" x1="1360" />
+            <wire x2="1536" y1="1184" y2="1264" x1="1536" />
+            <wire x2="1712" y1="1264" y2="1264" x1="1536" />
+        </branch>
+        <iomarker fontsize="28" x="1680" y="1440" name="key_col(3:0)" orien="R180" />
     </sheet>
 </drawing>

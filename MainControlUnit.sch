@@ -38,7 +38,7 @@
         <signal name="ALU_AOut(7:0)" />
         <signal name="ALU_BOut(7:0)" />
         <signal name="COut(7:0)" />
-        <signal name="IROut(7:0)" />
+        <signal name="IRout(7:0)" />
         <signal name="DROut(7:0)" />
         <signal name="R0Out(7:0)" />
         <signal name="R2Out(7:0)" />
@@ -63,6 +63,9 @@
         <signal name="Subtract_Flag" />
         <signal name="Add_Flag" />
         <signal name="RST_On" />
+        <signal name="A_Enable" />
+        <signal name="B_Enable" />
+        <signal name="Ain_Muxd(7:0)" />
         <port polarity="Input" name="CLKin" />
         <port polarity="Input" name="Instr_In(7:0)" />
         <port polarity="Input" name="Data_In(7:0)" />
@@ -91,7 +94,7 @@
         <port polarity="Output" name="ALU_AOut(7:0)" />
         <port polarity="Output" name="ALU_BOut(7:0)" />
         <port polarity="Output" name="COut(7:0)" />
-        <port polarity="Output" name="IROut(7:0)" />
+        <port polarity="Output" name="IRout(7:0)" />
         <port polarity="Output" name="DROut(7:0)" />
         <port polarity="Output" name="R0Out(7:0)" />
         <port polarity="Output" name="R2Out(7:0)" />
@@ -141,8 +144,11 @@
             <rect width="256" x="64" y="56" height="1064" />
         </blockdef>
         <blockdef name="RegisterBank">
-            <timestamp>2018-12-11T22:14:4</timestamp>
-            <rect width="256" x="64" y="-896" height="896" />
+            <timestamp>2018-12-13T5:55:35</timestamp>
+            <line x2="0" y1="32" y2="32" x1="64" />
+            <line x2="0" y1="96" y2="96" x1="64" />
+            <line x2="0" y1="160" y2="160" x1="64" />
+            <line x2="0" y1="224" y2="224" x1="64" />
             <line x2="0" y1="-864" y2="-864" x1="64" />
             <line x2="0" y1="-800" y2="-800" x1="64" />
             <line x2="0" y1="-736" y2="-736" x1="64" />
@@ -190,6 +196,7 @@
             <line x2="384" y1="-144" y2="-144" x1="320" />
             <rect width="64" x="320" y="-76" height="24" />
             <line x2="384" y1="-64" y2="-64" x1="320" />
+            <rect width="256" x="64" y="-896" height="1152" />
         </blockdef>
         <blockdef name="or3">
             <timestamp>2000-1-1T10:10:10</timestamp>
@@ -205,32 +212,58 @@
             <arc ex="112" ey="-176" sx="192" sy="-128" r="88" cx="116" cy="-88" />
             <line x2="48" y1="-176" y2="-176" x1="112" />
         </blockdef>
+        <blockdef name="or2">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-64" y2="-64" x1="0" />
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="192" y1="-96" y2="-96" x1="256" />
+            <arc ex="192" ey="-96" sx="112" sy="-48" r="88" cx="116" cy="-136" />
+            <arc ex="48" ey="-144" sx="48" sy="-48" r="56" cx="16" cy="-96" />
+            <line x2="48" y1="-144" y2="-144" x1="112" />
+            <arc ex="112" ey="-144" sx="192" sy="-96" r="88" cx="116" cy="-56" />
+            <line x2="48" y1="-48" y2="-48" x1="112" />
+        </blockdef>
+        <blockdef name="eight_b_mux">
+            <timestamp>2018-12-13T6:17:55</timestamp>
+            <rect width="256" x="64" y="-256" height="180" />
+            <rect width="64" x="0" y="-236" height="24" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <rect width="64" x="0" y="-172" height="24" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="320" y="-236" height="24" />
+            <line x2="320" y1="-224" y2="-224" x1="384" />
+        </blockdef>
         <block symbolname="RegisterBank" name="XLXI_8">
-            <blockpin signalname="CLKin" name="CLKin" />
             <blockpin signalname="XLXN_6" name="ABCRSTin" />
             <blockpin signalname="XLXN_7" name="RSTin" />
-            <blockpin signalname="R0in(7:0)" name="R0in(7:0)" />
             <blockpin signalname="Data_In(7:0)" name="DRin(7:0)" />
-            <blockpin signalname="Ain(7:0)" name="Ain(7:0)" />
-            <blockpin signalname="R1in(7:0)" name="R1in(7:0)" />
+            <blockpin signalname="Ain_Muxd(7:0)" name="Ain(7:0)" />
             <blockpin signalname="Bin(7:0)" name="Bin(7:0)" />
             <blockpin signalname="Instr_In(7:0)" name="IRin(7:0)" />
             <blockpin name="Zin(7:0)" />
             <blockpin signalname="Cin(7:0)" name="Cin(7:0)" />
+            <blockpin signalname="Sin(7:0)" name="Sin(7:0)" />
+            <blockpin signalname="R0in(7:0)" name="R0in(7:0)" />
+            <blockpin signalname="R1in(7:0)" name="R1in(7:0)" />
             <blockpin signalname="R2in(7:0)" name="R2in(7:0)" />
             <blockpin signalname="R3in(7:0)" name="R3in(7:0)" />
-            <blockpin signalname="Sin(7:0)" name="Sin(7:0)" />
-            <blockpin signalname="R0Out(7:0)" name="R0out(7:0)" />
+            <blockpin signalname="CLKin" name="CLKin" />
             <blockpin signalname="DROut(7:0)" name="DRout(7:0)" />
             <blockpin signalname="ALU_AOut(7:0)" name="Aout(7:0)" />
-            <blockpin signalname="R1Out(7:0)" name="R1out(7:0)" />
             <blockpin signalname="ALU_BOut(7:0)" name="Bout(7:0)" />
-            <blockpin signalname="IROut(7:0)" name="IRout(7:0)" />
+            <blockpin signalname="IRout(7:0)" name="IRout(7:0)" />
             <blockpin name="Zout(7:0)" />
             <blockpin signalname="COut(7:0)" name="Cout(7:0)" />
+            <blockpin signalname="Sout(7:0)" name="Sout(7:0)" />
+            <blockpin signalname="R0Out(7:0)" name="R0out(7:0)" />
+            <blockpin signalname="R1Out(7:0)" name="R1out(7:0)" />
             <blockpin signalname="R2Out(7:0)" name="R2out(7:0)" />
             <blockpin signalname="R3Out(7:0)" name="R3out(7:0)" />
-            <blockpin signalname="Sout(7:0)" name="Sout(7:0)" />
+            <blockpin name="half_clk" />
+            <blockpin name="quarter_clk" />
+            <blockpin signalname="B_Enable" name="B_Enable" />
+            <blockpin signalname="A_Enable" name="A_Enable" />
         </block>
         <block symbolname="or3" name="XLXI_10">
             <blockpin signalname="SUBU_On" name="I0" />
@@ -246,7 +279,7 @@
         </block>
         <block symbolname="ControlUnit" name="XLXI_9">
             <blockpin signalname="CLKin" name="CLKin" />
-            <blockpin signalname="Instr_In(7:0)" name="INSTin(7:0)" />
+            <blockpin signalname="IRout(7:0)" name="INSTin(7:0)" />
             <blockpin signalname="half_clk" name="half_clk" />
             <blockpin signalname="quarter_clk" name="quarter_clk" />
             <blockpin signalname="XLXN_6" name="CLR_On" />
@@ -264,6 +297,23 @@
             <blockpin signalname="GET_On" name="GET_On" />
             <blockpin signalname="HLT_On" name="HLT_On" />
             <blockpin signalname="RST_On" name="RST_On" />
+        </block>
+        <block symbolname="or3" name="XLXI_17">
+            <blockpin signalname="LDA_On" name="I0" />
+            <blockpin signalname="Subtract_Flag" name="I1" />
+            <blockpin signalname="Add_Flag" name="I2" />
+            <blockpin signalname="A_Enable" name="O" />
+        </block>
+        <block symbolname="or2" name="XLXI_18">
+            <blockpin signalname="Subtract_Flag" name="I0" />
+            <blockpin signalname="Add_Flag" name="I1" />
+            <blockpin signalname="B_Enable" name="O" />
+        </block>
+        <block symbolname="eight_b_mux" name="XLXI_21">
+            <blockpin signalname="Ain(7:0)" name="Ain(7:0)" />
+            <blockpin signalname="DROut(7:0)" name="Bin(7:0)" />
+            <blockpin signalname="LDA_On" name="Sw" />
+            <blockpin signalname="Ain_Muxd(7:0)" name="Qout(7:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -345,7 +395,7 @@
             <wire x2="1376" y1="1248" y2="1248" x1="1360" />
             <wire x2="1408" y1="1248" y2="1248" x1="1376" />
         </branch>
-        <branch name="Ain(7:0)">
+        <branch name="Ain_Muxd(7:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1744" y="672" type="branch" />
             <wire x2="1824" y1="672" y2="672" x1="1744" />
         </branch>
@@ -396,7 +446,7 @@
             <wire x2="2960" y1="912" y2="912" x1="2208" />
             <wire x2="2960" y1="352" y2="912" x1="2960" />
         </branch>
-        <branch name="IROut(7:0)">
+        <branch name="IRout(7:0)">
             <wire x2="2880" y1="752" y2="752" x1="2208" />
             <wire x2="2880" y1="352" y2="752" x1="2880" />
         </branch>
@@ -412,7 +462,7 @@
             <wire x2="3056" y1="992" y2="992" x1="2224" />
             <wire x2="3056" y1="336" y2="992" x1="3056" />
         </branch>
-        <branch name="Instr_In(7:0)">
+        <branch name="IRout(7:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="912" y="416" type="branch" />
             <wire x2="976" y1="416" y2="416" x1="912" />
         </branch>
@@ -437,7 +487,7 @@
         <iomarker fontsize="28" x="2528" y="352" name="DROut(7:0)" orien="R270" />
         <iomarker fontsize="28" x="2608" y="352" name="ALU_AOut(7:0)" orien="R270" />
         <iomarker fontsize="28" x="2784" y="352" name="ALU_BOut(7:0)" orien="R270" />
-        <iomarker fontsize="28" x="2880" y="352" name="IROut(7:0)" orien="R270" />
+        <iomarker fontsize="28" x="2880" y="352" name="IRout(7:0)" orien="R270" />
         <iomarker fontsize="28" x="2960" y="352" name="COut(7:0)" orien="R270" />
         <iomarker fontsize="28" x="3056" y="336" name="R2Out(7:0)" orien="R270" />
         <iomarker fontsize="28" x="2688" y="352" name="R1Out(7:0)" orien="R270" />
@@ -635,5 +685,58 @@
             <wire x2="1408" y1="1344" y2="1344" x1="1376" />
         </branch>
         <iomarker fontsize="28" x="1408" y="1344" name="RST_On" orien="R0" />
+        <branch name="A_Enable">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1728" y="1440" type="branch" />
+            <wire x2="1824" y1="1440" y2="1440" x1="1728" />
+        </branch>
+        <branch name="B_Enable">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1728" y="1376" type="branch" />
+            <wire x2="1824" y1="1376" y2="1376" x1="1728" />
+        </branch>
+        <instance x="2160" y="2032" name="XLXI_17" orien="R0" />
+        <branch name="Add_Flag">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2048" y="1840" type="branch" />
+            <wire x2="2160" y1="1840" y2="1840" x1="2048" />
+        </branch>
+        <branch name="Subtract_Flag">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2064" y="1904" type="branch" />
+            <wire x2="2160" y1="1904" y2="1904" x1="2064" />
+        </branch>
+        <branch name="LDA_On">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2064" y="1968" type="branch" />
+            <wire x2="2160" y1="1968" y2="1968" x1="2064" />
+        </branch>
+        <branch name="A_Enable">
+            <wire x2="2512" y1="1904" y2="1904" x1="2416" />
+        </branch>
+        <instance x="2160" y="2224" name="XLXI_18" orien="R0" />
+        <branch name="Add_Flag">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2080" y="2096" type="branch" />
+            <wire x2="2160" y1="2096" y2="2096" x1="2080" />
+        </branch>
+        <branch name="Subtract_Flag">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2080" y="2160" type="branch" />
+            <wire x2="2160" y1="2160" y2="2160" x1="2080" />
+        </branch>
+        <branch name="B_Enable">
+            <wire x2="2528" y1="2128" y2="2128" x1="2416" />
+        </branch>
+        <instance x="1824" y="1824" name="XLXI_21" orien="R0">
+        </instance>
+        <branch name="Ain_Muxd(7:0)">
+            <wire x2="2320" y1="1600" y2="1600" x1="2208" />
+        </branch>
+        <branch name="Ain(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1696" y="1600" type="branch" />
+            <wire x2="1824" y1="1600" y2="1600" x1="1696" />
+        </branch>
+        <branch name="DROut(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1696" y="1664" type="branch" />
+            <wire x2="1824" y1="1664" y2="1664" x1="1696" />
+        </branch>
+        <branch name="LDA_On">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1696" y="1728" type="branch" />
+            <wire x2="1824" y1="1728" y2="1728" x1="1696" />
+        </branch>
     </sheet>
 </drawing>

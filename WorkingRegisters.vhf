@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : WorkingRegisters.vhf
--- /___/   /\     Timestamp : 12/12/2018 17:33:05
+-- /___/   /\     Timestamp : 12/12/2018 19:28:36
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/John/Documents/PHYS301_FinalProject/WorkingRegisters.vhf -w C:/Users/John/Documents/PHYS301_FinalProject/WorkingRegisters.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/WorkingRegisters.vhf -w C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/WorkingRegisters.sch
 --Design Name: WorkingRegisters
 --Device: spartan3e
 --Purpose:

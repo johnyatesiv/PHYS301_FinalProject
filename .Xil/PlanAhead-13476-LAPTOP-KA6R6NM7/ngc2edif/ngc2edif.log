@@ -1,0 +1,43 @@
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design final_v1.ngc ...
+WARNING:NetListWriters:298 - No output is written to final_v1.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Ain<2 : 0> on block final_v1 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_2/XLXI_18/Mcompar_cnt10k_cmp_ge0000_lut<10 : 1> on block final_v1 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_2/XLXI_18/Mcompar_cnt1_cmp_ge0000_lut<12 : 1> on block final_v1 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_2/XLXI_18/Mcompar_cnt1k_cmp_ge0000_lut<11 : 1> on block final_v1 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus XLXI_3/XLXI_12/DB1/cnt_mux0000<31 : 7>
+   on block final_v1 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus XLXI_3/XLXI_12/DB2/cnt_mux0000<31 : 7>
+   on block final_v1 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus XLXI_3/XLXI_12/DB3/cnt_mux0000<31 : 7>
+   on block final_v1 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus XLXI_3/XLXI_12/DB4/cnt_mux0000<31 : 7>
+   on block final_v1 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_3/XLXI_9/Mcompar_arm_cmp_gt0000_lut<11 : 0> on block final_v1 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_3/XLXI_9/Mcompar_pls_cmp_lt0000_lut<11 : 1> on block final_v1 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus XLXI_3/XLXI_9/cnt_mux0000<31 : 0> on
+   block final_v1 is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file final_v1.edif ...
+ngc2edif: Total memory usage is 81128 kilobytes
+

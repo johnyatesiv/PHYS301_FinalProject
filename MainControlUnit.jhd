@@ -3,3 +3,5 @@ MODULE MainControlUnit
 		INSTANCE XLXI_9
 	SUBMODULE RegisterBank
 		INSTANCE XLXI_8
+	SUBMODULE eight_b_mux
+		INSTANCE XLXI_21

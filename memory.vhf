@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : memory.vhf
--- /___/   /\     Timestamp : 12/12/2018 17:33:20
+-- /___/   /\     Timestamp : 12/12/2018 19:28:42
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/John/Documents/PHYS301_FinalProject/memory.vhf -w C:/Users/John/Documents/PHYS301_FinalProject/memory.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/memory.vhf -w C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/memory.sch
 --Design Name: memory
 --Device: spartan3e
 --Purpose:

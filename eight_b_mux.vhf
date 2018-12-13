@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : eight_b_mux.vhf
--- /___/   /\     Timestamp : 12/11/2018 12:31:35
+-- /___/   /\     Timestamp : 12/12/2018 22:21:31
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan3e -flat -suppress -vhdl eight_b_mux.vhf -w "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/ALU_part/ALU/eight_b_mux.sch"
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/eight_b_mux.vhf -w C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/eight_b_mux.sch
 --Design Name: eight_b_mux
 --Device: spartan3e
 --Purpose:
@@ -99,14 +99,14 @@ architecture BEHAVIORAL of eight_b_mux is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_0";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_1";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_2";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_3";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_4";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_5";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_6";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_7";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_35";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_36";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_37";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_38";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_39";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_40";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_41";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_42";
 begin
    XLXI_1 : M2_1_MXILINX_eight_b_mux
       port map (D0=>Ain(0),

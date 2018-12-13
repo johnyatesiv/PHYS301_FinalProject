@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : DivClock.vhf
--- /___/   /\     Timestamp : 12/12/2018 17:33:21
+-- /___/   /\     Timestamp : 12/12/2018 18:11:47
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/John/Documents/PHYS301_FinalProject/DivClock.vhf -w C:/Users/John/Documents/PHYS301_FinalProject/DivClock.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/DivClock.vhf" -w "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/DivClock.sch"
 --Design Name: DivClock
 --Device: spartan3e
 --Purpose:
@@ -159,8 +159,8 @@ architecture BEHAVIORAL of DivClock is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_115";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_116";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_166";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_167";
 begin
    half_clk <= half_clk_DUMMY;
    XLXI_1 : FJKC_MXILINX_DivClock

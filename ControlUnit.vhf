@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ControlUnit.vhf
--- /___/   /\     Timestamp : 12/12/2018 17:33:06
+-- /___/   /\     Timestamp : 12/12/2018 19:29:12
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/John/Documents/PHYS301_FinalProject/ControlUnit.vhf -w C:/Users/John/Documents/PHYS301_FinalProject/ControlUnit.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ControlUnit.vhf -w C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ControlUnit.sch
 --Design Name: ControlUnit
 --Device: spartan3e
 --Purpose:
@@ -343,22 +343,22 @@ architecture BEHAVIORAL of Signals_MUSER_ControlUnit is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_10 : label is "XLXI_10_15";
-   attribute HU_SET of XLXI_14 : label is "XLXI_14_16";
-   attribute HU_SET of XLXI_17 : label is "XLXI_17_17";
-   attribute HU_SET of XLXI_18 : label is "XLXI_18_18";
-   attribute HU_SET of XLXI_31 : label is "XLXI_31_19";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_20";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_21";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_22";
-   attribute HU_SET of XLXI_55 : label is "XLXI_55_23";
-   attribute HU_SET of XLXI_56 : label is "XLXI_56_24";
-   attribute HU_SET of XLXI_57 : label is "XLXI_57_25";
-   attribute HU_SET of XLXI_58 : label is "XLXI_58_26";
-   attribute HU_SET of XLXI_59 : label is "XLXI_59_27";
-   attribute HU_SET of XLXI_60 : label is "XLXI_60_28";
-   attribute HU_SET of XLXI_61 : label is "XLXI_61_29";
-   attribute HU_SET of XLXI_62 : label is "XLXI_62_30";
+   attribute HU_SET of XLXI_10 : label is "XLXI_10_258";
+   attribute HU_SET of XLXI_14 : label is "XLXI_14_259";
+   attribute HU_SET of XLXI_17 : label is "XLXI_17_260";
+   attribute HU_SET of XLXI_18 : label is "XLXI_18_261";
+   attribute HU_SET of XLXI_31 : label is "XLXI_31_262";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_263";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_264";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_265";
+   attribute HU_SET of XLXI_55 : label is "XLXI_55_266";
+   attribute HU_SET of XLXI_56 : label is "XLXI_56_267";
+   attribute HU_SET of XLXI_57 : label is "XLXI_57_268";
+   attribute HU_SET of XLXI_58 : label is "XLXI_58_269";
+   attribute HU_SET of XLXI_59 : label is "XLXI_59_270";
+   attribute HU_SET of XLXI_60 : label is "XLXI_60_271";
+   attribute HU_SET of XLXI_61 : label is "XLXI_61_272";
+   attribute HU_SET of XLXI_62 : label is "XLXI_62_273";
 begin
    XLXI_1 : INV
       port map (I=>INSTin(0),

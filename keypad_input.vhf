@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : keypad_input.vhf
--- /___/   /\     Timestamp : 12/12/2018 17:33:14
+-- /___/   /\     Timestamp : 12/12/2018 19:28:59
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/John/Documents/PHYS301_FinalProject/keypad_input.vhf -w C:/Users/John/Documents/PHYS301_FinalProject/keypad_input.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/keypad_input.vhf -w C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/keypad_input.sch
 --Design Name: keypad_input
 --Device: spartan3e
 --Purpose:
@@ -37,12 +37,12 @@ end keypad_input;
 
 architecture BEHAVIORAL of keypad_input is
    attribute BOX_TYPE   : string ;
-   signal XLXN_3                 : std_logic_vector (3 downto 0);
    signal XLXN_4                 : std_logic_vector (3 downto 0);
    signal XLXN_5                 : std_logic_vector (3 downto 0);
    signal XLXN_6                 : std_logic_vector (3 downto 0);
    signal XLXN_8                 : std_logic;
    signal XLXN_17                : std_logic;
+   signal XLXN_18                : std_logic_vector (3 downto 0);
    signal key_press_DUMMY        : std_logic;
    signal Data_entry_DUMMY       : std_logic_vector (7 downto 0);
    signal key_row_DUMMY          : std_logic_vector (3 downto 0);
@@ -107,15 +107,15 @@ begin
    key_row_DUMMY(3 downto 0) <= key_row(3 downto 0);
    XLXI_5 : key_detect
       port map (clk=>clk_10k,
-                col(3 downto 0)=>XLXN_3(3 downto 0),
-                row(3 downto 0)=>key_col(3 downto 0),
+                col(3 downto 0)=>key_col(3 downto 0),
+                row(3 downto 0)=>XLXN_18(3 downto 0),
                 keyL=>key_press_DUMMY,
                 Lcol(3 downto 0)=>XLXN_4(3 downto 0),
                 Lrow(3 downto 0)=>XLXN_5(3 downto 0));
    
    XLXI_6 : col_strobe
       port map (clk=>clk_1k,
-                col(3 downto 0)=>XLXN_3(3 downto 0));
+                col(3 downto 0)=>key_col(3 downto 0));
    
    XLXI_7 : decoder16keyEn
       port map (colI(3 downto 0)=>XLXN_4(3 downto 0),
@@ -147,7 +147,7 @@ begin
    XLXI_12 : key4_dbnc
       port map (clk=>clk_10k,
                 swI(3 downto 0)=>key_row_DUMMY(3 downto 0),
-                swO(3 downto 0)=>key_col(3 downto 0));
+                swO(3 downto 0)=>XLXN_18(3 downto 0));
    
    XLXI_14 : shiftreg_hex2D
       port map (bIN(3 downto 0)=>XLXN_6(3 downto 0),

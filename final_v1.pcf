@@ -1,0 +1,37 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Dec 12 22:33:21 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "step" LOCATE = SITE "A7" LEVEL 1;
+COMP "PC<0>" LOCATE = SITE "M5" LEVEL 1;
+COMP "PC<1>" LOCATE = SITE "M11" LEVEL 1;
+COMP "PC<2>" LOCATE = SITE "P7" LEVEL 1;
+COMP "PC<3>" LOCATE = SITE "P6" LEVEL 1;
+COMP "PC<4>" LOCATE = SITE "N5" LEVEL 1;
+COMP "Data_Instr_mode" LOCATE = SITE "F3" LEVEL 1;
+COMP "sseg<0>" LOCATE = SITE "M12" LEVEL 1;
+COMP "sseg<1>" LOCATE = SITE "L13" LEVEL 1;
+COMP "sseg<2>" LOCATE = SITE "P12" LEVEL 1;
+COMP "sseg<3>" LOCATE = SITE "N11" LEVEL 1;
+COMP "sseg<4>" LOCATE = SITE "N14" LEVEL 1;
+COMP "sseg<5>" LOCATE = SITE "H12" LEVEL 1;
+COMP "sseg<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "B8_clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "anode<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "anode<1>" LOCATE = SITE "J12" LEVEL 1;
+COMP "anode<2>" LOCATE = SITE "M13" LEVEL 1;
+COMP "anode<3>" LOCATE = SITE "K14" LEVEL 1;
+COMP "toggle_clk_speed" LOCATE = SITE "E2" LEVEL 1;
+COMP "key_col<0>" LOCATE = SITE "C9" LEVEL 1;
+COMP "key_col<1>" LOCATE = SITE "A10" LEVEL 1;
+COMP "key_col<2>" LOCATE = SITE "B9" LEVEL 1;
+COMP "key_col<3>" LOCATE = SITE "A9" LEVEL 1;
+COMP "run_mode" LOCATE = SITE "N3" LEVEL 1;
+COMP "key_row<0>" LOCATE = SITE "D12" LEVEL 1;
+COMP "key_row<1>" LOCATE = SITE "C13" LEVEL 1;
+COMP "key_row<2>" LOCATE = SITE "A13" LEVEL 1;
+COMP "key_row<3>" LOCATE = SITE "C12" LEVEL 1;
+NET "B8_clk_BUFGP/IBUFG" BEL "B8_clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ALU_v4.vhf
--- /___/   /\     Timestamp : 12/12/2018 17:33:15
+-- /___/   /\     Timestamp : 12/12/2018 19:29:01
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/John/Documents/PHYS301_FinalProject/ALU_v4.vhf -w C:/Users/John/Documents/PHYS301_FinalProject/ALU_v4.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ALU_v4.vhf -w C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ALU_v4.sch
 --Design Name: ALU_v4
 --Device: spartan3e
 --Purpose:
@@ -813,7 +813,7 @@ architecture BEHAVIORAL of twos_comp_MUSER_ALU_v4 is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_10 : label is "XLXI_10_91";
+   attribute HU_SET of XLXI_10 : label is "XLXI_10_177";
 begin
    XLXN_21(7 downto 0) <= x"00";
    XLXI_2 : XOR2
@@ -955,8 +955,8 @@ architecture BEHAVIORAL of ALU_v4 is
    end component;
    attribute BOX_TYPE of AND3B1 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_92";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_93";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_178";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_179";
 begin
    A_reg_out(7 downto 0) <= A_reg_out_DUMMY(7 downto 0);
    XLXI_1 : twos_comp_MUSER_ALU_v4

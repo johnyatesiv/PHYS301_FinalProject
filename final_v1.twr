@@ -1,0 +1,155 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml final_v1.twx final_v1.ncd -o final_v1.twr final_v1.pcf
+-ucf final_v1.ucf
+
+Design file:              final_v1.ncd
+Physical constraint file: final_v1.pcf
+Device,package,speed:     xc3s100e,cp132,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock run_mode to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+ADDU_On     |   13.763(R)|XLXI_2/XLXN_146   |   0.000|
+ADD_On      |   14.033(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<0>|   18.367(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<1>|   18.672(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<2>|   18.329(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<3>|   18.758(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<4>|   18.465(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<5>|   18.460(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<6>|   18.669(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<7>|   18.698(R)|XLXI_2/XLXN_146   |   0.000|
+HLT_On      |   15.354(R)|XLXI_2/XLXN_146   |   0.000|
+LDA_On      |   13.950(R)|XLXI_2/XLXN_146   |   0.000|
+PC<0>       |   12.252(R)|XLXI_2/XLXN_139   |   0.000|
+PC<1>       |   10.881(R)|XLXI_2/XLXN_139   |   0.000|
+PC<2>       |   11.591(R)|XLXI_2/XLXN_139   |   0.000|
+PC<3>       |   11.044(R)|XLXI_2/XLXN_139   |   0.000|
+PC<4>       |   11.645(R)|XLXI_2/XLXN_139   |   0.000|
+SBI_On      |   13.660(R)|XLXI_2/XLXN_146   |   0.000|
+SET_On      |   14.905(R)|XLXI_2/XLXN_146   |   0.000|
+SUBU_On     |   14.326(R)|XLXI_2/XLXN_146   |   0.000|
+SUB_On      |   14.299(R)|XLXI_2/XLXN_146   |   0.000|
+------------+------------+------------------+--------+
+
+Clock step to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+PC<0>       |   12.185(R)|XLXI_2/XLXN_139   |   0.000|
+PC<1>       |   10.814(R)|XLXI_2/XLXN_139   |   0.000|
+PC<2>       |   11.524(R)|XLXI_2/XLXN_139   |   0.000|
+PC<3>       |   10.977(R)|XLXI_2/XLXN_139   |   0.000|
+PC<4>       |   11.578(R)|XLXI_2/XLXN_139   |   0.000|
+------------+------------+------------------+--------+
+
+Clock toggle_clk_speed to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+ADDU_On     |   16.047(R)|XLXI_2/XLXN_146   |   0.000|
+ADD_On      |   16.317(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<0>|   20.651(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<1>|   20.956(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<2>|   20.613(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<3>|   21.042(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<4>|   20.749(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<5>|   20.744(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<6>|   20.953(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<7>|   20.982(R)|XLXI_2/XLXN_146   |   0.000|
+HLT_On      |   17.638(R)|XLXI_2/XLXN_146   |   0.000|
+LDA_On      |   16.234(R)|XLXI_2/XLXN_146   |   0.000|
+SBI_On      |   15.944(R)|XLXI_2/XLXN_146   |   0.000|
+SET_On      |   17.189(R)|XLXI_2/XLXN_146   |   0.000|
+SUBU_On     |   16.610(R)|XLXI_2/XLXN_146   |   0.000|
+SUB_On      |   16.583(R)|XLXI_2/XLXN_146   |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock B8_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+B8_clk         |   12.422|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock run_mode
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+run_mode        |    9.962|         |         |         |
+step            |    9.962|         |         |         |
+toggle_clk_speed|    9.893|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock step
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+run_mode        |    6.998|         |         |         |
+step            |    3.787|         |         |         |
+toggle_clk_speed|    6.998|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock toggle_clk_speed
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+run_mode        |    9.962|         |         |         |
+step            |    9.962|         |         |         |
+toggle_clk_speed|    9.893|         |         |         |
+----------------+---------+---------+---------+---------+
+
+
+Analysis completed Wed Dec 12 22:34:36 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4519 MB
+
+
+

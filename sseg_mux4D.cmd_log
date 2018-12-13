@@ -1,0 +1,4 @@
+vhdtdtfi -lib work ../Final/sseg_mux4D.vhd -prj ALU -o sseg_mux4D.spl -module sseg_mux4D -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w sseg_mux4D.spl {C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/sseg_mux4D.sym} 
+vhdtdtfi -lib work sseg_mux4D.vhd -prj ALU -o sseg_mux4D.spl -module sseg_mux4D -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w sseg_mux4D.spl C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/sseg_mux4D.sym 

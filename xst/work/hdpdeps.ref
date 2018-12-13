@@ -1,616 +1,698 @@
-V3 272
-FL C:/Users/John/Documents/PHYS301_FinalProject/ALU_v4.vhf 2018/12/12.17:33:16 P.20131013
-EN work/NOR8_MXILINX_ALU_v4 1544665618 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/ALU_v4.vhf \
+V3 320
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/Final/bin2BCD3en.vhd" 2018/12/12.18:21:38 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/Final/sseg_mux4D.vhd" 2018/12/12.18:21:47 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/ALU_v4.vhf" 2018/12/12.18:11:36 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/ClockSignalController.vhf" 2018/12/12.18:11:30 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/col_strobe.vhd" 2018/12/12.17:56:20 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/ControlUnit.vhf" 2018/12/12.18:11:26 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/DCM_100M.vhd" 2018/12/12.17:56:18 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/debounce.vhd" 2018/12/12.17:56:20 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/decoder16keyEn.vhd" 2018/12/12.17:56:20 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/DivClock.vhf" 2018/12/12.18:11:48 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/final_v1.vhf" 2018/12/12.19:11:17 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/InstructionControl.vhf" 2018/12/12.18:11:33 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/key4_dbnc.vhd" 2018/12/12.17:56:22 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/keypad_input.vhf" 2018/12/12.18:35:09 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/key_detect.vhd" 2018/12/12.17:56:22 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/MainControlUnit.vhf" 2018/12/12.18:11:29 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/memory.vhf" 2018/12/12.18:11:39 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/oneshot.vhd" 2018/12/12.17:56:23 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/Prog_Counter.vhf" 2018/12/12.18:11:39 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/RegisterBank.vhf" 2018/12/12.18:11:23 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/shiftreg_hex2D.vhd" 2018/12/12.17:56:24 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/Signals.vhf" 2018/12/12.18:11:30 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/sRAM32x8_generic.vhd" 2018/12/12.17:56:23 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/twos_comp.vhf" 2018/12/12.18:11:34 P.20131013
+FL "C:/Users/Chris/Documents/School/7th Year/Fall 2018/Phys301Final/john/PHYS301_FinalProject-master/WorkingRegisters.vhf" 2018/12/12.18:11:23 P.20131013
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ALU_v4.vhf 2018/12/12.19:29:02 P.20131013
+EN work/NOR8_MXILINX_ALU_v4 1544682182 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ALU_v4.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/NOR8_MXILINX_ALU_v4/BEHAVIORAL 1544665619 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/ALU_v4.vhf \
-      EN work/NOR8_MXILINX_ALU_v4 1544665618 CP FMAP CP OR4 CP NOR2
-EN work/ADSU8_MXILINX_ALU_v4 1544665620 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/ALU_v4.vhf \
+AR work/NOR8_MXILINX_ALU_v4/BEHAVIORAL 1544682183 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ALU_v4.vhf \
+      EN work/NOR8_MXILINX_ALU_v4 1544682182 CP FMAP CP OR4 CP NOR2
+EN work/ADSU8_MXILINX_ALU_v4 1544682184 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ALU_v4.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/ADSU8_MXILINX_ALU_v4/BEHAVIORAL 1544665621 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/ALU_v4.vhf \
-      EN work/ADSU8_MXILINX_ALU_v4 1544665620 CP FMAP CP XOR3 CP MUXCY_L CP MUXCY \
+AR work/ADSU8_MXILINX_ALU_v4/BEHAVIORAL 1544682185 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ALU_v4.vhf \
+      EN work/ADSU8_MXILINX_ALU_v4 1544682184 CP FMAP CP XOR3 CP MUXCY_L CP MUXCY \
       CP XORCY CP MUXCY_D CP INV CP XOR2
-EN work/ADD8_MXILINX_ALU_v4 1544665622 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/ALU_v4.vhf \
+EN work/ADD8_MXILINX_ALU_v4 1544682186 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ALU_v4.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/ADD8_MXILINX_ALU_v4/BEHAVIORAL 1544665623 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/ALU_v4.vhf \
-      EN work/ADD8_MXILINX_ALU_v4 1544665622 CP FMAP CP MUXCY_L CP MUXCY CP XORCY \
+AR work/ADD8_MXILINX_ALU_v4/BEHAVIORAL 1544682187 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ALU_v4.vhf \
+      EN work/ADD8_MXILINX_ALU_v4 1544682186 CP FMAP CP MUXCY_L CP MUXCY CP XORCY \
       CP MUXCY_D CP XOR2
-EN work/twos_comp_MUSER_ALU_v4 1544665624 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/ALU_v4.vhf \
+EN work/twos_comp_MUSER_ALU_v4 1544682188 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ALU_v4.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/twos_comp_MUSER_ALU_v4/BEHAVIORAL 1544665625 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/ALU_v4.vhf \
-      EN work/twos_comp_MUSER_ALU_v4 1544665624 CP XOR2 CP ADD8_MXILINX_ALU_v4 \
+AR work/twos_comp_MUSER_ALU_v4/BEHAVIORAL 1544682189 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ALU_v4.vhf \
+      EN work/twos_comp_MUSER_ALU_v4 1544682188 CP XOR2 CP ADD8_MXILINX_ALU_v4 \
       CP BUF
-EN work/ALU_v4 1544665626 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/ALU_v4.vhf \
+EN work/ALU_v4 1544682190 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ALU_v4.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/ALU_v4/BEHAVIORAL 1544665627 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/ALU_v4.vhf EN work/ALU_v4 1544665626 \
-      CP twos_comp_MUSER_ALU_v4 CP ADSU8_MXILINX_ALU_v4 CP AND2 CP OR2 CP INV \
-      CP NOR8_MXILINX_ALU_v4 CP AND3B1
-FL C:/Users/John/Documents/PHYS301_FinalProject/ClockSignalController.vhf 2018/12/12.17:33:08 P.20131013
-EN work/ClockSignalController 1544665700 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/ClockSignalController.vhf \
+AR work/ALU_v4/BEHAVIORAL 1544682191 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ALU_v4.vhf \
+      EN work/ALU_v4 1544682190 CP twos_comp_MUSER_ALU_v4 CP ADSU8_MXILINX_ALU_v4 \
+      CP AND2 CP OR2 CP INV CP NOR8_MXILINX_ALU_v4 CP AND3B1
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/bin2BCD3en.vhd 2018/12/12.19:26:34 P.20131013
+EN work/bin2BCD3en 1544682130 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/bin2BCD3en.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/bin2BCD3en/Behavioral 1544682131 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/bin2BCD3en.vhd \
+      EN work/bin2BCD3en 1544682130
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ClockSignalController.vhf 2018/12/12.19:28:50 P.20131013
+EN work/ClockSignalController 1544682272 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ClockSignalController.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/ClockSignalController/BEHAVIORAL 1544665701 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/ClockSignalController.vhf \
-      EN work/ClockSignalController 1544665700 CP OR2 CP AND3B1 CP AND2B1
-FL C:/Users/John/Documents/PHYS301_FinalProject/col_strobe.vhd 2018/12/11.15:02:23 P.20131013
-EN work/col_strobe 1544665560 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/col_strobe.vhd \
+AR work/ClockSignalController/BEHAVIORAL 1544682273 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ClockSignalController.vhf \
+      EN work/ClockSignalController 1544682272 CP OR2 CP AND3B1 CP AND2B1
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/col_strobe.vhd 2018/12/12.19:26:34 P.20131013
+EN work/col_strobe 1544682118 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/col_strobe.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/col_strobe/Behavioral 1544665561 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/col_strobe.vhd \
-      EN work/col_strobe 1544665560
-FL C:/Users/John/Documents/PHYS301_FinalProject/ControlUnit.vhf 2018/12/12.17:33:07 P.20131013
-EN work/ClockSignalController_MUSER_ControlUnit 1544665664 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/ControlUnit.vhf \
+AR work/col_strobe/Behavioral 1544682119 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/col_strobe.vhd \
+      EN work/col_strobe 1544682118
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ControlUnit.vhf 2018/12/12.19:29:14 P.20131013
+EN work/ClockSignalController_MUSER_ControlUnit 1544682232 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ControlUnit.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/ClockSignalController_MUSER_ControlUnit/BEHAVIORAL 1544665665 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/ControlUnit.vhf \
-      EN work/ClockSignalController_MUSER_ControlUnit 1544665664 CP OR2 CP AND3B1 \
+AR work/ClockSignalController_MUSER_ControlUnit/BEHAVIORAL 1544682233 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ControlUnit.vhf \
+      EN work/ClockSignalController_MUSER_ControlUnit 1544682232 CP OR2 CP AND3B1 \
       CP AND2B1
-EN work/AND8_MXILINX_ControlUnit 1544665666 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/ControlUnit.vhf \
+EN work/AND8_MXILINX_ControlUnit 1544682234 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ControlUnit.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/AND8_MXILINX_ControlUnit/BEHAVIORAL 1544665667 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/ControlUnit.vhf \
-      EN work/AND8_MXILINX_ControlUnit 1544665666 CP FMAP CP AND4 CP AND2
-EN work/Signals_MUSER_ControlUnit 1544665668 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/ControlUnit.vhf \
+AR work/AND8_MXILINX_ControlUnit/BEHAVIORAL 1544682235 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ControlUnit.vhf \
+      EN work/AND8_MXILINX_ControlUnit 1544682234 CP FMAP CP AND4 CP AND2
+EN work/Signals_MUSER_ControlUnit 1544682236 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ControlUnit.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Signals_MUSER_ControlUnit/BEHAVIORAL 1544665669 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/ControlUnit.vhf \
-      EN work/Signals_MUSER_ControlUnit 1544665668 CP INV \
+AR work/Signals_MUSER_ControlUnit/BEHAVIORAL 1544682237 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ControlUnit.vhf \
+      EN work/Signals_MUSER_ControlUnit 1544682236 CP INV \
       CP AND8_MXILINX_ControlUnit
-EN work/InstructionControl_MUSER_ControlUnit 1544665670 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/ControlUnit.vhf \
+EN work/InstructionControl_MUSER_ControlUnit 1544682238 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ControlUnit.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/InstructionControl_MUSER_ControlUnit/BEHAVIORAL 1544665671 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/ControlUnit.vhf \
-      EN work/InstructionControl_MUSER_ControlUnit 1544665670 \
+AR work/InstructionControl_MUSER_ControlUnit/BEHAVIORAL 1544682239 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ControlUnit.vhf \
+      EN work/InstructionControl_MUSER_ControlUnit 1544682238 \
       CP Signals_MUSER_ControlUnit CP ClockSignalController_MUSER_ControlUnit
-EN work/ControlUnit 1544665672 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/ControlUnit.vhf \
+EN work/ControlUnit 1544682240 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ControlUnit.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/ControlUnit/BEHAVIORAL 1544665673 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/ControlUnit.vhf \
-      EN work/ControlUnit 1544665672 CP PULLUP \
+AR work/ControlUnit/BEHAVIORAL 1544682241 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ControlUnit.vhf \
+      EN work/ControlUnit 1544682240 CP PULLUP \
       CP InstructionControl_MUSER_ControlUnit
-FL C:/Users/John/Documents/PHYS301_FinalProject/DCM_100M.vhd 2018/12/11.15:02:23 P.20131013
-EN work/DCM_100M 1544665554 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/DCM_100M.vhd \
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/DCM_100M.vhd 2018/12/12.19:26:34 P.20131013
+EN work/DCM_100M 1544682112 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/DCM_100M.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/DCM_100M/Behavioral 1544665555 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/DCM_100M.vhd \
-      EN work/DCM_100M 1544665554
-FL C:/Users/John/Documents/PHYS301_FinalProject/debounce.vhd 2018/12/11.15:02:23 P.20131013
-EN work/switch_debounce 1544665552 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/debounce.vhd \
+AR work/DCM_100M/Behavioral 1544682113 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/DCM_100M.vhd \
+      EN work/DCM_100M 1544682112
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/debounce.vhd 2018/12/12.19:26:34 P.20131013
+EN work/switch_debounce 1544682110 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/debounce.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/switch_debounce/Behavioral 1544665553 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/debounce.vhd \
-      EN work/switch_debounce 1544665552
-FL C:/Users/John/Documents/PHYS301_FinalProject/decoder16keyEn.vhd 2018/12/11.15:02:23 P.20131013
-EN work/decoder16keyEn 1544665562 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/decoder16keyEn.vhd \
+AR work/switch_debounce/Behavioral 1544682111 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/debounce.vhd \
+      EN work/switch_debounce 1544682110
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/decoder16keyEn.vhd 2018/12/12.19:26:34 P.20131013
+EN work/decoder16keyEn 1544682120 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/decoder16keyEn.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/decoder16keyEn/Doric 1544665563 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/decoder16keyEn.vhd \
-      EN work/decoder16keyEn 1544665562
-FL C:/Users/John/Documents/PHYS301_FinalProject/DivClock.vhf 2018/12/12.17:33:21 P.20131013
-EN work/FJKC_MXILINX_DivClock 1544665674 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/DivClock.vhf \
+AR work/decoder16keyEn/Doric 1544682121 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/decoder16keyEn.vhd \
+      EN work/decoder16keyEn 1544682120
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/DivClock.vhf 2018/12/12.19:26:35 P.20131013
+EN work/FJKC_MXILINX_DivClock 1544682242 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/DivClock.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FJKC_MXILINX_DivClock/BEHAVIORAL 1544665675 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/DivClock.vhf \
-      EN work/FJKC_MXILINX_DivClock 1544665674 CP FDC CP AND3B2 CP AND3B1 CP OR3 \
+AR work/FJKC_MXILINX_DivClock/BEHAVIORAL 1544682243 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/DivClock.vhf \
+      EN work/FJKC_MXILINX_DivClock 1544682242 CP FDC CP AND3B2 CP AND3B1 CP OR3 \
       CP AND2B1
-EN work/DivClock 1544665676 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/DivClock.vhf \
+EN work/DivClock 1544682244 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/DivClock.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/DivClock/BEHAVIORAL 1544665677 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/DivClock.vhf \
-      EN work/DivClock 1544665676 CP FJKC_MXILINX_DivClock CP PULLUP CP BUF
-FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf 2018/12/12.17:45:43 P.20131013
-EN work/ClockSignalController_MUSER_final_v1 1544665570 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
+AR work/DivClock/BEHAVIORAL 1544682245 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/DivClock.vhf \
+      EN work/DivClock 1544682244 CP FJKC_MXILINX_DivClock CP PULLUP CP BUF
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/eight_b_mux.vhf 2018/12/12.22:21:31 P.20131013
+EN work/M2_1_MXILINX_eight_b_mux 1544682246 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/eight_b_mux.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/ClockSignalController_MUSER_final_v1/BEHAVIORAL 1544665571 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/ClockSignalController_MUSER_final_v1 1544665570 CP OR2 CP AND3B1 \
+AR work/M2_1_MXILINX_eight_b_mux/BEHAVIORAL 1544682247 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/eight_b_mux.vhf \
+      EN work/M2_1_MXILINX_eight_b_mux 1544682246 CP AND2B1 CP OR2 CP AND2
+EN work/eight_b_mux 1544682248 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/eight_b_mux.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/eight_b_mux/BEHAVIORAL 1544682249 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/eight_b_mux.vhf \
+      EN work/eight_b_mux 1544682248 CP M2_1_MXILINX_eight_b_mux
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf 2018/12/12.22:21:39 P.20131013
+EN work/keypad_input_MUSER_final_v1 1544682132 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/keypad_input_MUSER_final_v1/BEHAVIORAL 1544682133 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/keypad_input_MUSER_final_v1 1544682132 CP key_detect CP col_strobe \
+      CP decoder16keyEn CP oneshot CP PULLDOWN CP INV CP key4_dbnc CP shiftreg_hex2D
+EN work/memory_MUSER_final_v1 1544682134 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/memory_MUSER_final_v1/BEHAVIORAL 1544682135 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/memory_MUSER_final_v1 1544682134 CP sRAM32x8_generic CP PULLDOWN \
+      CP AND3B1 CP INV
+EN work/FJKC_MXILINX_final_v1 1544682136 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FJKC_MXILINX_final_v1/BEHAVIORAL 1544682137 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/FJKC_MXILINX_final_v1 1544682136 CP FDC CP AND3B2 CP AND3B1 CP OR3 \
       CP AND2B1
-EN work/AND8_MXILINX_final_v1 1544665572 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
+EN work/DivClock_MUSER_final_v1 1544682138 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/AND8_MXILINX_final_v1/BEHAVIORAL 1544665573 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/AND8_MXILINX_final_v1 1544665572 CP FMAP CP AND4 CP AND2
-EN work/Signals_MUSER_final_v1 1544665574 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/Signals_MUSER_final_v1/BEHAVIORAL 1544665575 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/Signals_MUSER_final_v1 1544665574 CP INV CP AND8_MXILINX_final_v1
-EN work/InstructionControl_MUSER_final_v1 1544665576 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/InstructionControl_MUSER_final_v1/BEHAVIORAL 1544665577 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/InstructionControl_MUSER_final_v1 1544665576 \
-      CP Signals_MUSER_final_v1 CP ClockSignalController_MUSER_final_v1
-EN work/ControlUnit_MUSER_final_v1 1544665578 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/ControlUnit_MUSER_final_v1/BEHAVIORAL 1544665579 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/ControlUnit_MUSER_final_v1 1544665578 CP PULLUP \
-      CP InstructionControl_MUSER_final_v1
-EN work/FD8RE_MXILINX_final_v1 1544665580 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/FD8RE_MXILINX_final_v1/BEHAVIORAL 1544665581 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/FD8RE_MXILINX_final_v1 1544665580 CP FDRE
-EN work/WorkingRegisters_MUSER_final_v1 1544665582 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/WorkingRegisters_MUSER_final_v1/BEHAVIORAL 1544665583 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/WorkingRegisters_MUSER_final_v1 1544665582 \
-      CP FD8RE_MXILINX_final_v1 CP PULLUP
-EN work/RegisterBank_MUSER_final_v1 1544665584 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/RegisterBank_MUSER_final_v1/BEHAVIORAL 1544665585 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/RegisterBank_MUSER_final_v1 1544665584 CP FD8RE_MXILINX_final_v1 \
-      CP PULLUP CP WorkingRegisters_MUSER_final_v1
-EN work/MainControlUnit_MUSER_final_v1 1544665586 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/MainControlUnit_MUSER_final_v1/BEHAVIORAL 1544665587 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/MainControlUnit_MUSER_final_v1 1544665586 \
-      CP RegisterBank_MUSER_final_v1 CP ControlUnit_MUSER_final_v1 CP OR3
-EN work/NOR8_MXILINX_final_v1 1544665588 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/NOR8_MXILINX_final_v1/BEHAVIORAL 1544665589 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/NOR8_MXILINX_final_v1 1544665588 CP FMAP CP OR4 CP NOR2
-EN work/ADSU8_MXILINX_final_v1 1544665590 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/ADSU8_MXILINX_final_v1/BEHAVIORAL 1544665591 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/ADSU8_MXILINX_final_v1 1544665590 CP FMAP CP XOR3 CP MUXCY_L CP MUXCY \
-      CP XORCY CP MUXCY_D CP INV CP XOR2
-EN work/ADD8_MXILINX_final_v1 1544665592 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/ADD8_MXILINX_final_v1/BEHAVIORAL 1544665593 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/ADD8_MXILINX_final_v1 1544665592 CP FMAP CP MUXCY_L CP MUXCY CP XORCY \
-      CP MUXCY_D CP XOR2
-EN work/twos_comp_MUSER_final_v1 1544665594 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/twos_comp_MUSER_final_v1/BEHAVIORAL 1544665595 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/twos_comp_MUSER_final_v1 1544665594 CP XOR2 CP ADD8_MXILINX_final_v1 \
-      CP BUF
-EN work/ALU_v4_MUSER_final_v1 1544665596 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/ALU_v4_MUSER_final_v1/BEHAVIORAL 1544665597 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/ALU_v4_MUSER_final_v1 1544665596 CP twos_comp_MUSER_final_v1 \
-      CP ADSU8_MXILINX_final_v1 CP AND2 CP OR2 CP INV CP NOR8_MXILINX_final_v1 \
-      CP AND3B1
-EN work/FJKC_MXILINX_final_v1 1544665598 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/FJKC_MXILINX_final_v1/BEHAVIORAL 1544665599 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/FJKC_MXILINX_final_v1 1544665598 CP FDC CP AND3B2 CP AND3B1 CP OR3 \
-      CP AND2B1
-EN work/DivClock_MUSER_final_v1 1544665600 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/DivClock_MUSER_final_v1/BEHAVIORAL 1544665601 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/DivClock_MUSER_final_v1 1544665600 CP FJKC_MXILINX_final_v1 \
+AR work/DivClock_MUSER_final_v1/BEHAVIORAL 1544682139 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/DivClock_MUSER_final_v1 1544682138 CP FJKC_MXILINX_final_v1 \
       CP PULLUP CP BUF
-EN work/M2_1_MXILINX_final_v1 1544665602 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
+EN work/M2_1_MXILINX_final_v1 1544682140 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1_MXILINX_final_v1/BEHAVIORAL 1544665603 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/M2_1_MXILINX_final_v1 1544665602 CP AND2B1 CP OR2 CP AND2
-EN work/M2_1B1_MXILINX_final_v1 1544665604 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
+AR work/M2_1_MXILINX_final_v1/BEHAVIORAL 1544682141 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/M2_1_MXILINX_final_v1 1544682140 CP AND2B1 CP OR2 CP AND2
+EN work/M2_1B1_MXILINX_final_v1 1544682142 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1B1_MXILINX_final_v1/BEHAVIORAL 1544665605 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/M2_1B1_MXILINX_final_v1 1544665604 CP AND2B2 CP OR2 CP AND2
-EN work/FTCLEX_MXILINX_final_v1 1544665606 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
+AR work/M2_1B1_MXILINX_final_v1/BEHAVIORAL 1544682143 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/M2_1B1_MXILINX_final_v1 1544682142 CP AND2B2 CP OR2 CP AND2
+EN work/FTCLEX_MXILINX_final_v1 1544682144 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FTCLEX_MXILINX_final_v1/BEHAVIORAL 1544665607 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/FTCLEX_MXILINX_final_v1 1544665606 CP M2_1_MXILINX_final_v1 CP XOR2 \
+AR work/FTCLEX_MXILINX_final_v1/BEHAVIORAL 1544682145 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/FTCLEX_MXILINX_final_v1 1544682144 CP M2_1_MXILINX_final_v1 CP XOR2 \
       CP FDCE
-EN work/CB8CLED_MXILINX_final_v1 1544665608 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
+EN work/CB8CLED_MXILINX_final_v1 1544682146 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/CB8CLED_MXILINX_final_v1/BEHAVIORAL 1544665609 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/CB8CLED_MXILINX_final_v1 1544665608 CP FTCLEX_MXILINX_final_v1 \
+AR work/CB8CLED_MXILINX_final_v1/BEHAVIORAL 1544682147 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/CB8CLED_MXILINX_final_v1 1544682146 CP FTCLEX_MXILINX_final_v1 \
       CP M2_1_MXILINX_final_v1 CP M2_1B1_MXILINX_final_v1 CP AND5 CP AND4 CP AND4B3 \
       CP AND2B2 CP VCC CP AND2B1 CP AND3 CP AND3B2 CP AND3B3 CP AND4B4 CP AND2 CP AND5B4 \
       CP OR2
-EN work/Prog_Counter_MUSER_final_v1 1544665610 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
+EN work/Prog_Counter_MUSER_final_v1 1544682148 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Prog_Counter_MUSER_final_v1/BEHAVIORAL 1544665611 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/Prog_Counter_MUSER_final_v1 1544665610 CP CB8CLED_MXILINX_final_v1 \
+AR work/Prog_Counter_MUSER_final_v1/BEHAVIORAL 1544682149 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/Prog_Counter_MUSER_final_v1 1544682148 CP CB8CLED_MXILINX_final_v1 \
       CP PULLUP CP INV CP DCM_100M CP PULLDOWN CP BUF CP M2_1_MXILINX_final_v1 \
       CP AND3B1 CP OR2 CP AND2B1 CP DivClock_MUSER_final_v1
-EN work/memory_MUSER_final_v1 1544665612 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
+EN work/eight_b_mux_MUSER_final_v1 1544682150 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/memory_MUSER_final_v1/BEHAVIORAL 1544665613 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/memory_MUSER_final_v1 1544665612 CP sRAM32x8_generic CP PULLDOWN \
-      CP AND3B1 CP INV
-EN work/keypad_input_MUSER_final_v1 1544665614 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
+AR work/eight_b_mux_MUSER_final_v1/BEHAVIORAL 1544682151 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/eight_b_mux_MUSER_final_v1 1544682150 CP M2_1_MXILINX_final_v1
+EN work/ClockSignalController_MUSER_final_v1 1544682152 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/keypad_input_MUSER_final_v1/BEHAVIORAL 1544665615 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/keypad_input_MUSER_final_v1 1544665614 CP key_detect CP col_strobe \
-      CP decoder16keyEn CP oneshot CP PULLDOWN CP INV CP key4_dbnc CP shiftreg_hex2D
-EN work/final_v1 1544665616 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
+AR work/ClockSignalController_MUSER_final_v1/BEHAVIORAL 1544682153 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/ClockSignalController_MUSER_final_v1 1544682152 CP OR2 CP AND3B1 \
+      CP AND2B1
+EN work/AND8_MXILINX_final_v1 1544682154 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/final_v1/BEHAVIORAL 1544665617 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf \
-      EN work/final_v1 1544665616 CP memory_MUSER_final_v1 \
+AR work/AND8_MXILINX_final_v1/BEHAVIORAL 1544682155 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/AND8_MXILINX_final_v1 1544682154 CP FMAP CP AND4 CP AND2
+EN work/Signals_MUSER_final_v1 1544682156 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Signals_MUSER_final_v1/BEHAVIORAL 1544682157 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/Signals_MUSER_final_v1 1544682156 CP INV CP AND8_MXILINX_final_v1
+EN work/InstructionControl_MUSER_final_v1 1544682158 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/InstructionControl_MUSER_final_v1/BEHAVIORAL 1544682159 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/InstructionControl_MUSER_final_v1 1544682158 \
+      CP Signals_MUSER_final_v1 CP ClockSignalController_MUSER_final_v1
+EN work/ControlUnit_MUSER_final_v1 1544682160 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/ControlUnit_MUSER_final_v1/BEHAVIORAL 1544682161 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/ControlUnit_MUSER_final_v1 1544682160 CP PULLUP \
+      CP InstructionControl_MUSER_final_v1
+EN work/FD8RE_MXILINX_final_v1 1544682162 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FD8RE_MXILINX_final_v1/BEHAVIORAL 1544682163 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/FD8RE_MXILINX_final_v1 1544682162 CP FDRE
+EN work/WorkingRegisters_MUSER_final_v1 1544682164 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/WorkingRegisters_MUSER_final_v1/BEHAVIORAL 1544682165 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/WorkingRegisters_MUSER_final_v1 1544682164 \
+      CP FD8RE_MXILINX_final_v1 CP PULLUP
+EN work/RegisterBank_MUSER_final_v1 1544682166 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/RegisterBank_MUSER_final_v1/BEHAVIORAL 1544682167 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/RegisterBank_MUSER_final_v1 1544682166 CP FD8RE_MXILINX_final_v1 \
+      CP PULLUP CP WorkingRegisters_MUSER_final_v1
+EN work/MainControlUnit_MUSER_final_v1 1544682168 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/MainControlUnit_MUSER_final_v1/BEHAVIORAL 1544682169 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/MainControlUnit_MUSER_final_v1 1544682168 \
+      CP RegisterBank_MUSER_final_v1 CP ControlUnit_MUSER_final_v1 CP OR3 CP OR2 \
+      CP eight_b_mux_MUSER_final_v1
+EN work/NOR8_MXILINX_final_v1 1544682170 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/NOR8_MXILINX_final_v1/BEHAVIORAL 1544682171 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/NOR8_MXILINX_final_v1 1544682170 CP FMAP CP OR4 CP NOR2
+EN work/ADSU8_MXILINX_final_v1 1544682172 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/ADSU8_MXILINX_final_v1/BEHAVIORAL 1544682173 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/ADSU8_MXILINX_final_v1 1544682172 CP FMAP CP XOR3 CP MUXCY_L CP MUXCY \
+      CP XORCY CP MUXCY_D CP INV CP XOR2
+EN work/ADD8_MXILINX_final_v1 1544682174 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/ADD8_MXILINX_final_v1/BEHAVIORAL 1544682175 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/ADD8_MXILINX_final_v1 1544682174 CP FMAP CP MUXCY_L CP MUXCY CP XORCY \
+      CP MUXCY_D CP XOR2
+EN work/twos_comp_MUSER_final_v1 1544682176 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/twos_comp_MUSER_final_v1/BEHAVIORAL 1544682177 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/twos_comp_MUSER_final_v1 1544682176 CP XOR2 CP ADD8_MXILINX_final_v1 \
+      CP BUF
+EN work/ALU_v4_MUSER_final_v1 1544682178 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/ALU_v4_MUSER_final_v1/BEHAVIORAL 1544682179 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/ALU_v4_MUSER_final_v1 1544682178 CP twos_comp_MUSER_final_v1 \
+      CP ADSU8_MXILINX_final_v1 CP AND2 CP OR2 CP INV CP NOR8_MXILINX_final_v1 \
+      CP AND3B1
+EN work/final_v1 1544682180 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/final_v1/BEHAVIORAL 1544682181 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/final_v1.vhf \
+      EN work/final_v1 1544682180 CP memory_MUSER_final_v1 \
       CP Prog_Counter_MUSER_final_v1 CP keypad_input_MUSER_final_v1 CP INV \
-      CP MainControlUnit_MUSER_final_v1 CP ALU_v4_MUSER_final_v1
-FL C:/Users/John/Documents/PHYS301_FinalProject/InstructionControl.vhf 2018/12/12.17:33:09 P.20131013
-EN work/ClockSignalController_MUSER_InstructionControl 1544665688 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/InstructionControl.vhf \
+      CP MainControlUnit_MUSER_final_v1 CP ALU_v4_MUSER_final_v1 CP sseg_mux4D \
+      CP bin2BCD3en
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/InstructionControl.vhf 2018/12/12.19:29:16 P.20131013
+EN work/ClockSignalController_MUSER_InstructionControl 1544682260 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/InstructionControl.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/ClockSignalController_MUSER_InstructionControl/BEHAVIORAL 1544665689 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/InstructionControl.vhf \
-      EN work/ClockSignalController_MUSER_InstructionControl 1544665688 CP OR2 \
+AR work/ClockSignalController_MUSER_InstructionControl/BEHAVIORAL 1544682261 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/InstructionControl.vhf \
+      EN work/ClockSignalController_MUSER_InstructionControl 1544682260 CP OR2 \
       CP AND3B1 CP AND2B1
-EN work/AND8_MXILINX_InstructionControl 1544665690 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/InstructionControl.vhf \
+EN work/AND8_MXILINX_InstructionControl 1544682262 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/InstructionControl.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/AND8_MXILINX_InstructionControl/BEHAVIORAL 1544665691 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/InstructionControl.vhf \
-      EN work/AND8_MXILINX_InstructionControl 1544665690 CP FMAP CP AND4 CP AND2
-EN work/Signals_MUSER_InstructionControl 1544665692 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/InstructionControl.vhf \
+AR work/AND8_MXILINX_InstructionControl/BEHAVIORAL 1544682263 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/InstructionControl.vhf \
+      EN work/AND8_MXILINX_InstructionControl 1544682262 CP FMAP CP AND4 CP AND2
+EN work/Signals_MUSER_InstructionControl 1544682264 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/InstructionControl.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Signals_MUSER_InstructionControl/BEHAVIORAL 1544665693 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/InstructionControl.vhf \
-      EN work/Signals_MUSER_InstructionControl 1544665692 CP INV \
+AR work/Signals_MUSER_InstructionControl/BEHAVIORAL 1544682265 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/InstructionControl.vhf \
+      EN work/Signals_MUSER_InstructionControl 1544682264 CP INV \
       CP AND8_MXILINX_InstructionControl
-EN work/InstructionControl 1544665694 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/InstructionControl.vhf \
+EN work/InstructionControl 1544682266 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/InstructionControl.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/InstructionControl/BEHAVIORAL 1544665695 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/InstructionControl.vhf \
-      EN work/InstructionControl 1544665694 CP Signals_MUSER_InstructionControl \
+AR work/InstructionControl/BEHAVIORAL 1544682267 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/InstructionControl.vhf \
+      EN work/InstructionControl 1544682266 CP Signals_MUSER_InstructionControl \
       CP ClockSignalController_MUSER_InstructionControl
-FL C:/Users/John/Documents/PHYS301_FinalProject/key4_dbnc.vhd 2018/12/11.15:02:10 P.20131013
-EN work/key4_dbnc 1544665566 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/key4_dbnc.vhd \
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/key4_dbnc.vhd 2018/12/12.19:26:37 P.20131013
+EN work/key4_dbnc 1544682124 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/key4_dbnc.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/key4_dbnc/Behavioral 1544665567 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/key4_dbnc.vhd \
-      EN work/key4_dbnc 1544665566 CP switch_debounce
-FL C:/Users/John/Documents/PHYS301_FinalProject/keypad_input.vhf 2018/12/12.17:33:14 P.20131013
-EN work/keypad_input 1544665628 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/keypad_input.vhf \
+AR work/key4_dbnc/Behavioral 1544682125 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/key4_dbnc.vhd \
+      EN work/key4_dbnc 1544682124 CP switch_debounce
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/keypad_input.vhf 2018/12/12.19:28:59 P.20131013
+EN work/keypad_input 1544682192 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/keypad_input.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/keypad_input/BEHAVIORAL 1544665629 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/keypad_input.vhf \
-      EN work/keypad_input 1544665628 CP key_detect CP col_strobe CP decoder16keyEn \
+AR work/keypad_input/BEHAVIORAL 1544682193 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/keypad_input.vhf \
+      EN work/keypad_input 1544682192 CP key_detect CP col_strobe CP decoder16keyEn \
       CP oneshot CP PULLDOWN CP INV CP key4_dbnc CP shiftreg_hex2D
-FL C:/Users/John/Documents/PHYS301_FinalProject/key_detect.vhd 2018/12/11.15:02:10 P.20131013
-EN work/key_detect 1544665558 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/key_detect.vhd \
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/key_detect.vhd 2018/12/12.19:26:37 P.20131013
+EN work/key_detect 1544682116 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/key_detect.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/key_detect/Behavioral 1544665559 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/key_detect.vhd \
-      EN work/key_detect 1544665558
-FL C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.vhf 2018/12/12.17:33:14 P.20131013
-EN work/ClockSignalController_MUSER_MainControlUnit 1544665630 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.vhf \
+AR work/key_detect/Behavioral 1544682117 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/key_detect.vhd \
+      EN work/key_detect 1544682116
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf 2018/12/12.22:21:42 P.20131013
+EN work/M2_1_MXILINX_MainControlUnit 1544682194 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/ClockSignalController_MUSER_MainControlUnit/BEHAVIORAL 1544665631 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.vhf \
-      EN work/ClockSignalController_MUSER_MainControlUnit 1544665630 CP OR2 \
+AR work/M2_1_MXILINX_MainControlUnit/BEHAVIORAL 1544682195 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf \
+      EN work/M2_1_MXILINX_MainControlUnit 1544682194 CP AND2B1 CP OR2 CP AND2
+EN work/eight_b_mux_MUSER_MainControlUnit 1544682196 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/eight_b_mux_MUSER_MainControlUnit/BEHAVIORAL 1544682197 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf \
+      EN work/eight_b_mux_MUSER_MainControlUnit 1544682196 \
+      CP M2_1_MXILINX_MainControlUnit
+EN work/ClockSignalController_MUSER_MainControlUnit 1544682198 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/ClockSignalController_MUSER_MainControlUnit/BEHAVIORAL 1544682199 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf \
+      EN work/ClockSignalController_MUSER_MainControlUnit 1544682198 CP OR2 \
       CP AND3B1 CP AND2B1
-EN work/AND8_MXILINX_MainControlUnit 1544665632 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.vhf \
+EN work/AND8_MXILINX_MainControlUnit 1544682200 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/AND8_MXILINX_MainControlUnit/BEHAVIORAL 1544665633 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.vhf \
-      EN work/AND8_MXILINX_MainControlUnit 1544665632 CP FMAP CP AND4 CP AND2
-EN work/Signals_MUSER_MainControlUnit 1544665634 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.vhf \
+AR work/AND8_MXILINX_MainControlUnit/BEHAVIORAL 1544682201 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf \
+      EN work/AND8_MXILINX_MainControlUnit 1544682200 CP FMAP CP AND4 CP AND2
+EN work/Signals_MUSER_MainControlUnit 1544682202 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Signals_MUSER_MainControlUnit/BEHAVIORAL 1544665635 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.vhf \
-      EN work/Signals_MUSER_MainControlUnit 1544665634 CP INV \
+AR work/Signals_MUSER_MainControlUnit/BEHAVIORAL 1544682203 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf \
+      EN work/Signals_MUSER_MainControlUnit 1544682202 CP INV \
       CP AND8_MXILINX_MainControlUnit
-EN work/InstructionControl_MUSER_MainControlUnit 1544665636 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.vhf \
+EN work/InstructionControl_MUSER_MainControlUnit 1544682204 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/InstructionControl_MUSER_MainControlUnit/BEHAVIORAL 1544665637 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.vhf \
-      EN work/InstructionControl_MUSER_MainControlUnit 1544665636 \
+AR work/InstructionControl_MUSER_MainControlUnit/BEHAVIORAL 1544682205 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf \
+      EN work/InstructionControl_MUSER_MainControlUnit 1544682204 \
       CP Signals_MUSER_MainControlUnit \
       CP ClockSignalController_MUSER_MainControlUnit
-EN work/ControlUnit_MUSER_MainControlUnit 1544665638 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.vhf \
+EN work/ControlUnit_MUSER_MainControlUnit 1544682206 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/ControlUnit_MUSER_MainControlUnit/BEHAVIORAL 1544665639 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.vhf \
-      EN work/ControlUnit_MUSER_MainControlUnit 1544665638 CP PULLUP \
+AR work/ControlUnit_MUSER_MainControlUnit/BEHAVIORAL 1544682207 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf \
+      EN work/ControlUnit_MUSER_MainControlUnit 1544682206 CP PULLUP \
       CP InstructionControl_MUSER_MainControlUnit
-EN work/FD8RE_MXILINX_MainControlUnit 1544665640 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.vhf \
+EN work/FD8RE_MXILINX_MainControlUnit 1544682208 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FD8RE_MXILINX_MainControlUnit/BEHAVIORAL 1544665641 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.vhf \
-      EN work/FD8RE_MXILINX_MainControlUnit 1544665640 CP FDRE
-EN work/WorkingRegisters_MUSER_MainControlUnit 1544665642 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.vhf \
+AR work/FD8RE_MXILINX_MainControlUnit/BEHAVIORAL 1544682209 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf \
+      EN work/FD8RE_MXILINX_MainControlUnit 1544682208 CP FDRE
+EN work/WorkingRegisters_MUSER_MainControlUnit 1544682210 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/WorkingRegisters_MUSER_MainControlUnit/BEHAVIORAL 1544665643 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.vhf \
-      EN work/WorkingRegisters_MUSER_MainControlUnit 1544665642 \
+AR work/WorkingRegisters_MUSER_MainControlUnit/BEHAVIORAL 1544682211 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf \
+      EN work/WorkingRegisters_MUSER_MainControlUnit 1544682210 \
       CP FD8RE_MXILINX_MainControlUnit CP PULLUP
-EN work/RegisterBank_MUSER_MainControlUnit 1544665644 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.vhf \
+EN work/RegisterBank_MUSER_MainControlUnit 1544682212 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/RegisterBank_MUSER_MainControlUnit/BEHAVIORAL 1544665645 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.vhf \
-      EN work/RegisterBank_MUSER_MainControlUnit 1544665644 \
+AR work/RegisterBank_MUSER_MainControlUnit/BEHAVIORAL 1544682213 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf \
+      EN work/RegisterBank_MUSER_MainControlUnit 1544682212 \
       CP FD8RE_MXILINX_MainControlUnit CP PULLUP \
       CP WorkingRegisters_MUSER_MainControlUnit
-EN work/MainControlUnit 1544665646 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.vhf \
+EN work/MainControlUnit 1544682214 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/MainControlUnit/BEHAVIORAL 1544665647 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.vhf \
-      EN work/MainControlUnit 1544665646 CP RegisterBank_MUSER_MainControlUnit \
-      CP ControlUnit_MUSER_MainControlUnit CP OR3
-FL C:/Users/John/Documents/PHYS301_FinalProject/memory.vhf 2018/12/12.17:33:20 P.20131013
-EN work/memory 1544665648 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/memory.vhf \
+AR work/MainControlUnit/BEHAVIORAL 1544682215 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/MainControlUnit.vhf \
+      EN work/MainControlUnit 1544682214 CP RegisterBank_MUSER_MainControlUnit \
+      CP ControlUnit_MUSER_MainControlUnit CP OR3 CP OR2 \
+      CP eight_b_mux_MUSER_MainControlUnit
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/memory.vhf 2018/12/12.19:28:42 P.20131013
+EN work/memory 1544682216 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/memory.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/memory/BEHAVIORAL 1544665649 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/memory.vhf EN work/memory 1544665648 \
-      CP sRAM32x8_generic CP PULLDOWN CP AND3B1 CP INV
-FL C:/Users/John/Documents/PHYS301_FinalProject/oneshot.vhd 2018/12/11.15:02:10 P.20131013
-EN work/oneshot 1544665564 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/oneshot.vhd \
+AR work/memory/BEHAVIORAL 1544682217 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/memory.vhf \
+      EN work/memory 1544682216 CP sRAM32x8_generic CP PULLDOWN CP AND3B1 CP INV
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/oneshot.vhd 2018/12/12.19:26:37 P.20131013
+EN work/oneshot 1544682122 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/oneshot.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
       PB ieee/std_logic_arith 1381692177
-AR work/oneshot/Behavioral 1544665565 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/oneshot.vhd EN work/oneshot 1544665564
-FL C:/Users/John/Documents/PHYS301_FinalProject/Prog_Counter.vhf 2018/12/12.17:33:19 P.20131013
-EN work/FJKC_MXILINX_Prog_Counter 1544665650 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/Prog_Counter.vhf \
+AR work/oneshot/Behavioral 1544682123 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/oneshot.vhd \
+      EN work/oneshot 1544682122
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/Prog_Counter.vhf 2018/12/12.19:28:42 P.20131013
+EN work/FJKC_MXILINX_Prog_Counter 1544682218 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/Prog_Counter.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FJKC_MXILINX_Prog_Counter/BEHAVIORAL 1544665651 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/Prog_Counter.vhf \
-      EN work/FJKC_MXILINX_Prog_Counter 1544665650 CP FDC CP AND3B2 CP AND3B1 CP OR3 \
+AR work/FJKC_MXILINX_Prog_Counter/BEHAVIORAL 1544682219 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/Prog_Counter.vhf \
+      EN work/FJKC_MXILINX_Prog_Counter 1544682218 CP FDC CP AND3B2 CP AND3B1 CP OR3 \
       CP AND2B1
-EN work/DivClock_MUSER_Prog_Counter 1544665652 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/Prog_Counter.vhf \
+EN work/DivClock_MUSER_Prog_Counter 1544682220 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/Prog_Counter.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/DivClock_MUSER_Prog_Counter/BEHAVIORAL 1544665653 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/Prog_Counter.vhf \
-      EN work/DivClock_MUSER_Prog_Counter 1544665652 CP FJKC_MXILINX_Prog_Counter \
+AR work/DivClock_MUSER_Prog_Counter/BEHAVIORAL 1544682221 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/Prog_Counter.vhf \
+      EN work/DivClock_MUSER_Prog_Counter 1544682220 CP FJKC_MXILINX_Prog_Counter \
       CP PULLUP CP BUF
-EN work/M2_1_MXILINX_Prog_Counter 1544665654 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/Prog_Counter.vhf \
+EN work/M2_1_MXILINX_Prog_Counter 1544682222 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/Prog_Counter.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1_MXILINX_Prog_Counter/BEHAVIORAL 1544665655 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/Prog_Counter.vhf \
-      EN work/M2_1_MXILINX_Prog_Counter 1544665654 CP AND2B1 CP OR2 CP AND2
-EN work/M2_1B1_MXILINX_Prog_Counter 1544665656 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/Prog_Counter.vhf \
+AR work/M2_1_MXILINX_Prog_Counter/BEHAVIORAL 1544682223 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/Prog_Counter.vhf \
+      EN work/M2_1_MXILINX_Prog_Counter 1544682222 CP AND2B1 CP OR2 CP AND2
+EN work/M2_1B1_MXILINX_Prog_Counter 1544682224 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/Prog_Counter.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1B1_MXILINX_Prog_Counter/BEHAVIORAL 1544665657 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/Prog_Counter.vhf \
-      EN work/M2_1B1_MXILINX_Prog_Counter 1544665656 CP AND2B2 CP OR2 CP AND2
-EN work/FTCLEX_MXILINX_Prog_Counter 1544665658 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/Prog_Counter.vhf \
+AR work/M2_1B1_MXILINX_Prog_Counter/BEHAVIORAL 1544682225 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/Prog_Counter.vhf \
+      EN work/M2_1B1_MXILINX_Prog_Counter 1544682224 CP AND2B2 CP OR2 CP AND2
+EN work/FTCLEX_MXILINX_Prog_Counter 1544682226 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/Prog_Counter.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FTCLEX_MXILINX_Prog_Counter/BEHAVIORAL 1544665659 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/Prog_Counter.vhf \
-      EN work/FTCLEX_MXILINX_Prog_Counter 1544665658 CP M2_1_MXILINX_Prog_Counter \
+AR work/FTCLEX_MXILINX_Prog_Counter/BEHAVIORAL 1544682227 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/Prog_Counter.vhf \
+      EN work/FTCLEX_MXILINX_Prog_Counter 1544682226 CP M2_1_MXILINX_Prog_Counter \
       CP XOR2 CP FDCE
-EN work/CB8CLED_MXILINX_Prog_Counter 1544665660 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/Prog_Counter.vhf \
+EN work/CB8CLED_MXILINX_Prog_Counter 1544682228 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/Prog_Counter.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/CB8CLED_MXILINX_Prog_Counter/BEHAVIORAL 1544665661 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/Prog_Counter.vhf \
-      EN work/CB8CLED_MXILINX_Prog_Counter 1544665660 \
+AR work/CB8CLED_MXILINX_Prog_Counter/BEHAVIORAL 1544682229 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/Prog_Counter.vhf \
+      EN work/CB8CLED_MXILINX_Prog_Counter 1544682228 \
       CP FTCLEX_MXILINX_Prog_Counter CP M2_1_MXILINX_Prog_Counter \
       CP M2_1B1_MXILINX_Prog_Counter CP AND5 CP AND4 CP AND4B3 CP AND2B2 CP VCC \
       CP AND2B1 CP AND3 CP AND3B2 CP AND3B3 CP AND4B4 CP AND2 CP AND5B4 CP OR2
-EN work/Prog_Counter 1544665662 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/Prog_Counter.vhf \
+EN work/Prog_Counter 1544682230 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/Prog_Counter.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Prog_Counter/BEHAVIORAL 1544665663 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/Prog_Counter.vhf \
-      EN work/Prog_Counter 1544665662 CP CB8CLED_MXILINX_Prog_Counter CP PULLUP \
+AR work/Prog_Counter/BEHAVIORAL 1544682231 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/Prog_Counter.vhf \
+      EN work/Prog_Counter 1544682230 CP CB8CLED_MXILINX_Prog_Counter CP PULLUP \
       CP INV CP DCM_100M CP PULLDOWN CP BUF CP M2_1_MXILINX_Prog_Counter CP AND3B1 \
       CP OR2 CP AND2B1 CP DivClock_MUSER_Prog_Counter
-FL C:/Users/John/Documents/PHYS301_FinalProject/RegisterBank.vhf 2018/12/12.17:33:04 P.20131013
-EN work/FD8RE_MXILINX_RegisterBank 1544665678 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/RegisterBank.vhf \
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/RegisterBank.vhf 2018/12/12.22:01:55 P.20131013
+EN work/FD8RE_MXILINX_RegisterBank 1544682250 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/RegisterBank.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FD8RE_MXILINX_RegisterBank/BEHAVIORAL 1544665679 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/RegisterBank.vhf \
-      EN work/FD8RE_MXILINX_RegisterBank 1544665678 CP FDRE
-EN work/WorkingRegisters_MUSER_RegisterBank 1544665680 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/RegisterBank.vhf \
+AR work/FD8RE_MXILINX_RegisterBank/BEHAVIORAL 1544682251 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/RegisterBank.vhf \
+      EN work/FD8RE_MXILINX_RegisterBank 1544682250 CP FDRE
+EN work/WorkingRegisters_MUSER_RegisterBank 1544682252 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/RegisterBank.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/WorkingRegisters_MUSER_RegisterBank/BEHAVIORAL 1544665681 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/RegisterBank.vhf \
-      EN work/WorkingRegisters_MUSER_RegisterBank 1544665680 \
+AR work/WorkingRegisters_MUSER_RegisterBank/BEHAVIORAL 1544682253 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/RegisterBank.vhf \
+      EN work/WorkingRegisters_MUSER_RegisterBank 1544682252 \
       CP FD8RE_MXILINX_RegisterBank CP PULLUP
-EN work/RegisterBank 1544665682 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/RegisterBank.vhf \
+EN work/RegisterBank 1544682254 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/RegisterBank.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/RegisterBank/BEHAVIORAL 1544665683 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/RegisterBank.vhf \
-      EN work/RegisterBank 1544665682 CP FD8RE_MXILINX_RegisterBank CP PULLUP \
+AR work/RegisterBank/BEHAVIORAL 1544682255 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/RegisterBank.vhf \
+      EN work/RegisterBank 1544682254 CP FD8RE_MXILINX_RegisterBank CP PULLUP \
       CP WorkingRegisters_MUSER_RegisterBank
-FL C:/Users/John/Documents/PHYS301_FinalProject/shiftreg_hex2D.vhd 2018/12/11.15:02:09 P.20131013
-EN work/shiftreg_hex2D 1544665568 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/shiftreg_hex2D.vhd \
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/shiftreg_hex2D.vhd 2018/12/12.19:26:38 P.20131013
+EN work/shiftreg_hex2D 1544682126 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/shiftreg_hex2D.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/shiftreg_hex2D/Behavioral 1544665569 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/shiftreg_hex2D.vhd \
-      EN work/shiftreg_hex2D 1544665568
-FL C:/Users/John/Documents/PHYS301_FinalProject/Signals.vhf 2018/12/12.17:33:11 P.20131013
-EN work/AND8_MXILINX_Signals 1544665702 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/Signals.vhf \
+AR work/shiftreg_hex2D/Behavioral 1544682127 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/shiftreg_hex2D.vhd \
+      EN work/shiftreg_hex2D 1544682126
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/Signals.vhf 2018/12/12.19:28:58 P.20131013
+EN work/AND8_MXILINX_Signals 1544682274 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/Signals.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/AND8_MXILINX_Signals/BEHAVIORAL 1544665703 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/Signals.vhf \
-      EN work/AND8_MXILINX_Signals 1544665702 CP FMAP CP AND4 CP AND2
-EN work/Signals 1544665704 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/Signals.vhf \
+AR work/AND8_MXILINX_Signals/BEHAVIORAL 1544682275 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/Signals.vhf \
+      EN work/AND8_MXILINX_Signals 1544682274 CP FMAP CP AND4 CP AND2
+EN work/Signals 1544682276 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/Signals.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Signals/BEHAVIORAL 1544665705 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/Signals.vhf EN work/Signals 1544665704 \
-      CP INV CP AND8_MXILINX_Signals
-FL C:/Users/John/Documents/PHYS301_FinalProject/sRAM32x8_generic.vhd 2018/12/11.12:13:56 P.20131013
-EN work/sRAM32x8_generic 1544665556 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/sRAM32x8_generic.vhd \
+AR work/Signals/BEHAVIORAL 1544682277 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/Signals.vhf \
+      EN work/Signals 1544682276 CP INV CP AND8_MXILINX_Signals
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/sRAM32x8_generic.vhd 2018/12/12.19:26:38 P.20131013
+EN work/sRAM32x8_generic 1544682114 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/sRAM32x8_generic.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/sRAM32x8_generic/Behavioral 1544665557 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/sRAM32x8_generic.vhd \
-      EN work/sRAM32x8_generic 1544665556
-FL C:/Users/John/Documents/PHYS301_FinalProject/twos_comp.vhf 2018/12/12.17:33:15 P.20131013
-EN work/ADD8_MXILINX_twos_comp 1544665684 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/twos_comp.vhf \
+AR work/sRAM32x8_generic/Behavioral 1544682115 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/sRAM32x8_generic.vhd \
+      EN work/sRAM32x8_generic 1544682114
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/sseg_mux4D.vhd 2018/12/12.19:26:38 P.20131013
+EN work/sseg_mux4D 1544682128 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/sseg_mux4D.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/sseg_mux4D/Behavioral 1544682129 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/sseg_mux4D.vhd \
+      EN work/sseg_mux4D 1544682128
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/twos_comp.vhf 2018/12/12.19:28:37 P.20131013
+EN work/ADD8_MXILINX_twos_comp 1544682256 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/twos_comp.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/ADD8_MXILINX_twos_comp/BEHAVIORAL 1544665685 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/twos_comp.vhf \
-      EN work/ADD8_MXILINX_twos_comp 1544665684 CP FMAP CP MUXCY_L CP MUXCY CP XORCY \
+AR work/ADD8_MXILINX_twos_comp/BEHAVIORAL 1544682257 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/twos_comp.vhf \
+      EN work/ADD8_MXILINX_twos_comp 1544682256 CP FMAP CP MUXCY_L CP MUXCY CP XORCY \
       CP MUXCY_D CP XOR2
-EN work/twos_comp 1544665686 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/twos_comp.vhf \
+EN work/twos_comp 1544682258 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/twos_comp.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/twos_comp/BEHAVIORAL 1544665687 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/twos_comp.vhf \
-      EN work/twos_comp 1544665686 CP XOR2 CP ADD8_MXILINX_twos_comp CP BUF
-FL C:/Users/John/Documents/PHYS301_FinalProject/WorkingRegisters.vhf 2018/12/12.17:33:05 P.20131013
-EN work/FD8RE_MXILINX_WorkingRegisters 1544665696 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/WorkingRegisters.vhf \
+AR work/twos_comp/BEHAVIORAL 1544682259 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/twos_comp.vhf \
+      EN work/twos_comp 1544682258 CP XOR2 CP ADD8_MXILINX_twos_comp CP BUF
+FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/WorkingRegisters.vhf 2018/12/12.19:28:36 P.20131013
+EN work/FD8RE_MXILINX_WorkingRegisters 1544682268 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/WorkingRegisters.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FD8RE_MXILINX_WorkingRegisters/BEHAVIORAL 1544665697 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/WorkingRegisters.vhf \
-      EN work/FD8RE_MXILINX_WorkingRegisters 1544665696 CP FDRE
-EN work/WorkingRegisters 1544665698 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/WorkingRegisters.vhf \
+AR work/FD8RE_MXILINX_WorkingRegisters/BEHAVIORAL 1544682269 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/WorkingRegisters.vhf \
+      EN work/FD8RE_MXILINX_WorkingRegisters 1544682268 CP FDRE
+EN work/WorkingRegisters 1544682270 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/WorkingRegisters.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/WorkingRegisters/BEHAVIORAL 1544665699 \
-      FL C:/Users/John/Documents/PHYS301_FinalProject/WorkingRegisters.vhf \
-      EN work/WorkingRegisters 1544665698 CP FD8RE_MXILINX_WorkingRegisters \
+AR work/WorkingRegisters/BEHAVIORAL 1544682271 \
+      FL C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/WorkingRegisters.vhf \
+      EN work/WorkingRegisters 1544682270 CP FD8RE_MXILINX_WorkingRegisters \
       CP PULLUP

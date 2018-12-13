@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ClockSignalController.vhf
--- /___/   /\     Timestamp : 12/12/2018 17:33:08
+-- /___/   /\     Timestamp : 12/12/2018 19:28:50
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/John/Documents/PHYS301_FinalProject/ClockSignalController.vhf -w C:/Users/John/Documents/PHYS301_FinalProject/ClockSignalController.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ClockSignalController.vhf -w C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/ClockSignalController.sch
 --Design Name: ClockSignalController
 --Device: spartan3e
 --Purpose:

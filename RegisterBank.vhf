@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : RegisterBank.vhf
--- /___/   /\     Timestamp : 12/12/2018 17:33:04
+-- /___/   /\     Timestamp : 12/12/2018 22:01:54
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/John/Documents/PHYS301_FinalProject/RegisterBank.vhf -w C:/Users/John/Documents/PHYS301_FinalProject/RegisterBank.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/RegisterBank.vhf -w C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/RegisterBank.sch
 --Design Name: RegisterBank
 --Device: spartan3e
 --Purpose:
@@ -189,37 +189,41 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity RegisterBank is
-   port ( ABCRSTin : in    std_logic; 
-          Ain      : in    std_logic_vector (7 downto 0); 
-          Bin      : in    std_logic_vector (7 downto 0); 
-          Cin      : in    std_logic_vector (7 downto 0); 
-          CLKin    : in    std_logic; 
-          DRin     : in    std_logic_vector (7 downto 0); 
-          IRin     : in    std_logic_vector (7 downto 0); 
-          RSTin    : in    std_logic; 
-          R0in     : in    std_logic_vector (7 downto 0); 
-          R1in     : in    std_logic_vector (7 downto 0); 
-          R2in     : in    std_logic_vector (7 downto 0); 
-          R3in     : in    std_logic_vector (7 downto 0); 
-          Sin      : in    std_logic_vector (7 downto 0); 
-          Zin      : in    std_logic_vector (7 downto 0); 
-          Aout     : out   std_logic_vector (7 downto 0); 
-          Bout     : out   std_logic_vector (7 downto 0); 
-          Cout     : out   std_logic_vector (7 downto 0); 
-          DRout    : out   std_logic_vector (7 downto 0); 
-          IRout    : out   std_logic_vector (7 downto 0); 
-          R0out    : out   std_logic_vector (7 downto 0); 
-          R1out    : out   std_logic_vector (7 downto 0); 
-          R2out    : out   std_logic_vector (7 downto 0); 
-          R3out    : out   std_logic_vector (7 downto 0); 
-          Sout     : out   std_logic_vector (7 downto 0); 
-          Zout     : out   std_logic_vector (7 downto 0));
+   port ( ABCRSTin    : in    std_logic; 
+          Ain         : in    std_logic_vector (7 downto 0); 
+          A_Enable    : in    std_logic; 
+          Bin         : in    std_logic_vector (7 downto 0); 
+          B_Enable    : in    std_logic; 
+          Cin         : in    std_logic_vector (7 downto 0); 
+          CLKin       : in    std_logic; 
+          DRin        : in    std_logic_vector (7 downto 0); 
+          half_clk    : in    std_logic; 
+          IRin        : in    std_logic_vector (7 downto 0); 
+          quarter_clk : in    std_logic; 
+          RSTin       : in    std_logic; 
+          R0in        : in    std_logic_vector (7 downto 0); 
+          R1in        : in    std_logic_vector (7 downto 0); 
+          R2in        : in    std_logic_vector (7 downto 0); 
+          R3in        : in    std_logic_vector (7 downto 0); 
+          Sin         : in    std_logic_vector (7 downto 0); 
+          Zin         : in    std_logic_vector (7 downto 0); 
+          Aout        : out   std_logic_vector (7 downto 0); 
+          Bout        : out   std_logic_vector (7 downto 0); 
+          Cout        : out   std_logic_vector (7 downto 0); 
+          DRout       : out   std_logic_vector (7 downto 0); 
+          IRout       : out   std_logic_vector (7 downto 0); 
+          R0out       : out   std_logic_vector (7 downto 0); 
+          R1out       : out   std_logic_vector (7 downto 0); 
+          R2out       : out   std_logic_vector (7 downto 0); 
+          R3out       : out   std_logic_vector (7 downto 0); 
+          Sout        : out   std_logic_vector (7 downto 0); 
+          Zout        : out   std_logic_vector (7 downto 0));
 end RegisterBank;
 
 architecture BEHAVIORAL of RegisterBank is
    attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
-   signal CE       : std_logic;
+   signal CE          : std_logic;
    component FD8RE_MXILINX_RegisterBank
       port ( C  : in    std_logic; 
              CE : in    std_logic; 
@@ -256,7 +260,7 @@ architecture BEHAVIORAL of RegisterBank is
 begin
    XLXI_1 : FD8RE_MXILINX_RegisterBank
       port map (C=>CLKin,
-                CE=>CE,
+                CE=>A_Enable,
                 D(7 downto 0)=>Ain(7 downto 0),
                 R=>ABCRSTin,
                 Q(7 downto 0)=>Aout(7 downto 0));
@@ -270,7 +274,7 @@ begin
    
    XLXI_14 : FD8RE_MXILINX_RegisterBank
       port map (C=>CLKin,
-                CE=>CE,
+                CE=>B_Enable,
                 D(7 downto 0)=>Bin(7 downto 0),
                 R=>ABCRSTin,
                 Q(7 downto 0)=>Bout(7 downto 0));

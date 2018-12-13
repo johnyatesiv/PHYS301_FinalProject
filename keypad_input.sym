@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="keypad_input">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2018-12-10T2:15:51</timestamp>
+    <timestamp>2018-12-13T2:18:7</timestamp>
     <pin polarity="Input" x="0" y="-224" name="clk_1k" />
     <pin polarity="Input" x="0" y="-160" name="key_row(3:0)" />
     <pin polarity="Input" x="0" y="-96" name="clk_10k" />

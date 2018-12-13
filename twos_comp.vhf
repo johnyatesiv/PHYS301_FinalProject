@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : twos_comp.vhf
--- /___/   /\     Timestamp : 12/12/2018 17:33:14
+-- /___/   /\     Timestamp : 12/12/2018 19:28:37
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/John/Documents/PHYS301_FinalProject/twos_comp.vhf -w C:/Users/John/Documents/PHYS301_FinalProject/twos_comp.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/twos_comp.vhf -w C:/Users/John/Downloads/PHYS301_FinalProject-master_v2/PHYS301_FinalProject-master/twos_comp.sch
 --Design Name: twos_comp
 --Device: spartan3e
 --Purpose:
@@ -355,7 +355,7 @@ architecture BEHAVIORAL of twos_comp is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_10 : label is "XLXI_10_90";
+   attribute HU_SET of XLXI_10 : label is "XLXI_10_15";
 begin
    XLXN_21(7 downto 0) <= x"00";
    XLXI_2 : XOR2
