@@ -1,0 +1,564 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml final_v1.twx final_v1.ncd -o final_v1.twr final_v1.pcf
+-ucf final_v1.ucf
+
+Design file:              final_v1.ncd
+Physical constraint file: final_v1.pcf
+Device,package,speed:     xc3s100e,cp132,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock B8_clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+clk         |   11.747(R)|B8_clk_BUFGP      |   0.000|
+------------+------------+------------------+--------+
+
+Clock Ctrl_Instr_In<0> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+A_reg_out<0>|   16.215(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<1>|   17.382(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<2>|   17.698(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<3>|   18.541(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<4>|   19.019(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<5>|   19.110(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<6>|   18.823(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<7>|   18.983(R)|XLXI_2/XLXN_146   |   0.000|
+MVI_On      |   15.973(R)|XLXI_2/XLXN_146   |   0.000|
+STA_On      |   16.172(R)|XLXI_2/XLXN_146   |   0.000|
+half_clk    |   15.340(R)|XLXI_2/XLXN_146   |   0.000|
+------------+------------+------------------+--------+
+
+Clock Ctrl_Instr_In<1> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+A_reg_out<0>|   17.192(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<1>|   18.359(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<2>|   18.675(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<3>|   19.518(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<4>|   19.996(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<5>|   20.087(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<6>|   19.800(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<7>|   19.960(R)|XLXI_2/XLXN_146   |   0.000|
+MVI_On      |   16.950(R)|XLXI_2/XLXN_146   |   0.000|
+STA_On      |   17.149(R)|XLXI_2/XLXN_146   |   0.000|
+half_clk    |   16.317(R)|XLXI_2/XLXN_146   |   0.000|
+------------+------------+------------------+--------+
+
+Clock Ctrl_Instr_In<2> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+A_reg_out<0>|   16.978(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<1>|   18.145(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<2>|   18.461(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<3>|   19.304(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<4>|   19.782(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<5>|   19.873(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<6>|   19.586(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<7>|   19.746(R)|XLXI_2/XLXN_146   |   0.000|
+MVI_On      |   16.736(R)|XLXI_2/XLXN_146   |   0.000|
+STA_On      |   16.935(R)|XLXI_2/XLXN_146   |   0.000|
+half_clk    |   16.103(R)|XLXI_2/XLXN_146   |   0.000|
+------------+------------+------------------+--------+
+
+Clock Ctrl_Instr_In<3> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+A_reg_out<0>|   17.674(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<1>|   18.841(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<2>|   19.157(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<3>|   20.000(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<4>|   20.478(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<5>|   20.569(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<6>|   20.282(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<7>|   20.442(R)|XLXI_2/XLXN_146   |   0.000|
+MVI_On      |   17.432(R)|XLXI_2/XLXN_146   |   0.000|
+STA_On      |   17.631(R)|XLXI_2/XLXN_146   |   0.000|
+half_clk    |   16.799(R)|XLXI_2/XLXN_146   |   0.000|
+------------+------------+------------------+--------+
+
+Clock Ctrl_Instr_In<4> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+A_reg_out<0>|   17.002(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<1>|   18.169(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<2>|   18.485(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<3>|   19.328(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<4>|   19.806(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<5>|   19.897(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<6>|   19.610(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<7>|   19.770(R)|XLXI_2/XLXN_146   |   0.000|
+MVI_On      |   16.760(R)|XLXI_2/XLXN_146   |   0.000|
+STA_On      |   16.959(R)|XLXI_2/XLXN_146   |   0.000|
+half_clk    |   16.127(R)|XLXI_2/XLXN_146   |   0.000|
+------------+------------+------------------+--------+
+
+Clock Ctrl_Instr_In<5> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+A_reg_out<0>|   17.322(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<1>|   18.489(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<2>|   18.805(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<3>|   19.648(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<4>|   20.126(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<5>|   20.217(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<6>|   19.930(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<7>|   20.090(R)|XLXI_2/XLXN_146   |   0.000|
+MVI_On      |   17.080(R)|XLXI_2/XLXN_146   |   0.000|
+STA_On      |   17.279(R)|XLXI_2/XLXN_146   |   0.000|
+half_clk    |   16.447(R)|XLXI_2/XLXN_146   |   0.000|
+------------+------------+------------------+--------+
+
+Clock Ctrl_Instr_In<6> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+A_reg_out<0>|   17.086(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<1>|   18.253(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<2>|   18.569(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<3>|   19.412(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<4>|   19.890(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<5>|   19.981(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<6>|   19.694(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<7>|   19.854(R)|XLXI_2/XLXN_146   |   0.000|
+MVI_On      |   16.844(R)|XLXI_2/XLXN_146   |   0.000|
+STA_On      |   17.043(R)|XLXI_2/XLXN_146   |   0.000|
+half_clk    |   16.211(R)|XLXI_2/XLXN_146   |   0.000|
+------------+------------+------------------+--------+
+
+Clock Ctrl_Instr_In<7> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+A_reg_out<0>|   16.978(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<1>|   18.145(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<2>|   18.461(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<3>|   19.304(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<4>|   19.782(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<5>|   19.873(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<6>|   19.586(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<7>|   19.746(R)|XLXI_2/XLXN_146   |   0.000|
+MVI_On      |   16.736(R)|XLXI_2/XLXN_146   |   0.000|
+STA_On      |   16.935(R)|XLXI_2/XLXN_146   |   0.000|
+half_clk    |   16.103(R)|XLXI_2/XLXN_146   |   0.000|
+------------+------------+------------------+--------+
+
+Clock run_mode to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+A_reg_out<0>|   13.204(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<1>|   14.371(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<2>|   14.687(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<3>|   15.530(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<4>|   16.008(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<5>|   16.099(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<6>|   15.812(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<7>|   15.972(R)|XLXI_2/XLXN_146   |   0.000|
+MVI_On      |   12.962(R)|XLXI_2/XLXN_146   |   0.000|
+STA_On      |   13.161(R)|XLXI_2/XLXN_146   |   0.000|
+half_clk    |   12.329(R)|XLXI_2/XLXN_146   |   0.000|
+------------+------------+------------------+--------+
+
+Clock toggle_clk_speed to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+A_reg_out<0>|   15.436(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<1>|   16.603(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<2>|   16.919(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<3>|   17.762(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<4>|   18.240(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<5>|   18.331(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<6>|   18.044(R)|XLXI_2/XLXN_146   |   0.000|
+A_reg_out<7>|   18.204(R)|XLXI_2/XLXN_146   |   0.000|
+MVI_On      |   15.194(R)|XLXI_2/XLXN_146   |   0.000|
+STA_On      |   15.393(R)|XLXI_2/XLXN_146   |   0.000|
+half_clk    |   14.561(R)|XLXI_2/XLXN_146   |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock B8_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+B8_clk         |   12.544|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Ctrl_Instr_In<0>
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+Ctrl_Instr_In<0>|    4.903|    0.049|         |         |
+Ctrl_Instr_In<1>|    4.903|    1.308|         |         |
+Ctrl_Instr_In<2>|    4.903|    0.802|         |         |
+Ctrl_Instr_In<3>|    4.903|    1.297|         |         |
+Ctrl_Instr_In<4>|    4.903|    1.592|         |         |
+Ctrl_Instr_In<5>|    4.903|    1.288|         |         |
+Ctrl_Instr_In<6>|    4.903|    1.770|         |         |
+Ctrl_Instr_In<7>|    4.903|    1.333|         |         |
+run_mode        |    4.903|         |         |         |
+toggle_clk_speed|    4.903|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Ctrl_Instr_In<1>
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+Ctrl_Instr_In<0>|    4.903|   -0.732|         |         |
+Ctrl_Instr_In<1>|    4.903|    0.527|         |         |
+Ctrl_Instr_In<2>|    4.903|    0.021|         |         |
+Ctrl_Instr_In<3>|    4.903|    0.516|         |         |
+Ctrl_Instr_In<4>|    4.903|    0.811|         |         |
+Ctrl_Instr_In<5>|    4.903|    0.507|         |         |
+Ctrl_Instr_In<6>|    4.903|    0.989|         |         |
+Ctrl_Instr_In<7>|    4.903|    0.552|         |         |
+run_mode        |    4.903|         |         |         |
+toggle_clk_speed|    4.903|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Ctrl_Instr_In<2>
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+Ctrl_Instr_In<0>|    4.903|   -0.561|         |         |
+Ctrl_Instr_In<1>|    4.903|    0.698|         |         |
+Ctrl_Instr_In<2>|    4.903|    0.192|         |         |
+Ctrl_Instr_In<3>|    4.903|    0.687|         |         |
+Ctrl_Instr_In<4>|    4.903|    0.982|         |         |
+Ctrl_Instr_In<5>|    4.903|    0.678|         |         |
+Ctrl_Instr_In<6>|    4.903|    1.160|         |         |
+Ctrl_Instr_In<7>|    4.903|    0.723|         |         |
+run_mode        |    4.903|         |         |         |
+toggle_clk_speed|    4.903|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Ctrl_Instr_In<3>
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+Ctrl_Instr_In<0>|    4.903|   -1.118|         |         |
+Ctrl_Instr_In<1>|    4.903|    0.141|         |         |
+Ctrl_Instr_In<2>|    4.903|   -0.365|         |         |
+Ctrl_Instr_In<3>|    4.903|    0.130|         |         |
+Ctrl_Instr_In<4>|    4.903|    0.425|         |         |
+Ctrl_Instr_In<5>|    4.903|    0.121|         |         |
+Ctrl_Instr_In<6>|    4.903|    0.603|         |         |
+Ctrl_Instr_In<7>|    4.903|    0.166|         |         |
+run_mode        |    4.903|         |         |         |
+toggle_clk_speed|    4.903|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Ctrl_Instr_In<4>
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+Ctrl_Instr_In<0>|    4.903|   -0.581|         |         |
+Ctrl_Instr_In<1>|    4.903|    0.678|         |         |
+Ctrl_Instr_In<2>|    4.903|    0.172|         |         |
+Ctrl_Instr_In<3>|    4.903|    0.667|         |         |
+Ctrl_Instr_In<4>|    4.903|    0.962|         |         |
+Ctrl_Instr_In<5>|    4.903|    0.658|         |         |
+Ctrl_Instr_In<6>|    4.903|    1.140|         |         |
+Ctrl_Instr_In<7>|    4.903|    0.703|         |         |
+run_mode        |    4.903|         |         |         |
+toggle_clk_speed|    4.903|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Ctrl_Instr_In<5>
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+Ctrl_Instr_In<0>|    4.903|   -0.836|         |         |
+Ctrl_Instr_In<1>|    4.903|    0.423|         |         |
+Ctrl_Instr_In<2>|    4.903|   -0.083|         |         |
+Ctrl_Instr_In<3>|    4.903|    0.412|         |         |
+Ctrl_Instr_In<4>|    4.903|    0.707|         |         |
+Ctrl_Instr_In<5>|    4.903|    0.403|         |         |
+Ctrl_Instr_In<6>|    4.903|    0.885|         |         |
+Ctrl_Instr_In<7>|    4.903|    0.448|         |         |
+run_mode        |    4.903|         |         |         |
+toggle_clk_speed|    4.903|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Ctrl_Instr_In<6>
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+Ctrl_Instr_In<0>|    4.903|   -0.648|         |         |
+Ctrl_Instr_In<1>|    4.903|    0.611|         |         |
+Ctrl_Instr_In<2>|    4.903|    0.105|         |         |
+Ctrl_Instr_In<3>|    4.903|    0.600|         |         |
+Ctrl_Instr_In<4>|    4.903|    0.895|         |         |
+Ctrl_Instr_In<5>|    4.903|    0.591|         |         |
+Ctrl_Instr_In<6>|    4.903|    1.073|         |         |
+Ctrl_Instr_In<7>|    4.903|    0.636|         |         |
+run_mode        |    4.903|         |         |         |
+toggle_clk_speed|    4.903|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Ctrl_Instr_In<7>
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+Ctrl_Instr_In<0>|    4.903|   -0.561|         |         |
+Ctrl_Instr_In<1>|    4.903|    0.698|         |         |
+Ctrl_Instr_In<2>|    4.903|    0.192|         |         |
+Ctrl_Instr_In<3>|    4.903|    0.687|         |         |
+Ctrl_Instr_In<4>|    4.903|    0.982|         |         |
+Ctrl_Instr_In<5>|    4.903|    0.678|         |         |
+Ctrl_Instr_In<6>|    4.903|    1.160|         |         |
+Ctrl_Instr_In<7>|    4.903|    0.723|         |         |
+run_mode        |    4.903|         |         |         |
+toggle_clk_speed|    4.903|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock run_mode
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+Ctrl_Instr_In<0>|    4.903|    2.458|         |         |
+Ctrl_Instr_In<1>|    4.903|    3.717|         |         |
+Ctrl_Instr_In<2>|    4.903|    3.211|         |         |
+Ctrl_Instr_In<3>|    4.903|    3.706|         |         |
+Ctrl_Instr_In<4>|    4.903|    4.001|         |         |
+Ctrl_Instr_In<5>|    4.903|    3.697|         |         |
+Ctrl_Instr_In<6>|    4.903|    4.179|         |         |
+Ctrl_Instr_In<7>|    4.903|    3.742|         |         |
+run_mode        |    4.903|         |         |         |
+toggle_clk_speed|    4.903|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock toggle_clk_speed
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+Ctrl_Instr_In<0>|    4.903|    0.672|         |         |
+Ctrl_Instr_In<1>|    4.903|    1.931|         |         |
+Ctrl_Instr_In<2>|    4.903|    1.425|         |         |
+Ctrl_Instr_In<3>|    4.903|    1.920|         |         |
+Ctrl_Instr_In<4>|    4.903|    2.215|         |         |
+Ctrl_Instr_In<5>|    4.903|    1.911|         |         |
+Ctrl_Instr_In<6>|    4.903|    2.393|         |         |
+Ctrl_Instr_In<7>|    4.903|    1.956|         |         |
+run_mode        |    4.903|         |         |         |
+toggle_clk_speed|    4.903|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Pad to Pad
+----------------+---------------+---------+
+Source Pad      |Destination Pad|  Delay  |
+----------------+---------------+---------+
+Ctrl_Instr_In<0>|ADDU_On        |   10.815|
+Ctrl_Instr_In<0>|ADD_On         |    9.893|
+Ctrl_Instr_In<0>|ADI_On         |   10.167|
+Ctrl_Instr_In<0>|A_reg_out<0>   |   14.788|
+Ctrl_Instr_In<0>|A_reg_out<1>   |   15.931|
+Ctrl_Instr_In<0>|A_reg_out<2>   |   16.116|
+Ctrl_Instr_In<0>|A_reg_out<3>   |   16.595|
+Ctrl_Instr_In<0>|A_reg_out<4>   |   16.552|
+Ctrl_Instr_In<0>|A_reg_out<5>   |   16.643|
+Ctrl_Instr_In<0>|A_reg_out<6>   |   16.356|
+Ctrl_Instr_In<0>|A_reg_out<7>   |   16.516|
+Ctrl_Instr_In<0>|HLT_On         |    9.398|
+Ctrl_Instr_In<0>|MVI_On         |    9.980|
+Ctrl_Instr_In<0>|STA_On         |   10.795|
+Ctrl_Instr_In<0>|SUBU_On        |   10.810|
+Ctrl_Instr_In<0>|SUB_On         |   10.315|
+Ctrl_Instr_In<0>|clk            |   10.479|
+Ctrl_Instr_In<1>|ADDU_On        |    9.208|
+Ctrl_Instr_In<1>|ADD_On         |    8.546|
+Ctrl_Instr_In<1>|ADI_On         |    8.610|
+Ctrl_Instr_In<1>|A_reg_out<0>   |   13.370|
+Ctrl_Instr_In<1>|A_reg_out<1>   |   14.513|
+Ctrl_Instr_In<1>|A_reg_out<2>   |   14.698|
+Ctrl_Instr_In<1>|A_reg_out<3>   |   15.177|
+Ctrl_Instr_In<1>|A_reg_out<4>   |   15.134|
+Ctrl_Instr_In<1>|A_reg_out<5>   |   15.225|
+Ctrl_Instr_In<1>|A_reg_out<6>   |   14.938|
+Ctrl_Instr_In<1>|A_reg_out<7>   |   15.098|
+Ctrl_Instr_In<1>|HLT_On         |   10.375|
+Ctrl_Instr_In<1>|MVI_On         |   11.161|
+Ctrl_Instr_In<1>|STA_On         |   11.929|
+Ctrl_Instr_In<1>|SUBU_On        |    9.590|
+Ctrl_Instr_In<1>|SUB_On         |    8.835|
+Ctrl_Instr_In<1>|clk            |   11.456|
+Ctrl_Instr_In<2>|ADDU_On        |    8.814|
+Ctrl_Instr_In<2>|ADD_On         |    8.171|
+Ctrl_Instr_In<2>|ADI_On         |    8.815|
+Ctrl_Instr_In<2>|A_reg_out<0>   |   12.924|
+Ctrl_Instr_In<2>|A_reg_out<1>   |   14.067|
+Ctrl_Instr_In<2>|A_reg_out<2>   |   14.252|
+Ctrl_Instr_In<2>|A_reg_out<3>   |   14.731|
+Ctrl_Instr_In<2>|A_reg_out<4>   |   14.688|
+Ctrl_Instr_In<2>|A_reg_out<5>   |   14.779|
+Ctrl_Instr_In<2>|A_reg_out<6>   |   14.492|
+Ctrl_Instr_In<2>|A_reg_out<7>   |   14.652|
+Ctrl_Instr_In<2>|HLT_On         |   10.161|
+Ctrl_Instr_In<2>|MVI_On         |   10.650|
+Ctrl_Instr_In<2>|STA_On         |   11.236|
+Ctrl_Instr_In<2>|SUBU_On        |    9.262|
+Ctrl_Instr_In<2>|SUB_On         |    8.488|
+Ctrl_Instr_In<2>|clk            |   11.242|
+Ctrl_Instr_In<3>|ADDU_On        |    9.909|
+Ctrl_Instr_In<3>|ADD_On         |    8.994|
+Ctrl_Instr_In<3>|ADI_On         |    9.142|
+Ctrl_Instr_In<3>|A_reg_out<0>   |   13.882|
+Ctrl_Instr_In<3>|A_reg_out<1>   |   15.025|
+Ctrl_Instr_In<3>|A_reg_out<2>   |   15.210|
+Ctrl_Instr_In<3>|A_reg_out<3>   |   15.689|
+Ctrl_Instr_In<3>|A_reg_out<4>   |   15.646|
+Ctrl_Instr_In<3>|A_reg_out<5>   |   15.737|
+Ctrl_Instr_In<3>|A_reg_out<6>   |   15.450|
+Ctrl_Instr_In<3>|A_reg_out<7>   |   15.610|
+Ctrl_Instr_In<3>|HLT_On         |   10.857|
+Ctrl_Instr_In<3>|MVI_On         |   11.050|
+Ctrl_Instr_In<3>|STA_On         |   11.691|
+Ctrl_Instr_In<3>|SUBU_On        |    9.856|
+Ctrl_Instr_In<3>|SUB_On         |    9.354|
+Ctrl_Instr_In<3>|clk            |   11.938|
+Ctrl_Instr_In<4>|ADDU_On        |   10.163|
+Ctrl_Instr_In<4>|ADD_On         |    9.257|
+Ctrl_Instr_In<4>|ADI_On         |    9.076|
+Ctrl_Instr_In<4>|A_reg_out<0>   |   14.136|
+Ctrl_Instr_In<4>|A_reg_out<1>   |   15.279|
+Ctrl_Instr_In<4>|A_reg_out<2>   |   15.464|
+Ctrl_Instr_In<4>|A_reg_out<3>   |   15.943|
+Ctrl_Instr_In<4>|A_reg_out<4>   |   15.900|
+Ctrl_Instr_In<4>|A_reg_out<5>   |   15.991|
+Ctrl_Instr_In<4>|A_reg_out<6>   |   15.704|
+Ctrl_Instr_In<4>|A_reg_out<7>   |   15.864|
+Ctrl_Instr_In<4>|HLT_On         |   10.185|
+Ctrl_Instr_In<4>|MVI_On         |   11.428|
+Ctrl_Instr_In<4>|STA_On         |   12.216|
+Ctrl_Instr_In<4>|SUBU_On        |   10.056|
+Ctrl_Instr_In<4>|SUB_On         |    9.545|
+Ctrl_Instr_In<4>|clk            |   11.266|
+Ctrl_Instr_In<5>|ADDU_On        |    9.281|
+Ctrl_Instr_In<5>|ADD_On         |    8.619|
+Ctrl_Instr_In<5>|ADI_On         |    9.159|
+Ctrl_Instr_In<5>|A_reg_out<0>   |   13.254|
+Ctrl_Instr_In<5>|A_reg_out<1>   |   14.397|
+Ctrl_Instr_In<5>|A_reg_out<2>   |   14.582|
+Ctrl_Instr_In<5>|A_reg_out<3>   |   15.061|
+Ctrl_Instr_In<5>|A_reg_out<4>   |   15.018|
+Ctrl_Instr_In<5>|A_reg_out<5>   |   15.109|
+Ctrl_Instr_In<5>|A_reg_out<6>   |   14.822|
+Ctrl_Instr_In<5>|A_reg_out<7>   |   14.982|
+Ctrl_Instr_In<5>|HLT_On         |   10.505|
+Ctrl_Instr_In<5>|MVI_On         |   10.969|
+Ctrl_Instr_In<5>|STA_On         |   11.800|
+Ctrl_Instr_In<5>|SUBU_On        |    9.625|
+Ctrl_Instr_In<5>|SUB_On         |    8.870|
+Ctrl_Instr_In<5>|clk            |   11.586|
+Ctrl_Instr_In<6>|ADDU_On        |    9.948|
+Ctrl_Instr_In<6>|ADD_On         |    8.746|
+Ctrl_Instr_In<6>|ADI_On         |    9.151|
+Ctrl_Instr_In<6>|A_reg_out<0>   |   13.921|
+Ctrl_Instr_In<6>|A_reg_out<1>   |   15.064|
+Ctrl_Instr_In<6>|A_reg_out<2>   |   15.249|
+Ctrl_Instr_In<6>|A_reg_out<3>   |   15.728|
+Ctrl_Instr_In<6>|A_reg_out<4>   |   15.685|
+Ctrl_Instr_In<6>|A_reg_out<5>   |   15.776|
+Ctrl_Instr_In<6>|A_reg_out<6>   |   15.489|
+Ctrl_Instr_In<6>|A_reg_out<7>   |   15.649|
+Ctrl_Instr_In<6>|HLT_On         |   10.269|
+Ctrl_Instr_In<6>|MVI_On         |   10.942|
+Ctrl_Instr_In<6>|STA_On         |   11.566|
+Ctrl_Instr_In<6>|SUBU_On        |    9.600|
+Ctrl_Instr_In<6>|SUB_On         |    9.385|
+Ctrl_Instr_In<6>|clk            |   11.350|
+Ctrl_Instr_In<7>|ADDU_On        |   10.087|
+Ctrl_Instr_In<7>|ADD_On         |    9.447|
+Ctrl_Instr_In<7>|ADI_On         |    9.531|
+Ctrl_Instr_In<7>|A_reg_out<0>   |   14.060|
+Ctrl_Instr_In<7>|A_reg_out<1>   |   15.203|
+Ctrl_Instr_In<7>|A_reg_out<2>   |   15.388|
+Ctrl_Instr_In<7>|A_reg_out<3>   |   15.867|
+Ctrl_Instr_In<7>|A_reg_out<4>   |   15.824|
+Ctrl_Instr_In<7>|A_reg_out<5>   |   15.915|
+Ctrl_Instr_In<7>|A_reg_out<6>   |   15.628|
+Ctrl_Instr_In<7>|A_reg_out<7>   |   15.788|
+Ctrl_Instr_In<7>|HLT_On         |   10.161|
+Ctrl_Instr_In<7>|MVI_On         |   10.793|
+Ctrl_Instr_In<7>|STA_On         |   11.472|
+Ctrl_Instr_In<7>|SUBU_On        |   10.410|
+Ctrl_Instr_In<7>|SUB_On         |    9.633|
+Ctrl_Instr_In<7>|clk            |   11.242|
+run_mode        |clk            |    7.468|
+toggle_clk_speed|clk            |    9.700|
+----------------+---------------+---------+
+
+
+Analysis completed Wed Dec 12 16:15:09 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4504 MB
+
+
+

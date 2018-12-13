@@ -1,1 +1,14 @@
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_FinalProject/RegisterBank.vhf,-w,C:/Users/John/Documents/PHYS301_FinalProject/RegisterBank.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_FinalProject/WorkingRegisters.vhf,-w,C:/Users/John/Documents/PHYS301_FinalProject/WorkingRegisters.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_FinalProject/ControlUnit.vhf,-w,C:/Users/John/Documents/PHYS301_FinalProject/ControlUnit.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_FinalProject/ClockSignalController.vhf,-w,C:/Users/John/Documents/PHYS301_FinalProject/ClockSignalController.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_FinalProject/InstructionControl.vhf,-w,C:/Users/John/Documents/PHYS301_FinalProject/InstructionControl.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_FinalProject/Signals.vhf,-w,C:/Users/John/Documents/PHYS301_FinalProject/Signals.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.vhf,-w,C:/Users/John/Documents/PHYS301_FinalProject/MainControlUnit.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_FinalProject/keypad_input.vhf,-w,C:/Users/John/Documents/PHYS301_FinalProject/keypad_input.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_FinalProject/twos_comp.vhf,-w,C:/Users/John/Documents/PHYS301_FinalProject/twos_comp.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_FinalProject/ALU_v4.vhf,-w,C:/Users/John/Documents/PHYS301_FinalProject/ALU_v4.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_FinalProject/Prog_Counter.vhf,-w,C:/Users/John/Documents/PHYS301_FinalProject/Prog_Counter.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_FinalProject/memory.vhf,-w,C:/Users/John/Documents/PHYS301_FinalProject/memory.sch
 sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf,-w,C:/Users/John/Documents/PHYS301_FinalProject/final_v1.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_FinalProject/DivClock.vhf,-w,C:/Users/John/Documents/PHYS301_FinalProject/DivClock.sch

@@ -18,8 +18,10 @@
         <signal name="XLXN_14" />
         <signal name="Data_Instr_mode" />
         <signal name="step" />
-        <signal name="half_clk" />
-        <signal name="quarter_clk" />
+        <signal name="half_clk">
+        </signal>
+        <signal name="quarter_clk">
+        </signal>
         <signal name="Subtract_Flag" />
         <signal name="Instr_Out(7:0)" />
         <signal name="Data_Out(7:0)" />
@@ -50,18 +52,21 @@
         <signal name="MVI_On" />
         <signal name="LCA_On" />
         <signal name="STA_On" />
-        <signal name="ADI_On" />
+        <signal name="ADI_On">
+        </signal>
         <signal name="SUB_On" />
         <signal name="ADD_On" />
-        <signal name="SUBU_On" />
-        <signal name="ADDU_On" />
+        <signal name="SUBU_On">
+        </signal>
+        <signal name="ADDU_On">
+        </signal>
         <signal name="SBI_On" />
         <signal name="LDA_On" />
         <signal name="SET_On" />
         <signal name="GET_On" />
         <signal name="Sin(7:0)" />
-        <signal name="run_mode_out" />
-        <signal name="clk" />
+        <signal name="clk">
+        </signal>
         <port polarity="Input" name="B8_clk" />
         <port polarity="Input" name="toggle_clk_speed" />
         <port polarity="Input" name="run_mode" />
@@ -69,21 +74,14 @@
         <port polarity="Input" name="key_row(3:0)" />
         <port polarity="Input" name="Data_Instr_mode" />
         <port polarity="Input" name="step" />
-        <port polarity="Output" name="half_clk" />
-        <port polarity="Output" name="quarter_clk" />
         <port polarity="Output" name="HLT_On" />
         <port polarity="Input" name="Ctrl_Instr_In(7:0)" />
         <port polarity="Output" name="A_reg_out(7:0)" />
         <port polarity="Output" name="MVI_On" />
         <port polarity="Output" name="LCA_On" />
         <port polarity="Output" name="STA_On" />
-        <port polarity="Output" name="ADI_On" />
         <port polarity="Output" name="SUB_On" />
         <port polarity="Output" name="ADD_On" />
-        <port polarity="Output" name="SUBU_On" />
-        <port polarity="Output" name="ADDU_On" />
-        <port polarity="Output" name="run_mode_out" />
-        <port polarity="Output" name="clk" />
         <blockdef name="memory">
             <timestamp>2018-12-9T4:37:22</timestamp>
             <rect width="304" x="64" y="-448" height="448" />
@@ -226,14 +224,6 @@
             <rect width="112" x="0" y="0" height="64" />
             <line x2="112" y1="32" y2="32" x1="144" />
         </blockdef>
-        <blockdef name="buf">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="64" y1="-32" y2="-32" x1="0" />
-            <line x2="128" y1="-32" y2="-32" x1="224" />
-            <line x2="128" y1="0" y2="-32" x1="64" />
-            <line x2="64" y1="-32" y2="-64" x1="128" />
-            <line x2="64" y1="-64" y2="0" x1="64" />
-        </blockdef>
         <block symbolname="memory" name="XLXI_1">
             <blockpin signalname="XLXN_1(4:0)" name="PC(4:0)" />
             <blockpin signalname="XLXN_2(7:0)" name="Keypad(7:0)" />
@@ -340,10 +330,6 @@
             <blockpin name="Neg_flag" />
             <blockpin name="Zero_flag" />
             <blockpin name="Overflow_flag" />
-        </block>
-        <block symbolname="buf" name="XLXI_35">
-            <blockpin name="I" />
-            <blockpin signalname="run_mode_out" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -606,11 +592,6 @@
         <branch name="Ctrl_Instr_In(7:0)">
             <wire x2="592" y1="1120" y2="1120" x1="336" />
         </branch>
-        <instance x="96" y="1296" name="XLXI_35" orien="R0" />
-        <branch name="run_mode_out">
-            <wire x2="352" y1="1264" y2="1264" x1="320" />
-        </branch>
-        <iomarker fontsize="28" x="352" y="1264" name="run_mode_out" orien="R0" />
         <branch name="clk">
             <wire x2="736" y1="704" y2="704" x1="688" />
         </branch>
@@ -618,32 +599,8 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1952" y="512" type="branch" />
             <wire x2="2000" y1="512" y2="512" x1="1952" />
         </branch>
-        <branch name="clk">
-            <wire x2="288" y1="1344" y2="1344" x1="96" />
-        </branch>
-        <branch name="half_clk">
-            <wire x2="288" y1="1408" y2="1408" x1="96" />
-        </branch>
-        <branch name="quarter_clk">
-            <wire x2="288" y1="1472" y2="1472" x1="96" />
-        </branch>
-        <iomarker fontsize="28" x="288" y="1344" name="clk" orien="R0" />
-        <iomarker fontsize="28" x="288" y="1408" name="half_clk" orien="R0" />
-        <iomarker fontsize="28" x="288" y="1472" name="quarter_clk" orien="R0" />
         <iomarker fontsize="28" x="336" y="1120" name="Ctrl_Instr_In(7:0)" orien="R180" />
         <instance x="1360" y="1648" name="XLXI_15(7:0)" orien="R0">
         </instance>
-        <branch name="SUBU_On">
-            <wire x2="2928" y1="2000" y2="2000" x1="2736" />
-        </branch>
-        <branch name="ADI_On">
-            <wire x2="2928" y1="1888" y2="1888" x1="2736" />
-        </branch>
-        <iomarker fontsize="28" x="2928" y="1888" name="ADI_On" orien="R0" />
-        <iomarker fontsize="28" x="2928" y="2000" name="SUBU_On" orien="R0" />
-        <branch name="ADDU_On">
-            <wire x2="2928" y1="2096" y2="2096" x1="2752" />
-        </branch>
-        <iomarker fontsize="28" x="2928" y="2096" name="ADDU_On" orien="R0" />
     </sheet>
 </drawing>
