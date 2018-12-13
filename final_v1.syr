@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.32 secs
+Total CPU time to Xst completion: 0.31 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.32 secs
+Total CPU time to Xst completion: 0.33 secs
  
 --> Reading design: final_v1.prj
 
@@ -371,11 +371,11 @@ Analyzing hierarchy for entity <AND8_MXILINX_final_v1> in library <work> (archit
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <final_v1> in library <work> (Architecture <BEHAVIORAL>).
-WARNING:Xst:753 - "C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf" line 3724: Unconnected output port 'clk1Hz' of component 'Prog_Counter_MUSER_final_v1'.
-WARNING:Xst:753 - "C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf" line 3724: Unconnected output port 'clk1MHz' of component 'Prog_Counter_MUSER_final_v1'.
-WARNING:Xst:753 - "C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf" line 3793: Unconnected output port 'Neg_flag' of component 'ALU_v4_MUSER_final_v1'.
-WARNING:Xst:753 - "C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf" line 3793: Unconnected output port 'Zero_flag' of component 'ALU_v4_MUSER_final_v1'.
-WARNING:Xst:753 - "C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf" line 3793: Unconnected output port 'Overflow_flag' of component 'ALU_v4_MUSER_final_v1'.
+WARNING:Xst:753 - "C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf" line 3705: Unconnected output port 'clk1Hz' of component 'Prog_Counter_MUSER_final_v1'.
+WARNING:Xst:753 - "C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf" line 3705: Unconnected output port 'clk1MHz' of component 'Prog_Counter_MUSER_final_v1'.
+WARNING:Xst:753 - "C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf" line 3774: Unconnected output port 'Neg_flag' of component 'ALU_v4_MUSER_final_v1'.
+WARNING:Xst:753 - "C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf" line 3774: Unconnected output port 'Zero_flag' of component 'ALU_v4_MUSER_final_v1'.
+WARNING:Xst:753 - "C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf" line 3774: Unconnected output port 'Overflow_flag' of component 'ALU_v4_MUSER_final_v1'.
 Entity <final_v1> analyzed. Unit <final_v1> generated.
 
 Analyzing Entity <memory_MUSER_final_v1> in library <work> (Architecture <BEHAVIORAL>).
@@ -385,10 +385,10 @@ Analyzing Entity <sRAM32x8_generic> in library <work> (Architecture <Behavioral>
 Entity <sRAM32x8_generic> analyzed. Unit <sRAM32x8_generic> generated.
 
 Analyzing Entity <Prog_Counter_MUSER_final_v1> in library <work> (Architecture <BEHAVIORAL>).
-WARNING:Xst:753 - "C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf" line 3204: Unconnected output port 'CEO' of component 'CB8CLED_MXILINX_final_v1'.
-WARNING:Xst:753 - "C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf" line 3204: Unconnected output port 'TC' of component 'CB8CLED_MXILINX_final_v1'.
+WARNING:Xst:753 - "C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf" line 3199: Unconnected output port 'CEO' of component 'CB8CLED_MXILINX_final_v1'.
+WARNING:Xst:753 - "C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf" line 3199: Unconnected output port 'TC' of component 'CB8CLED_MXILINX_final_v1'.
     Set user-defined property "HU_SET =  XLXI_1_164" for instance <XLXI_1> in unit <Prog_Counter_MUSER_final_v1>.
-WARNING:Xst:753 - "C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf" line 3222: Unconnected output port 'CLK100' of component 'DCM_100M'.
+WARNING:Xst:753 - "C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf" line 3217: Unconnected output port 'CLK100' of component 'DCM_100M'.
     Set user-defined property "HU_SET =  XLXI_59_165" for instance <XLXI_59> in unit <Prog_Counter_MUSER_final_v1>.
 Entity <Prog_Counter_MUSER_final_v1> analyzed. Unit <Prog_Counter_MUSER_final_v1> generated.
 
@@ -472,7 +472,7 @@ Analyzing Entity <shiftreg_hex2D> in library <work> (Architecture <Behavioral>).
 Entity <shiftreg_hex2D> analyzed. Unit <shiftreg_hex2D> generated.
 
 Analyzing Entity <MainControlUnit_MUSER_final_v1> in library <work> (Architecture <BEHAVIORAL>).
-WARNING:Xst:753 - "C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf" line 2237: Unconnected output port 'Zout' of component 'RegisterBank_MUSER_final_v1'.
+WARNING:Xst:753 - "C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf" line 2232: Unconnected output port 'Zout' of component 'RegisterBank_MUSER_final_v1'.
 Entity <MainControlUnit_MUSER_final_v1> analyzed. Unit <MainControlUnit_MUSER_final_v1> generated.
 
 Analyzing Entity <RegisterBank_MUSER_final_v1> in library <work> (Architecture <BEHAVIORAL>).
@@ -873,22 +873,22 @@ WARNING:Xst:646 - Signal <XLXN_95> is assigned but never used. This unconnected 
 WARNING:Xst:646 - Signal <XLXN_94> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <XLXN_93> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <XLXN_92> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <XLXI_35_I_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_2_RST_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <Sin> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
 WARNING:Xst:653 - Signal <Signed_Flag> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <SUBU_On> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <SET_On> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <SBI_On> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <R3in> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
 WARNING:Xst:653 - Signal <R2in> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
 WARNING:Xst:653 - Signal <R1in> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
 WARNING:Xst:653 - Signal <R0in> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
-WARNING:Xst:646 - Signal <LDA_On> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <Instr_Out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <GET_On> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <Data_Out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <Ctrl_Data_In> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
 WARNING:Xst:653 - Signal <Cin> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:646 - Signal <ADI_On> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ADDU_On> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 Unit <final_v1> synthesized.
 
 
@@ -1682,12 +1682,12 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 42
+# IOs                              : 37
 
 Cell Usage :
-# BELS                             : 1782
+# BELS                             : 1780
 #      AND2                        : 38
-#      AND2B1                      : 28
+#      AND2B1                      : 29
 #      AND2B2                      : 2
 #      AND3                        : 2
 #      AND3B1                      : 11
@@ -1698,7 +1698,7 @@ Cell Usage :
 #      AND4B4                      : 1
 #      AND5                        : 1
 #      AND5B4                      : 1
-#      BUF                         : 10
+#      BUF                         : 7
 #      GND                         : 20
 #      INV                         : 39
 #      LUT1                        : 100
@@ -1729,9 +1729,9 @@ Cell Usage :
 # Clock Buffers                    : 4
 #      BUFG                        : 3
 #      BUFGP                       : 1
-# IO Buffers                       : 41
+# IO Buffers                       : 36
 #      IBUF                        : 16
-#      OBUF                        : 25
+#      OBUF                        : 20
 # Logical                          : 1
 #      NOR2                        : 1
 # Others                           : 79
@@ -1748,8 +1748,8 @@ Selected Device : 3s100ecp132-4
  Number of Slices:                      517  out of    960    53%  
  Number of Slice Flip Flops:            346  out of   1920    18%  
  Number of 4 input LUTs:                774  out of   1920    40%  
- Number of IOs:                          42
- Number of bonded IOBs:                  42  out of     83    50%  
+ Number of IOs:                          37
+ Number of bonded IOBs:                  37  out of     83    44%  
  Number of GCLKs:                         4  out of     24    16%  
 
 ---------------------------
@@ -1875,10 +1875,10 @@ Delay:               11.973ns (Levels of Logic = 22)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'XLXI_2/XLXN_1461'
-  Clock period: 5.464ns (frequency: 183.016MHz)
+  Clock period: 5.428ns (frequency: 184.230MHz)
   Total number of paths / destination ports: 26 / 25
 -------------------------------------------------------------------------
-Delay:               5.464ns (Levels of Logic = 3)
+Delay:               5.428ns (Levels of Logic = 3)
   Source:            XLXI_2/XLXI_100/XLXI_1/I_36_32 (FF)
   Destination:       XLXI_11/XLXI_8/XLXI_1/I_Q0 (FF)
   Source Clock:      XLXI_2/XLXN_1461 rising
@@ -1888,15 +1888,15 @@ Delay:               5.464ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              6   0.591   0.669  I_36_32 (Q)
+     FDC:C->Q              5   0.591   0.633  I_36_32 (Q)
      end scope: 'XLXI_2/XLXI_100/XLXI_1'
      OR2:I0->O             5   0.704   0.633  XLXI_11/XLXI_9/XLXI_49/XLXI_3/XLXI_2 (XLXI_11/XLXI_9/XLXI_49/XLXI_3/CLK_OR_CLK2)
      AND3B1:I1->O         24   0.704   1.252  XLXI_11/XLXI_9/XLXI_49/XLXI_3/XLXI_5 (XLXI_11/XLXN_6)
      begin scope: 'XLXI_11/XLXI_8/XLXI_14'
      FDRE:R                    0.911          I_Q0
     ----------------------------------------
-    Total                      5.464ns (2.910ns logic, 2.554ns route)
-                                       (53.3% logic, 46.7% route)
+    Total                      5.428ns (2.910ns logic, 2.518ns route)
+                                       (53.6% logic, 46.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'XLXI_2/XLXN_139'
@@ -2154,7 +2154,7 @@ Offset:              10.262ns (Levels of Logic = 9)
      AND4:I3->O            1   0.704   0.420  I_36_127 (S1)
      AND2:I1->O            1   0.704   0.420  I_36_142 (O_DUMMY)
      end scope: 'XLXI_11/XLXI_9/XLXI_49/XLXI_2/XLXI_61'
-     BUF:I->O              3   0.704   0.531  XLXI_11/XLXI_9/XLXI_49/XLXI_3/XLXI_32 (HLT_On_OBUF)
+     AND2B1:I1->O          3   0.704   0.531  XLXI_11/XLXI_9/XLXI_49/XLXI_3/XLXI_33 (HLT_On_OBUF)
      INV:I->O              2   0.704   0.447  XLXI_2/XLXI_3 (XLXI_2/XLXN_4)
      begin scope: 'XLXI_2/XLXI_1'
      OR2:I0->O             8   0.704   0.757  I_36_74 (OR_CE_L)
@@ -2165,29 +2165,40 @@ Offset:              10.262ns (Levels of Logic = 9)
                                        (58.4% logic, 41.6% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'B8_clk'
-  Total number of paths / destination ports: 2 / 1
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_2/XLXI_100/XLXI_1/Q'
+  Total number of paths / destination ports: 248 / 16
 -------------------------------------------------------------------------
-Offset:              8.833ns (Levels of Logic = 6)
-  Source:            XLXI_2/XLXI_18/clk_1m_0 (FF)
-  Destination:       clk (PAD)
-  Source Clock:      B8_clk rising
+Offset:              14.226ns (Levels of Logic = 17)
+  Source:            XLXI_2/XLXI_100/XLXI_2/I_36_32 (FF)
+  Destination:       A_reg_out<7> (PAD)
+  Source Clock:      XLXI_2/XLXI_100/XLXI_1/Q rising
 
-  Data Path: XLXI_2/XLXI_18/clk_1m_0 to clk
+  Data Path: XLXI_2/XLXI_100/XLXI_2/I_36_32 to A_reg_out<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              2   0.591   0.447  XLXI_2/XLXI_18/clk_1m_0 (XLXI_2/XLXI_18/clk_1m_0)
-     begin scope: 'XLXI_2/XLXI_59'
-     AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
-     OR2:I0->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_2/XLXI_59'
-     AND3B1:I2->O          2   0.704   0.447  XLXI_2/XLXI_95 (XLXI_2/XLXN_1461)
-     BUF:I->O              1   0.704   0.420  XLXI_2/XLXN_146_BUF (XLXI_2/XLXN_146_BUF)
-     OBUF:I->O                 3.272          clk_OBUF (clk)
+     FDC:C->Q             18   0.591   1.068  I_36_32 (Q)
+     end scope: 'XLXI_2/XLXI_100/XLXI_2'
+     AND2B1:I0->O          2   0.704   0.447  XLXI_11/XLXI_9/XLXI_49/XLXI_3/XLXI_21 (SUB_On_OBUF)
+     OR3:I2->O             2   0.704   0.447  XLXI_11/XLXI_10 (Subtract_Flag)
+     INV:I->O              2   0.704   0.447  XLXI_12/XLXI_5 (XLXI_12/XLXN_8)
+     OR2:I1->O             8   0.704   0.757  XLXI_12/XLXI_4 (XLXI_12/XLXN_7)
+     begin scope: 'XLXI_12/XLXI_2'
+     INV:I->O              1   0.704   0.420  I_36_112 (SUB0)
+     XOR3:I2->O            1   0.704   0.000  I_36_50 (I0)
+     MUXCY_L:S->LO         1   0.464   0.000  I_36_111 (C0)
+     MUXCY_L:CI->LO        1   0.059   0.000  I_36_55 (C1)
+     MUXCY_L:CI->LO        1   0.059   0.000  I_36_62 (C2)
+     MUXCY_L:CI->LO        1   0.059   0.000  I_36_58 (C3)
+     MUXCY_L:CI->LO        1   0.059   0.000  I_36_63 (C4)
+     MUXCY_L:CI->LO        1   0.059   0.000  I_36_110 (C5)
+     MUXCY_D:CI->LO        1   0.459   0.000  I_36_107 (C6)
+     XORCY:CI->O           3   0.804   0.531  I_36_80 (S<7>)
+     end scope: 'XLXI_12/XLXI_2'
+     OBUF:I->O                 3.272          A_reg_out_7_OBUF (A_reg_out<7>)
     ----------------------------------------
-    Total                      8.833ns (6.679ns logic, 2.154ns route)
-                                       (75.6% logic, 24.4% route)
+    Total                     14.226ns (10.109ns logic, 4.117ns route)
+                                       (71.1% logic, 28.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_2/XLXN_1461'
@@ -2227,42 +2238,6 @@ Offset:              12.610ns (Levels of Logic = 17)
                                        (78.6% logic, 21.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_2/XLXI_100/XLXI_1/Q'
-  Total number of paths / destination ports: 249 / 17
--------------------------------------------------------------------------
-Offset:              14.226ns (Levels of Logic = 17)
-  Source:            XLXI_2/XLXI_100/XLXI_2/I_36_32 (FF)
-  Destination:       A_reg_out<7> (PAD)
-  Source Clock:      XLXI_2/XLXI_100/XLXI_1/Q rising
-
-  Data Path: XLXI_2/XLXI_100/XLXI_2/I_36_32 to A_reg_out<7>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q             18   0.591   1.068  I_36_32 (Q)
-     end scope: 'XLXI_2/XLXI_100/XLXI_2'
-     AND2B1:I0->O          2   0.704   0.447  XLXI_11/XLXI_9/XLXI_49/XLXI_3/XLXI_21 (SUB_On_OBUF)
-     OR3:I2->O             2   0.704   0.447  XLXI_11/XLXI_10 (Subtract_Flag)
-     INV:I->O              2   0.704   0.447  XLXI_12/XLXI_5 (XLXI_12/XLXN_8)
-     OR2:I1->O             8   0.704   0.757  XLXI_12/XLXI_4 (XLXI_12/XLXN_7)
-     begin scope: 'XLXI_12/XLXI_2'
-     INV:I->O              1   0.704   0.420  I_36_112 (SUB0)
-     XOR3:I2->O            1   0.704   0.000  I_36_50 (I0)
-     MUXCY_L:S->LO         1   0.464   0.000  I_36_111 (C0)
-     MUXCY_L:CI->LO        1   0.059   0.000  I_36_55 (C1)
-     MUXCY_L:CI->LO        1   0.059   0.000  I_36_62 (C2)
-     MUXCY_L:CI->LO        1   0.059   0.000  I_36_58 (C3)
-     MUXCY_L:CI->LO        1   0.059   0.000  I_36_63 (C4)
-     MUXCY_L:CI->LO        1   0.059   0.000  I_36_110 (C5)
-     MUXCY_D:CI->LO        1   0.459   0.000  I_36_107 (C6)
-     XORCY:CI->O           3   0.804   0.531  I_36_80 (S<7>)
-     end scope: 'XLXI_12/XLXI_2'
-     OBUF:I->O                 3.272          A_reg_out_7_OBUF (A_reg_out<7>)
-    ----------------------------------------
-    Total                     14.226ns (10.109ns logic, 4.117ns route)
-                                       (71.1% logic, 28.9% route)
-
-=========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_2/XLXI_18/clk_10k_01'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
@@ -2283,7 +2258,7 @@ Offset:              4.394ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 2003 / 18
+  Total number of paths / destination ports: 1984 / 16
 -------------------------------------------------------------------------
 Delay:               18.427ns (Levels of Logic = 21)
   Source:            Ctrl_Instr_In<0> (PAD)
@@ -2295,12 +2270,12 @@ Delay:               18.427ns (Levels of Logic = 21)
     ----------------------------------------  ------------
      IBUF:I->O            11   1.218   0.933  Ctrl_Instr_In_0_IBUF (Ctrl_Instr_In_0_IBUF)
      INV:I->O              8   0.704   0.757  XLXI_11/XLXI_9/XLXI_49/XLXI_2/XLXI_1 (XLXI_11/XLXI_9/XLXI_49/XLXI_2/INSTin0INV)
-     begin scope: 'XLXI_11/XLXI_9/XLXI_49/XLXI_2/XLXI_60'
+     begin scope: 'XLXI_11/XLXI_9/XLXI_49/XLXI_2/XLXI_58'
      AND4:I3->O            1   0.704   0.420  I_36_127 (S1)
      AND2:I1->O            1   0.704   0.420  I_36_142 (O_DUMMY)
-     end scope: 'XLXI_11/XLXI_9/XLXI_49/XLXI_2/XLXI_60'
-     AND2B1:I1->O          2   0.704   0.447  XLXI_11/XLXI_9/XLXI_49/XLXI_3/XLXI_23 (SUBU_On_OBUF)
-     OR3:I0->O             2   0.704   0.447  XLXI_11/XLXI_10 (Subtract_Flag)
+     end scope: 'XLXI_11/XLXI_9/XLXI_49/XLXI_2/XLXI_58'
+     AND2B1:I1->O          2   0.704   0.447  XLXI_11/XLXI_9/XLXI_49/XLXI_3/XLXI_26 (SBI_On_OBUF)
+     OR3:I1->O             2   0.704   0.447  XLXI_11/XLXI_10 (Subtract_Flag)
      INV:I->O              2   0.704   0.447  XLXI_12/XLXI_5 (XLXI_12/XLXN_8)
      OR2:I1->O             8   0.704   0.757  XLXI_12/XLXI_4 (XLXI_12/XLXN_7)
      begin scope: 'XLXI_12/XLXI_2'
@@ -2323,12 +2298,12 @@ Delay:               18.427ns (Levels of Logic = 21)
 =========================================================================
 
 
-Total REAL time to Xst completion: 40.00 secs
-Total CPU time to Xst completion: 39.56 secs
+Total REAL time to Xst completion: 41.00 secs
+Total CPU time to Xst completion: 41.09 secs
  
 --> 
 
-Total memory usage is 4630964 kilobytes
+Total memory usage is 4630904 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  699 (   0 filtered)

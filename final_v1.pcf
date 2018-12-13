@@ -1,9 +1,8 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed Dec 12 16:13:48 2018
+// Written by: Map P.20131013 on Wed Dec 12 16:46:52 2018
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "SUBU_On" LOCATE = SITE "P4" LEVEL 1;
 COMP "Ctrl_Instr_In<0>" LOCATE = SITE "P11" LEVEL 1;
 COMP "Ctrl_Instr_In<1>" LOCATE = SITE "L3" LEVEL 1;
 COMP "Ctrl_Instr_In<2>" LOCATE = SITE "K3" LEVEL 1;
@@ -12,10 +11,11 @@ COMP "Ctrl_Instr_In<4>" LOCATE = SITE "G3" LEVEL 1;
 COMP "Ctrl_Instr_In<5>" LOCATE = SITE "F3" LEVEL 1;
 COMP "Ctrl_Instr_In<6>" LOCATE = SITE "E2" LEVEL 1;
 COMP "Ctrl_Instr_In<7>" LOCATE = SITE "N3" LEVEL 1;
-COMP "ADI_On" LOCATE = SITE "G1" LEVEL 1;
 COMP "B8_clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "LDA_On" LOCATE = SITE "P4" LEVEL 1;
+COMP "HLT_On" LOCATE = SITE "N4" LEVEL 1;
+COMP "SBI_On" LOCATE = SITE "G1" LEVEL 1;
 COMP "run_mode" LOCATE = SITE "G12" LEVEL 1;
-COMP "ADDU_On" LOCATE = SITE "N4" LEVEL 1;
 NET "B8_clk_BUFGP/IBUFG" BEL "B8_clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 SCHEMATIC END;
 

@@ -13,18 +13,10 @@ NET "Ctrl_Instr_In[6]" LOC = e2;
 NET "Ctrl_Instr_In[7]" LOC = n3;
 
 #Output
-#NET "A_reg_out[0]" LOC = m5;
-#NET "A_reg_out[1]" LOC = m11;
-#NET "A_reg_out[2]" LOC = p7;
-#NET "A_reg_out[3]" LOC = p6;
-#NET "A_reg_out[4]" LOC = n5;
-#NET "A_reg_out[5]" LOC = n4;
-#NET "A_reg_out[6]" LOC = p4;
-#NET "A_reg_out[7]" LOC = g1;
 
 #run mode
-NET "ADI_On" LOC = g1;
-NET "SUBU_On" LOC = p4;
-NET "ADDU_On" LOC = n4;
+NET "SBI_On" LOC = g1;
+NET "LDA_On" LOC = p4;
+NET "HLT_On" LOC = n4;
 NET "run_mode" LOC = g12;
 

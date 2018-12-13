@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Signals.vhf
--- /___/   /\     Timestamp : 12/12/2018 16:11:54
+-- /___/   /\     Timestamp : 12/12/2018 16:45:26
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

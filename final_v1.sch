@@ -82,6 +82,8 @@
         <port polarity="Output" name="STA_On" />
         <port polarity="Output" name="SUB_On" />
         <port polarity="Output" name="ADD_On" />
+        <port polarity="Output" name="SBI_On" />
+        <port polarity="Output" name="LDA_On" />
         <blockdef name="memory">
             <timestamp>2018-12-9T4:37:22</timestamp>
             <rect width="304" x="64" y="-448" height="448" />
@@ -602,5 +604,17 @@
         <iomarker fontsize="28" x="336" y="1120" name="Ctrl_Instr_In(7:0)" orien="R180" />
         <instance x="1360" y="1648" name="XLXI_15(7:0)" orien="R0">
         </instance>
+        <branch name="SBI_On">
+            <wire x2="2976" y1="2192" y2="2192" x1="2784" />
+        </branch>
+        <branch name="LDA_On">
+            <wire x2="2976" y1="2256" y2="2256" x1="2784" />
+        </branch>
+        <branch name="HLT_On">
+            <wire x2="2976" y1="2336" y2="2336" x1="2784" />
+        </branch>
+        <iomarker fontsize="28" x="2976" y="2192" name="SBI_On" orien="R0" />
+        <iomarker fontsize="28" x="2976" y="2256" name="LDA_On" orien="R0" />
+        <iomarker fontsize="28" x="2976" y="2336" name="HLT_On" orien="R0" />
     </sheet>
 </drawing>

@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : RegisterBank.vhf
--- /___/   /\     Timestamp : 12/12/2018 16:11:48
+-- /___/   /\     Timestamp : 12/12/2018 16:45:20
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

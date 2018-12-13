@@ -109,14 +109,6 @@
             <line x2="40" y1="-64" y2="-64" x1="0" />
             <circle r="12" cx="52" cy="-64" />
         </blockdef>
-        <blockdef name="buf">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="64" y1="-32" y2="-32" x1="0" />
-            <line x2="128" y1="-32" y2="-32" x1="224" />
-            <line x2="128" y1="0" y2="-32" x1="64" />
-            <line x2="64" y1="-32" y2="-64" x1="128" />
-            <line x2="64" y1="-64" y2="0" x1="64" />
-        </blockdef>
         <block symbolname="and3b1" name="XLXI_5">
             <blockpin signalname="CLK_4" name="I0" />
             <blockpin signalname="CLK_OR_CLK2" name="I1" />
@@ -202,8 +194,9 @@
             <blockpin signalname="GET" name="I1" />
             <blockpin signalname="GET_On" name="O" />
         </block>
-        <block symbolname="buf" name="XLXI_32">
-            <blockpin signalname="HLT" name="I" />
+        <block symbolname="and2b1" name="XLXI_33">
+            <blockpin signalname="CLK_4" name="I0" />
+            <blockpin signalname="HLT" name="I1" />
             <blockpin signalname="HLT_On" name="O" />
         </block>
     </netlist>
@@ -520,14 +513,18 @@
             <wire x2="1168" y1="2096" y2="2096" x1="1056" />
         </branch>
         <iomarker fontsize="28" x="1504" y="2128" name="GET_On" orien="R0" />
-        <branch name="HLT">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1056" y="2336" type="branch" />
-            <wire x2="1248" y1="2336" y2="2336" x1="1056" />
+        <instance x="1232" y="2560" name="XLXI_33" orien="R0" />
+        <branch name="CLK_4">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1088" y="2496" type="branch" />
+            <wire x2="1232" y1="2496" y2="2496" x1="1088" />
         </branch>
-        <instance x="1248" y="2368" name="XLXI_32" orien="R0" />
         <branch name="HLT_On">
-            <wire x2="1504" y1="2336" y2="2336" x1="1472" />
+            <wire x2="1520" y1="2464" y2="2464" x1="1488" />
         </branch>
-        <iomarker fontsize="28" x="1504" y="2336" name="HLT_On" orien="R0" />
+        <iomarker fontsize="28" x="1520" y="2464" name="HLT_On" orien="R0" />
+        <branch name="HLT">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1088" y="2432" type="branch" />
+            <wire x2="1232" y1="2432" y2="2432" x1="1088" />
+        </branch>
     </sheet>
 </drawing>

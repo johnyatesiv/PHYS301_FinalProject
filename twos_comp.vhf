@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : twos_comp.vhf
--- /___/   /\     Timestamp : 12/12/2018 16:11:59
+-- /___/   /\     Timestamp : 12/12/2018 16:45:31
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

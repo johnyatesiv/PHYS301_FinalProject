@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : InstructionControl.vhf
--- /___/   /\     Timestamp : 12/12/2018 16:11:52
+-- /___/   /\     Timestamp : 12/12/2018 16:45:24
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -87,12 +87,6 @@ architecture BEHAVIORAL of ClockSignalController_MUSER_InstructionControl is
              O  : out   std_logic);
    end component;
    attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
-   
-   component BUF
-      port ( I : in    std_logic; 
-             O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
 begin
    XLXI_1 : OR2
@@ -180,8 +174,9 @@ begin
                 I1=>SET,
                 O=>SET_On);
    
-   XLXI_32 : BUF
-      port map (I=>HLT,
+   XLXI_33 : AND2B1
+      port map (I0=>CLK_4,
+                I1=>HLT,
                 O=>HLT_On);
    
 end BEHAVIORAL;

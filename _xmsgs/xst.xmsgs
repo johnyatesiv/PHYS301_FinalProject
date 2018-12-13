@@ -5,31 +5,31 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf</arg>&quot; line <arg fmt="%d" index="2">3724</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">clk1Hz</arg>&apos; of component &apos;<arg fmt="%s" index="4">Prog_Counter_MUSER_final_v1</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf</arg>&quot; line <arg fmt="%d" index="2">3705</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">clk1Hz</arg>&apos; of component &apos;<arg fmt="%s" index="4">Prog_Counter_MUSER_final_v1</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf</arg>&quot; line <arg fmt="%d" index="2">3724</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">clk1MHz</arg>&apos; of component &apos;<arg fmt="%s" index="4">Prog_Counter_MUSER_final_v1</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf</arg>&quot; line <arg fmt="%d" index="2">3705</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">clk1MHz</arg>&apos; of component &apos;<arg fmt="%s" index="4">Prog_Counter_MUSER_final_v1</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf</arg>&quot; line <arg fmt="%d" index="2">3793</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Neg_flag</arg>&apos; of component &apos;<arg fmt="%s" index="4">ALU_v4_MUSER_final_v1</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf</arg>&quot; line <arg fmt="%d" index="2">3774</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Neg_flag</arg>&apos; of component &apos;<arg fmt="%s" index="4">ALU_v4_MUSER_final_v1</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf</arg>&quot; line <arg fmt="%d" index="2">3793</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Zero_flag</arg>&apos; of component &apos;<arg fmt="%s" index="4">ALU_v4_MUSER_final_v1</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf</arg>&quot; line <arg fmt="%d" index="2">3774</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Zero_flag</arg>&apos; of component &apos;<arg fmt="%s" index="4">ALU_v4_MUSER_final_v1</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf</arg>&quot; line <arg fmt="%d" index="2">3793</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Overflow_flag</arg>&apos; of component &apos;<arg fmt="%s" index="4">ALU_v4_MUSER_final_v1</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf</arg>&quot; line <arg fmt="%d" index="2">3774</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Overflow_flag</arg>&apos; of component &apos;<arg fmt="%s" index="4">ALU_v4_MUSER_final_v1</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf</arg>&quot; line <arg fmt="%d" index="2">3204</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB8CLED_MXILINX_final_v1</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf</arg>&quot; line <arg fmt="%d" index="2">3199</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB8CLED_MXILINX_final_v1</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf</arg>&quot; line <arg fmt="%d" index="2">3204</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB8CLED_MXILINX_final_v1</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf</arg>&quot; line <arg fmt="%d" index="2">3199</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB8CLED_MXILINX_final_v1</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf</arg>&quot; line <arg fmt="%d" index="2">3222</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK100</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM_100M</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf</arg>&quot; line <arg fmt="%d" index="2">3217</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK100</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM_100M</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf</arg>&quot; line <arg fmt="%d" index="2">2237</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Zout</arg>&apos; of component &apos;<arg fmt="%s" index="4">RegisterBank_MUSER_final_v1</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf</arg>&quot; line <arg fmt="%d" index="2">2232</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Zout</arg>&apos; of component &apos;<arg fmt="%s" index="4">RegisterBank_MUSER_final_v1</arg>&apos;.
 </msg>
 
 <msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf</arg>&quot; line <arg fmt="%d" index="2">967</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CO</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADSU8_MXILINX_final_v1</arg>&apos;.
@@ -155,9 +155,6 @@
 <msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXN_92</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_35_I_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
-</msg>
-
 <msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_2_RST_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
@@ -167,10 +164,10 @@
 <msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">Signed_Flag</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">SET_On</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">SUBU_On</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">SBI_On</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">SET_On</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">R3in</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000</arg>.
@@ -183,9 +180,6 @@
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">R0in</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">LDA_On</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">Instr_Out</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -201,6 +195,12 @@
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">Cin</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">ADI_On</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">ADDU_On</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">XLXI_1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">XLXI_1</arg>&gt;.

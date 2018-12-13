@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : final_v1.vhf
--- /___/   /\     Timestamp : 12/12/2018 16:12:05
+-- /___/   /\     Timestamp : 12/12/2018 16:45:37
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -1082,12 +1082,6 @@ architecture BEHAVIORAL of ClockSignalController_MUSER_final_v1 is
    end component;
    attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
    
-   component BUF
-      port ( I : in    std_logic; 
-             O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
-   
 begin
    XLXI_1 : OR2
       port map (I0=>CLK_4,
@@ -1174,8 +1168,9 @@ begin
                 I1=>SET,
                 O=>SET_On);
    
-   XLXI_32 : BUF
-      port map (I=>HLT,
+   XLXI_33 : AND2B1
+      port map (I0=>CLK_4,
+                I1=>HLT,
                 O=>HLT_On);
    
 end BEHAVIORAL;
@@ -3540,43 +3535,42 @@ entity final_v1 is
           run_mode         : in    std_logic; 
           step             : in    std_logic; 
           toggle_clk_speed : in    std_logic; 
-          ADDU_On          : out   std_logic; 
           ADD_On           : out   std_logic; 
-          ADI_On           : out   std_logic; 
           A_reg_out        : out   std_logic_vector (7 downto 0); 
-          clk              : out   std_logic; 
-          half_clk         : out   std_logic; 
           HLT_On           : out   std_logic; 
           LCA_On           : out   std_logic; 
+          LDA_On           : out   std_logic; 
           MVI_On           : out   std_logic; 
-          quarter_clk      : out   std_logic; 
-          run_mode_out     : out   std_logic; 
+          SBI_On           : out   std_logic; 
           STA_On           : out   std_logic; 
-          SUBU_On          : out   std_logic; 
           SUB_On           : out   std_logic; 
           key_col          : inout std_logic_vector (3 downto 0));
 end final_v1;
 
 architecture BEHAVIORAL of final_v1 is
    attribute BOX_TYPE   : string ;
+   signal ADDU_On               : std_logic;
    signal Add_Flag              : std_logic;
+   signal ADI_On                : std_logic;
    signal Cin                   : std_logic_vector (7 downto 0);
+   signal clk                   : std_logic;
    signal clk1kHz               : std_logic;
    signal clk10khz              : std_logic;
    signal Ctrl_Data_In          : std_logic_vector (7 downto 0);
    signal Data_Out              : std_logic_vector (7 downto 0);
    signal GET_On                : std_logic;
+   signal half_clk              : std_logic;
    signal Instr_Out             : std_logic_vector (7 downto 0);
-   signal LDA_On                : std_logic;
+   signal quarter_clk           : std_logic;
    signal R0in                  : std_logic_vector (7 downto 0);
    signal R1in                  : std_logic_vector (7 downto 0);
    signal R2in                  : std_logic_vector (7 downto 0);
    signal R3in                  : std_logic_vector (7 downto 0);
-   signal SBI_On                : std_logic;
    signal SET_On                : std_logic;
    signal Signed_Flag           : std_logic;
    signal Sin                   : std_logic_vector (7 downto 0);
    signal Subtract_Flag         : std_logic;
+   signal SUBU_On               : std_logic;
    signal XLXN_1                : std_logic_vector (4 downto 0);
    signal XLXN_2                : std_logic_vector (7 downto 0);
    signal XLXN_3                : std_logic;
@@ -3593,12 +3587,8 @@ architecture BEHAVIORAL of final_v1 is
    signal XLXN_132              : std_logic_vector (7 downto 0);
    signal XLXN_133              : std_logic_vector (7 downto 0);
    signal XLXN_134              : std_logic_vector (7 downto 0);
-   signal quarter_clk_DUMMY     : std_logic;
    signal HLT_On_DUMMY          : std_logic;
-   signal half_clk_DUMMY        : std_logic;
-   signal clk_DUMMY             : std_logic;
    signal XLXI_2_RST_openSignal : std_logic;
-   signal XLXI_35_I_openSignal  : std_logic;
    component memory_MUSER_final_v1
       port ( PC        : in    std_logic_vector (4 downto 0); 
              Keypad    : in    std_logic_vector (7 downto 0); 
@@ -3697,21 +3687,12 @@ architecture BEHAVIORAL of final_v1 is
              Overflow_flag : out   std_logic);
    end component;
    
-   component BUF
-      port ( I : in    std_logic; 
-             O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
-   
 begin
    XLXN_131(7 downto 0) <= x"01";
    XLXN_132(7 downto 0) <= x"02";
-   clk <= clk_DUMMY;
-   half_clk <= half_clk_DUMMY;
    HLT_On <= HLT_On_DUMMY;
-   quarter_clk <= quarter_clk_DUMMY;
    XLXI_1 : memory_MUSER_final_v1
-      port map (clk1k=>clk_DUMMY,
+      port map (clk1k=>clk,
                 Keypad(7 downto 0)=>XLXN_2(7 downto 0),
                 KeyPress=>XLXN_3,
                 PC(4 downto 0)=>XLXN_1(4 downto 0),
@@ -3728,14 +3709,14 @@ begin
                 RST=>XLXI_2_RST_openSignal,
                 run_mode=>run_mode,
                 step=>step,
-                clk=>clk_DUMMY,
+                clk=>clk,
                 clk1Hz=>open,
                 clk1kHz=>clk1kHz,
                 clk1MHz=>open,
                 clk10khz=>clk10khz,
-                half_clk=>half_clk_DUMMY,
+                half_clk=>half_clk,
                 PC(4 downto 0)=>XLXN_1(4 downto 0),
-                quarter_clk=>quarter_clk_DUMMY);
+                quarter_clk=>quarter_clk);
    
    XLXI_3 : keypad_input_MUSER_final_v1
       port map (clk_1k=>run_mode,
@@ -3754,11 +3735,11 @@ begin
       port map (Ain(7 downto 0)=>XLXN_131(7 downto 0),
                 Bin(7 downto 0)=>XLXN_132(7 downto 0),
                 Cin(7 downto 0)=>Cin(7 downto 0),
-                CLKin=>clk_DUMMY,
+                CLKin=>clk,
                 Data_In(7 downto 0)=>Ctrl_Data_In(7 downto 0),
-                half_clk=>half_clk_DUMMY,
+                half_clk=>half_clk,
                 Instr_In(7 downto 0)=>Ctrl_Instr_In(7 downto 0),
-                quarter_clk=>quarter_clk_DUMMY,
+                quarter_clk=>quarter_clk,
                 R0in(7 downto 0)=>R0in(7 downto 0),
                 R1in(7 downto 0)=>R1in(7 downto 0),
                 R2in(7 downto 0)=>R2in(7 downto 0),
@@ -3800,10 +3781,6 @@ begin
                 Neg_flag=>open,
                 Overflow_flag=>open,
                 Zero_flag=>open);
-   
-   XLXI_35 : BUF
-      port map (I=>XLXI_35_I_openSignal,
-                O=>run_mode_out);
    
 end BEHAVIORAL;
 

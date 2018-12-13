@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : DivClock.vhf
--- /___/   /\     Timestamp : 12/12/2018 16:12:11
+-- /___/   /\     Timestamp : 12/12/2018 16:45:44
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
