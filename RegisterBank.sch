@@ -9,7 +9,6 @@
         <signal name="CLKin" />
         <signal name="ABCRSTin" />
         <signal name="RSTin" />
-        <signal name="XLXN_66" />
         <signal name="DRout(7:0)" />
         <signal name="DRin(7:0)" />
         <signal name="Ain(7:0)" />
@@ -113,7 +112,7 @@
             <rect width="256" x="64" y="-256" height="384" />
         </blockdef>
         <block symbolname="pullup" name="XLXI_34">
-            <blockpin signalname="XLXN_66" name="O" />
+            <blockpin signalname="CE" name="O" />
         </block>
         <block symbolname="fd8re" name="XLXI_29">
             <blockpin signalname="CLKin" name="C" />
@@ -185,7 +184,7 @@
             <wire x2="432" y1="2224" y2="2224" x1="240" />
         </branch>
         <instance x="96" y="2560" name="XLXI_34" orien="R0" />
-        <branch name="XLXN_66">
+        <branch name="CE">
             <wire x2="160" y1="2560" y2="2576" x1="160" />
             <wire x2="432" y1="2576" y2="2576" x1="160" />
             <wire x2="432" y1="2560" y2="2576" x1="432" />

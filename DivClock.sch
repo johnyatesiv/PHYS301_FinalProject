@@ -10,9 +10,12 @@
         <signal name="half_clk" />
         <signal name="clk_in" />
         <signal name="quarter_clk" />
+        <signal name="XLXN_2" />
+        <signal name="clk" />
         <port polarity="Output" name="half_clk" />
         <port polarity="Input" name="clk_in" />
         <port polarity="Output" name="quarter_clk" />
+        <port polarity="Output" name="clk" />
         <blockdef name="fjkc">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-128" y2="-128" x1="0" />
@@ -43,6 +46,14 @@
             <line x2="64" y1="0" y2="-32" x1="64" />
             <line x2="32" y1="-128" y2="-128" x1="96" />
         </blockdef>
+        <blockdef name="buf">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-32" y2="-32" x1="0" />
+            <line x2="128" y1="-32" y2="-32" x1="224" />
+            <line x2="128" y1="0" y2="-32" x1="64" />
+            <line x2="64" y1="-32" y2="-64" x1="128" />
+            <line x2="64" y1="-64" y2="0" x1="64" />
+        </blockdef>
         <block symbolname="fjkc" name="XLXI_1">
             <blockpin signalname="clk_in" name="C" />
             <blockpin name="CLR" />
@@ -59,6 +70,10 @@
         </block>
         <block symbolname="pullup" name="XLXI_3">
             <blockpin signalname="XLXN_1" name="O" />
+        </block>
+        <block symbolname="buf" name="XLXI_4">
+            <blockpin signalname="clk_in" name="I" />
+            <blockpin signalname="clk" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -84,13 +99,23 @@
         </branch>
         <instance x="864" y="1264" name="XLXI_3" orien="R0" />
         <branch name="clk_in">
-            <wire x2="976" y1="1456" y2="1456" x1="944" />
+            <wire x2="720" y1="1456" y2="1456" x1="640" />
+            <wire x2="960" y1="1456" y2="1456" x1="720" />
+            <wire x2="976" y1="1456" y2="1456" x1="960" />
+            <wire x2="720" y1="1456" y2="1680" x1="720" />
+            <wire x2="960" y1="1680" y2="1680" x1="720" />
+            <wire x2="1328" y1="1680" y2="1680" x1="960" />
         </branch>
-        <iomarker fontsize="28" x="944" y="1456" name="clk_in" orien="R180" />
         <iomarker fontsize="28" x="1472" y="1472" name="half_clk" orien="R0" />
         <branch name="quarter_clk">
             <wire x2="2016" y1="1312" y2="1312" x1="1984" />
         </branch>
         <iomarker fontsize="28" x="2016" y="1312" name="quarter_clk" orien="R0" />
+        <iomarker fontsize="28" x="640" y="1456" name="clk_in" orien="R180" />
+        <instance x="1328" y="1712" name="XLXI_4" orien="R0" />
+        <branch name="clk">
+            <wire x2="1584" y1="1680" y2="1680" x1="1552" />
+        </branch>
+        <iomarker fontsize="28" x="1584" y="1680" name="clk" orien="R0" />
     </sheet>
 </drawing>

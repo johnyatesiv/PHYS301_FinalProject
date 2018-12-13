@@ -37,6 +37,7 @@
         <signal name="XLXN_135" />
         <signal name="XLXN_146" />
         <signal name="half_clk" />
+        <signal name="clk" />
         <port polarity="Output" name="clk1Hz" />
         <port polarity="Output" name="clk1MHz" />
         <port polarity="Input" name="HLT" />
@@ -50,6 +51,7 @@
         <port polarity="Input" name="step" />
         <port polarity="Input" name="clk_speed" />
         <port polarity="Output" name="half_clk" />
+        <port polarity="Output" name="clk" />
         <blockdef name="cb8cled">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <rect width="64" x="0" y="-460" height="24" />
@@ -176,11 +178,12 @@
             <circle r="12" cx="52" cy="-64" />
         </blockdef>
         <blockdef name="DivClock">
-            <timestamp>2018-12-10T1:16:6</timestamp>
-            <rect width="256" x="64" y="-128" height="128" />
+            <timestamp>2018-12-12T22:14:39</timestamp>
+            <line x2="384" y1="32" y2="32" x1="320" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
+            <rect width="256" x="64" y="-128" height="192" />
         </blockdef>
         <block symbolname="DCM_100M" name="XLXI_18">
             <blockpin signalname="B8_clk" name="CLK" />
@@ -258,6 +261,7 @@
             <blockpin signalname="XLXN_146" name="clk_in" />
             <blockpin signalname="half_clk" name="half_clk" />
             <blockpin signalname="quarter_clk" name="quarter_clk" />
+            <blockpin signalname="clk" name="clk" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -457,5 +461,9 @@
         <iomarker fontsize="28" x="1568" y="384" name="clk_speed" orien="R180" />
         <iomarker fontsize="28" x="2800" y="352" name="half_clk" orien="R0" />
         <iomarker fontsize="28" x="2800" y="416" name="quarter_clk" orien="R0" />
+        <branch name="clk">
+            <wire x2="2800" y1="480" y2="480" x1="2768" />
+        </branch>
+        <iomarker fontsize="28" x="2800" y="480" name="clk" orien="R0" />
     </sheet>
 </drawing>

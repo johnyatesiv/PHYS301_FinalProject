@@ -1,12 +1,1 @@
-sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/ControlUnit.vhf,-w,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/ControlUnit.sch
-sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/Signals.vhf,-w,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/Signals.sch
-sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/RegisterBank.vhf,-w,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/RegisterBank.sch
-sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/InstructionControl.vhf,-w,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/InstructionControl.sch
-sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/WorkingRegisters.vhf,-w,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/WorkingRegisters.sch
-sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/ClockSignalController.vhf,-w,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/ClockSignalController.sch
-sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/Prog_Counter.vhf,-w,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/Prog_Counter.sch
-sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/final_v1.vhf,-w,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/final_v1.sch
-sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/DivClock.vhf,-w,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/DivClock.sch
-sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/keypad_input.vhf,-w,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/keypad_input.sch
-sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/Prog_Counter.vhf,-w,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/Prog_Counter.sch
-sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/final_v1.vhf,-w,C:/Users/John/Documents/PHYS301_Xilinx/Final_v2/final_v1.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/John/Documents/PHYS301_FinalProject/final_v1.vhf,-w,C:/Users/John/Documents/PHYS301_FinalProject/final_v1.sch

@@ -8,12 +8,6 @@
     <netlist>
         <signal name="INSTin(0)" />
         <signal name="INSTin(1)" />
-        <signal name="XLXN_6" />
-        <signal name="XLXN_7" />
-        <signal name="XLXN_8" />
-        <signal name="XLXN_9" />
-        <signal name="XLXN_10" />
-        <signal name="XLXN_11" />
         <signal name="INSTin1INV" />
         <signal name="INSTin2INV" />
         <signal name="INSTin3INV" />
@@ -21,23 +15,8 @@
         <signal name="INSTin5INV" />
         <signal name="INSTin6INV" />
         <signal name="INSTin(2)" />
-        <signal name="XLXN_23" />
         <signal name="INSTin0INV" />
-        <signal name="XLXN_27" />
-        <signal name="XLXN_29" />
         <signal name="INSTin7INV" />
-        <signal name="XLXN_103" />
-        <signal name="XLXN_105" />
-        <signal name="XLXN_107" />
-        <signal name="XLXN_109" />
-        <signal name="XLXN_111" />
-        <signal name="XLXN_113" />
-        <signal name="XLXN_115" />
-        <signal name="XLXN_117" />
-        <signal name="XLXN_119" />
-        <signal name="XLXN_121" />
-        <signal name="XLXN_232" />
-        <signal name="XLXN_233" />
         <signal name="INSTin(7:0)" />
         <signal name="INSTin(7)" />
         <signal name="INSTin(3)" />
@@ -226,10 +205,10 @@
             <blockpin signalname="INSTin7INV" name="I0" />
             <blockpin signalname="INSTin6INV" name="I1" />
             <blockpin signalname="INSTin5INV" name="I2" />
-            <blockpin signalname="INSTin4INV" name="I3" />
-            <blockpin signalname="INSTin(3)" name="I4" />
+            <blockpin signalname="INSTin(4)" name="I3" />
+            <blockpin signalname="INSTin3INV" name="I4" />
             <blockpin signalname="INSTin2INV" name="I5" />
-            <blockpin signalname="INSTin(1)" name="I6" />
+            <blockpin signalname="INSTin1INV" name="I6" />
             <blockpin signalname="INSTin(0)" name="I7" />
             <blockpin signalname="ADI" name="O" />
         </block>
@@ -237,10 +216,10 @@
             <blockpin signalname="INSTin7INV" name="I0" />
             <blockpin signalname="INSTin6INV" name="I1" />
             <blockpin signalname="INSTin5INV" name="I2" />
-            <blockpin signalname="INSTin4INV" name="I3" />
-            <blockpin signalname="INSTin(3)" name="I4" />
-            <blockpin signalname="INSTin(2)" name="I5" />
-            <blockpin signalname="INSTin1INV" name="I6" />
+            <blockpin signalname="INSTin(4)" name="I3" />
+            <blockpin signalname="INSTin3INV" name="I4" />
+            <blockpin signalname="INSTin2INV" name="I5" />
+            <blockpin signalname="INSTin(1)" name="I6" />
             <blockpin signalname="INSTin0INV" name="I7" />
             <blockpin signalname="ADD" name="O" />
         </block>
@@ -248,10 +227,10 @@
             <blockpin signalname="INSTin7INV" name="I0" />
             <blockpin signalname="INSTin6INV" name="I1" />
             <blockpin signalname="INSTin5INV" name="I2" />
-            <blockpin signalname="INSTin4INV" name="I3" />
-            <blockpin signalname="INSTin(3)" name="I4" />
-            <blockpin signalname="INSTin(2)" name="I5" />
-            <blockpin signalname="INSTin1INV" name="I6" />
+            <blockpin signalname="INSTin(4)" name="I3" />
+            <blockpin signalname="INSTin3INV" name="I4" />
+            <blockpin signalname="INSTin2INV" name="I5" />
+            <blockpin signalname="INSTin(1)" name="I6" />
             <blockpin signalname="INSTin(0)" name="I7" />
             <blockpin signalname="ADDU" name="O" />
         </block>
@@ -259,10 +238,10 @@
             <blockpin signalname="INSTin7INV" name="I0" />
             <blockpin signalname="INSTin6INV" name="I1" />
             <blockpin signalname="INSTin5INV" name="I2" />
-            <blockpin signalname="INSTin4INV" name="I3" />
-            <blockpin signalname="INSTin(3)" name="I4" />
+            <blockpin signalname="INSTin(4)" name="I3" />
+            <blockpin signalname="INSTin3INV" name="I4" />
             <blockpin signalname="INSTin(2)" name="I5" />
-            <blockpin signalname="INSTin(1)" name="I6" />
+            <blockpin signalname="INSTin1INV" name="I6" />
             <blockpin signalname="INSTin0INV" name="I7" />
             <blockpin signalname="SBI" name="O" />
         </block>
@@ -270,10 +249,10 @@
             <blockpin signalname="INSTin7INV" name="I0" />
             <blockpin signalname="INSTin6INV" name="I1" />
             <blockpin signalname="INSTin5INV" name="I2" />
-            <blockpin signalname="INSTin4INV" name="I3" />
-            <blockpin signalname="INSTin(3)" name="I4" />
+            <blockpin signalname="INSTin(4)" name="I3" />
+            <blockpin signalname="INSTin3INV" name="I4" />
             <blockpin signalname="INSTin(2)" name="I5" />
-            <blockpin signalname="INSTin(1)" name="I6" />
+            <blockpin signalname="INSTin1INV" name="I6" />
             <blockpin signalname="INSTin(0)" name="I7" />
             <blockpin signalname="SUB" name="O" />
         </block>
@@ -283,8 +262,8 @@
             <blockpin signalname="INSTin5INV" name="I2" />
             <blockpin signalname="INSTin(4)" name="I3" />
             <blockpin signalname="INSTin3INV" name="I4" />
-            <blockpin signalname="INSTin2INV" name="I5" />
-            <blockpin signalname="INSTin1INV" name="I6" />
+            <blockpin signalname="INSTin(2)" name="I5" />
+            <blockpin signalname="INSTin(1)" name="I6" />
             <blockpin signalname="INSTin0INV" name="I7" />
             <blockpin signalname="SUBU" name="O" />
         </block>
@@ -724,11 +703,11 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="496" type="branch" />
             <wire x2="2400" y1="496" y2="496" x1="2320" />
         </branch>
-        <branch name="INSTin4INV">
+        <branch name="INSTin(4)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="432" type="branch" />
             <wire x2="2400" y1="432" y2="432" x1="2320" />
         </branch>
-        <branch name="INSTin(3)">
+        <branch name="INSTin3INV">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="368" type="branch" />
             <wire x2="2400" y1="368" y2="368" x1="2320" />
         </branch>
@@ -736,7 +715,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="304" type="branch" />
             <wire x2="2400" y1="304" y2="304" x1="2320" />
         </branch>
-        <branch name="INSTin(1)">
+        <branch name="INSTin1INV">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="240" type="branch" />
             <wire x2="2400" y1="240" y2="240" x1="2320" />
         </branch>
@@ -756,19 +735,19 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="1008" type="branch" />
             <wire x2="2400" y1="1008" y2="1008" x1="2320" />
         </branch>
-        <branch name="INSTin4INV">
+        <branch name="INSTin(4)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="944" type="branch" />
             <wire x2="2400" y1="944" y2="944" x1="2320" />
         </branch>
-        <branch name="INSTin(3)">
+        <branch name="INSTin3INV">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="880" type="branch" />
             <wire x2="2400" y1="880" y2="880" x1="2320" />
         </branch>
-        <branch name="INSTin(2)">
+        <branch name="INSTin2INV">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="816" type="branch" />
             <wire x2="2400" y1="816" y2="816" x1="2320" />
         </branch>
-        <branch name="INSTin1INV">
+        <branch name="INSTin(1)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="752" type="branch" />
             <wire x2="2400" y1="752" y2="752" x1="2320" />
         </branch>
@@ -790,19 +769,19 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="1568" type="branch" />
             <wire x2="2400" y1="1568" y2="1568" x1="2320" />
         </branch>
-        <branch name="INSTin4INV">
+        <branch name="INSTin(4)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="1504" type="branch" />
             <wire x2="2400" y1="1504" y2="1504" x1="2320" />
         </branch>
-        <branch name="INSTin(3)">
+        <branch name="INSTin3INV">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="1440" type="branch" />
             <wire x2="2400" y1="1440" y2="1440" x1="2320" />
         </branch>
-        <branch name="INSTin(2)">
+        <branch name="INSTin2INV">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="1376" type="branch" />
             <wire x2="2400" y1="1376" y2="1376" x1="2320" />
         </branch>
-        <branch name="INSTin1INV">
+        <branch name="INSTin(1)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="1312" type="branch" />
             <wire x2="2400" y1="1312" y2="1312" x1="2320" />
         </branch>
@@ -822,11 +801,11 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2080" type="branch" />
             <wire x2="2400" y1="2080" y2="2080" x1="2320" />
         </branch>
-        <branch name="INSTin4INV">
+        <branch name="INSTin(4)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2016" type="branch" />
             <wire x2="2400" y1="2016" y2="2016" x1="2320" />
         </branch>
-        <branch name="INSTin(3)">
+        <branch name="INSTin3INV">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="1952" type="branch" />
             <wire x2="2400" y1="1952" y2="1952" x1="2320" />
         </branch>
@@ -834,7 +813,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="1888" type="branch" />
             <wire x2="2400" y1="1888" y2="1888" x1="2320" />
         </branch>
-        <branch name="INSTin(1)">
+        <branch name="INSTin1INV">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="1824" type="branch" />
             <wire x2="2400" y1="1824" y2="1824" x1="2320" />
         </branch>
@@ -869,11 +848,11 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2976" y="512" type="branch" />
             <wire x2="3056" y1="512" y2="512" x1="2976" />
         </branch>
-        <branch name="INSTin4INV">
+        <branch name="INSTin(4)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2976" y="448" type="branch" />
             <wire x2="3056" y1="448" y2="448" x1="2976" />
         </branch>
-        <branch name="INSTin(3)">
+        <branch name="INSTin3INV">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2976" y="384" type="branch" />
             <wire x2="3056" y1="384" y2="384" x1="2976" />
         </branch>
@@ -881,7 +860,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2976" y="320" type="branch" />
             <wire x2="3056" y1="320" y2="320" x1="2976" />
         </branch>
-        <branch name="INSTin(1)">
+        <branch name="INSTin1INV">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2976" y="256" type="branch" />
             <wire x2="3056" y1="256" y2="256" x1="2976" />
         </branch>
@@ -909,11 +888,11 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2976" y="896" type="branch" />
             <wire x2="3056" y1="896" y2="896" x1="2976" />
         </branch>
-        <branch name="INSTin2INV">
+        <branch name="INSTin(2)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2976" y="832" type="branch" />
             <wire x2="3056" y1="832" y2="832" x1="2976" />
         </branch>
-        <branch name="INSTin1INV">
+        <branch name="INSTin(1)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2976" y="768" type="branch" />
             <wire x2="3056" y1="768" y2="768" x1="2976" />
         </branch>

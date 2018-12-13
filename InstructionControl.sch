@@ -6,9 +6,7 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="INSTin(7:0)" />
         <signal name="CLKin" />
-        <signal name="XLXN_7(7:0)" />
         <signal name="XLXN_8" />
         <signal name="XLXN_9" />
         <signal name="XLXN_10" />
@@ -42,7 +40,7 @@
         <signal name="SET_On" />
         <signal name="GET_On" />
         <signal name="HLT_On" />
-        <port polarity="Input" name="INSTin(7:0)" />
+        <signal name="INSTin(7:0)" />
         <port polarity="Input" name="CLKin" />
         <port polarity="Output" name="CLR_On" />
         <port polarity="Output" name="MVI_On" />
@@ -60,21 +58,7 @@
         <port polarity="Output" name="SET_On" />
         <port polarity="Output" name="GET_On" />
         <port polarity="Output" name="HLT_On" />
-        <blockdef name="fd8ce">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="64" y1="-128" y2="-128" x1="0" />
-            <line x2="64" y1="-192" y2="-192" x1="0" />
-            <line x2="64" y1="-32" y2="-32" x1="0" />
-            <line x2="64" y1="-256" y2="-256" x1="0" />
-            <line x2="320" y1="-256" y2="-256" x1="384" />
-            <line x2="64" y1="-32" y2="-32" x1="192" />
-            <line x2="192" y1="-64" y2="-32" x1="192" />
-            <line x2="64" y1="-128" y2="-144" x1="80" />
-            <line x2="80" y1="-112" y2="-128" x1="64" />
-            <rect width="64" x="320" y="-268" height="24" />
-            <rect width="64" x="0" y="-268" height="24" />
-            <rect width="256" x="64" y="-320" height="256" />
-        </blockdef>
+        <port polarity="Input" name="INSTin(7:0)" />
         <blockdef name="Signals">
             <timestamp>2018-12-2T20:25:49</timestamp>
             <rect width="256" x="64" y="-1024" height="1024" />
@@ -135,7 +119,7 @@
             <rect width="256" x="64" y="-1216" height="1408" />
         </blockdef>
         <block symbolname="Signals" name="XLXI_2">
-            <blockpin signalname="XLXN_7(7:0)" name="INSTin(7:0)" />
+            <blockpin signalname="INSTin(7:0)" name="INSTin(7:0)" />
             <blockpin signalname="XLXN_9" name="MVI" />
             <blockpin signalname="XLXN_10" name="STA" />
             <blockpin signalname="XLXN_24" name="LDA" />
@@ -188,21 +172,10 @@
             <blockpin signalname="GET_On" name="GET_On" />
             <blockpin signalname="HLT_On" name="HLT_On" />
         </block>
-        <block symbolname="fd8ce" name="XLXI_1">
-            <blockpin signalname="CLKin" name="C" />
-            <blockpin signalname="CLKin" name="CE" />
-            <blockpin name="CLR" />
-            <blockpin signalname="INSTin(7:0)" name="D(7:0)" />
-            <blockpin signalname="XLXN_7(7:0)" name="Q(7:0)" />
-        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
         <instance x="1152" y="1264" name="XLXI_2" orien="R0">
         </instance>
-        <branch name="XLXN_7(7:0)">
-            <wire x2="1152" y1="304" y2="304" x1="656" />
-            <wire x2="1152" y1="272" y2="304" x1="1152" />
-        </branch>
         <branch name="XLXN_8">
             <wire x2="1920" y1="464" y2="464" x1="1536" />
         </branch>
@@ -298,21 +271,6 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1824" y="1296" type="branch" />
             <wire x2="1920" y1="1296" y2="1296" x1="1824" />
         </branch>
-        <branch name="INSTin(7:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="192" y="384" type="branch" />
-            <wire x2="208" y1="384" y2="384" x1="192" />
-            <wire x2="272" y1="304" y2="304" x1="208" />
-            <wire x2="208" y1="304" y2="384" x1="208" />
-        </branch>
-        <branch name="CLKin">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="144" y="480" type="branch" />
-            <wire x2="240" y1="480" y2="480" x1="144" />
-            <wire x2="272" y1="368" y2="368" x1="240" />
-            <wire x2="240" y1="368" y2="432" x1="240" />
-            <wire x2="240" y1="432" y2="480" x1="240" />
-            <wire x2="272" y1="432" y2="432" x1="240" />
-        </branch>
-        <instance x="272" y="560" name="XLXI_1" orien="R0" />
         <iomarker fontsize="28" x="2416" y="272" name="CLR_On" orien="R0" />
         <iomarker fontsize="28" x="2416" y="384" name="MVI_On" orien="R0" />
         <iomarker fontsize="28" x="2416" y="496" name="LCA_On" orien="R0" />
@@ -324,13 +282,9 @@
         <iomarker fontsize="28" x="2416" y="1168" name="ADDU_On" orien="R0" />
         <iomarker fontsize="28" x="2416" y="1280" name="SBI_On" orien="R0" />
         <iomarker fontsize="28" x="2416" y="1392" name="LDA_On" orien="R0" />
-        <branch name="INSTin(7:0)">
-            <wire x2="672" y1="912" y2="912" x1="304" />
-        </branch>
         <branch name="CLKin">
             <wire x2="672" y1="976" y2="976" x1="304" />
         </branch>
-        <iomarker fontsize="28" x="304" y="912" name="INSTin(7:0)" orien="R180" />
         <iomarker fontsize="28" x="304" y="976" name="CLKin" orien="R180" />
         <branch name="half_clk">
             <wire x2="672" y1="1040" y2="1040" x1="304" />
@@ -352,5 +306,10 @@
             <wire x2="688" y1="1120" y2="1120" x1="320" />
         </branch>
         <iomarker fontsize="28" x="320" y="1120" name="quarter_clk" orien="R180" />
+        <branch name="INSTin(7:0)">
+            <wire x2="1136" y1="272" y2="272" x1="1056" />
+            <wire x2="1152" y1="272" y2="272" x1="1136" />
+        </branch>
+        <iomarker fontsize="28" x="1056" y="272" name="INSTin(7:0)" orien="R180" />
     </sheet>
 </drawing>

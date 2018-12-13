@@ -60,19 +60,6 @@
             <rect width="64" x="320" y="-172" height="24" />
             <line x2="384" y1="-160" y2="-160" x1="320" />
         </blockdef>
-        <blockdef name="shiftreg_hex2D">
-            <timestamp>2018-12-9T20:7:38</timestamp>
-            <rect width="256" x="64" y="-256" height="256" />
-            <line x2="0" y1="-224" y2="-224" x1="64" />
-            <line x2="0" y1="-160" y2="-160" x1="64" />
-            <line x2="0" y1="-96" y2="-96" x1="64" />
-            <rect width="64" x="0" y="-44" height="24" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
-            <rect width="64" x="320" y="-236" height="24" />
-            <line x2="384" y1="-224" y2="-224" x1="320" />
-            <rect width="64" x="320" y="-44" height="24" />
-            <line x2="384" y1="-32" y2="-32" x1="320" />
-        </blockdef>
         <blockdef name="oneshot">
             <timestamp>2018-12-9T20:10:58</timestamp>
             <rect width="256" x="64" y="-128" height="128" />
@@ -112,6 +99,19 @@
             <rect width="64" x="320" y="-108" height="24" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
         </blockdef>
+        <blockdef name="shiftreg_hex2D">
+            <timestamp>2018-12-12T5:38:10</timestamp>
+            <rect width="256" x="64" y="-256" height="256" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="320" y="-236" height="24" />
+            <line x2="384" y1="-224" y2="-224" x1="320" />
+            <rect width="64" x="320" y="-44" height="24" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
         <block symbolname="key_detect" name="XLXI_5">
             <blockpin signalname="clk_10k" name="clk" />
             <blockpin signalname="key_col(3:0)" name="row(3:0)" />
@@ -130,14 +130,6 @@
             <blockpin signalname="XLXN_4(3:0)" name="colI(3:0)" />
             <blockpin signalname="XLXN_6(3:0)" name="binO(3:0)" />
         </block>
-        <block symbolname="shiftreg_hex2D" name="XLXI_8">
-            <blockpin signalname="XLXN_17" name="CE" />
-            <blockpin name="RST" />
-            <blockpin signalname="XLXN_8" name="CLK" />
-            <blockpin signalname="XLXN_6(3:0)" name="bIN(3:0)" />
-            <blockpin signalname="Data_entry(7:4)" name="bOUT2(3:0)" />
-            <blockpin signalname="Data_entry(3:0)" name="bOUT1(3:0)" />
-        </block>
         <block symbolname="oneshot" name="XLXI_9">
             <blockpin signalname="clk_10k" name="CLK" />
             <blockpin signalname="key_press" name="En" />
@@ -154,6 +146,14 @@
             <blockpin signalname="clk_10k" name="clk" />
             <blockpin signalname="key_row(3:0)" name="swI(3:0)" />
             <blockpin signalname="key_col(3:0)" name="swO(3:0)" />
+        </block>
+        <block symbolname="shiftreg_hex2D" name="XLXI_14">
+            <blockpin signalname="XLXN_17" name="CE" />
+            <blockpin name="RST" />
+            <blockpin signalname="XLXN_8" name="CLK" />
+            <blockpin signalname="XLXN_6(3:0)" name="bIN(3:0)" />
+            <blockpin signalname="Data_entry(7:4)" name="bOUT2(3:0)" />
+            <blockpin signalname="Data_entry(3:0)" name="bOUT1(3:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -189,8 +189,6 @@
             <wire x2="2624" y1="1056" y2="1056" x1="2608" />
             <wire x2="2608" y1="1056" y2="1200" x1="2608" />
         </branch>
-        <instance x="2624" y="1088" name="XLXI_8" orien="R0">
-        </instance>
         <branch name="XLXN_8">
             <wire x2="2624" y1="992" y2="992" x1="2592" />
         </branch>
@@ -245,16 +243,20 @@
         <bustap x2="3072" y1="1056" y2="1056" x1="3168" />
         <branch name="Data_entry(3:0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3056" y="1056" type="branch" />
-            <wire x2="3056" y1="1056" y2="1056" x1="3008" />
+            <wire x2="3024" y1="1056" y2="1056" x1="3008" />
+            <wire x2="3056" y1="1056" y2="1056" x1="3024" />
             <wire x2="3072" y1="1056" y2="1056" x1="3056" />
         </branch>
         <bustap x2="3072" y1="864" y2="864" x1="3168" />
         <branch name="Data_entry(7:4)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3040" y="864" type="branch" />
-            <wire x2="3040" y1="864" y2="864" x1="3008" />
+            <wire x2="3024" y1="864" y2="864" x1="3008" />
+            <wire x2="3040" y1="864" y2="864" x1="3024" />
             <wire x2="3072" y1="864" y2="864" x1="3040" />
         </branch>
         <instance x="976" y="1280" name="XLXI_12" orien="R0">
+        </instance>
+        <instance x="2624" y="1088" name="XLXI_14" orien="R0">
         </instance>
     </sheet>
 </drawing>
